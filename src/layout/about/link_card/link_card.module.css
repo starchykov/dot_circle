@@ -1,0 +1,59 @@
+.goTo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 250px;
+}
+.goTo .box {
+  position: relative;
+  width: 24%;
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 0.75em;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .goTo .box {
+    width: 45%;
+    margin: 15px 0;
+  }
+}
+.goTo .box img {
+  height: 100%;
+}
+.goTo .box p {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.goTo .box hr {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ff8c21;
+  background: #ff8c21;
+}
+.goTo .box span {
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=link_card.module.css.map */

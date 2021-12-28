@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  text-underline: none;
+
+  scroll-behavior: smooth;
+
+  * p, h1, span {
+    white-space: pre-line;
+  }
+
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+
+
+  .menuWrapper {
+    position: fixed;
+    z-index: 3;
+    width: 250px;
+    height: 100%;
+  }
+
+  .appContent {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 0 12% 0 calc(12% + 78px);
+
+    @media (max-width: 1400px) {
+      padding: 0 5% 0 calc(5% + 78px);
+    }
+
+    @media (max-width: 1024px) {
+     padding: 1%;
+    }
+  }
+}
+
+// Scrollbar custom styles
+::-webkit-scrollbar {
+  position: fixed;
+  right: 0;
+
+  z-index: 100;
+
+  width: 9px;
+  background-color: lightgray;
+}
+
+
+::-webkit-scrollbar-button {
+  //background-color: #ef7f1a;
+  //display: none;
+}
+
+::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background: transparent;
+  display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  border-radius: 12px;
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+
+::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+
+//------------ scrollbar---------------

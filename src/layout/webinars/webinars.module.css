@@ -1,0 +1,88 @@
+.webinars {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 30px 0 0 0;
+}
+.webinars i {
+  min-width: 50px;
+  font-size: xx-large;
+  text-align: center;
+}
+.webinars .title {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
+}
+.webinars .bgImage {
+  position: fixed;
+  z-index: 1;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(4px);
+  transform: scale(1.1);
+}
+.webinars .topContent, .webinars .middleContent, .webinars .bottomContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 50px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.48);
+  box-shadow: 0 8px 32px 0 rgba(62, 62, 62, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.webinars .topContent .containerTitle, .webinars .middleContent .containerTitle, .webinars .bottomContent .containerTitle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: x-large;
+  color: black;
+  text-transform: uppercase;
+}
+.webinars .topContent p, .webinars .middleContent p, .webinars .bottomContent p {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  font-weight: 600;
+  font-size: medium;
+  white-space: pre-line;
+}
+.webinars .topContent p.listItem, .webinars .middleContent p.listItem, .webinars .bottomContent p.listItem {
+  position: relative;
+  align-items: center;
+  margin: 0 0 0 60px;
+}
+.webinars .topContent p.listItem:before, .webinars .middleContent p.listItem:before, .webinars .bottomContent p.listItem:before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  left: -20px;
+  border-radius: 50%;
+  background: black;
+}
+.webinars .topContent .bold, .webinars .middleContent .bold, .webinars .bottomContent .bold {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.webinars .topContent .normal, .webinars .middleContent .normal, .webinars .bottomContent .normal {
+  text-align: left;
+}
+
+/*# sourceMappingURL=webinars.module.css.map */

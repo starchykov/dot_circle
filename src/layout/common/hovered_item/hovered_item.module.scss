@@ -1,0 +1,122 @@
+.hoveredItem {
+  position: relative;
+  z-index: 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  overflow: hidden;
+
+  max-width: 45%;
+  min-width: 45%;
+  aspect-ratio: 2 / 1;
+
+  border: 2px white solid;
+  color: black;
+
+  padding: 15px;
+  background: rgba(232, 232, 232, 0.38);
+  box-shadow: 0 8px 32px 0 rgb(62 62 62 / 37%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 12px;
+
+  transition: all 0.1s;
+
+
+  @media (max-width: 768px) {
+    max-width: none;
+    width: 100%;
+
+    i {
+      margin: 0 auto !important;
+    }
+  }
+
+  &:hover {
+    color: white;
+    border: 2px #8fa9b5 solid;
+    background: #4682b454;
+    cursor: pointer;
+
+
+    p {
+      border-top: 1px #ef7f1a solid;
+
+      &::after {
+        border-top: 20px solid #ef7f1a;
+      }
+    }
+  }
+
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  img {
+    position: absolute;
+    filter: blur(8px) brightness(1.3);
+    width: 100%;
+    //object-fit: cover;
+  }
+
+  h1 {
+    position: relative;
+    width: 100%;
+    margin: 0 0 15px 0;
+
+    font-size: 29px;
+
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.1s;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+  }
+
+
+  p {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+
+    width: 100%;
+    padding: 20px 0 0 0;
+
+    border-top: 1px white solid;
+    min-height: 100px;
+
+    transition: all 0.1s;
+
+    &::after {
+      transition: all 0.4s;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 50%;
+
+      width: 0;
+      height: 0;
+
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 20px solid white;
+    }
+  }
+
+  .link {
+    text-decoration: none;
+    color: black;
+  }
+}

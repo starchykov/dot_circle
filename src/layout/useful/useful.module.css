@@ -1,0 +1,81 @@
+.useful {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+.useful .bgImage {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(2px);
+  transform: scale(1.1);
+}
+.useful h1 {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
+}
+.useful .dropdownBox {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 50px;
+  padding: 15px;
+  background: rgba(232, 232, 232, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(62, 62, 62, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 12px;
+  white-space: pre-line;
+  color: white;
+}
+.useful .dropdownBox[open] > .dropdownTitle::after {
+  content: "-";
+}
+.useful .dropdownBox .dropdownTitle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 30px;
+}
+.useful .dropdownBox .dropdownTitle::marker {
+  display: none;
+  content: "";
+}
+.useful .dropdownBox .dropdownTitle::after {
+  content: "+";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  color: black;
+  font-size: 1.5em;
+  font-weight: normal;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.275);
+}
+.useful .dropdownBox .dropdownTitle h3 {
+  width: 90%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.useful .dropdownBox .dropdownMassage {
+  padding: 15px 0;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
+}
+
+/*# sourceMappingURL=useful.module.css.map */

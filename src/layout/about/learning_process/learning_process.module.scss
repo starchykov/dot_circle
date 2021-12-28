@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+
+  margin: 50px 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  h1 {
+    width: 100%;
+    color: dimgrey;
+  }
+
+  .leftContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      width: 70%;
+      padding: 15px;
+      margin: 15px 0;
+
+      border-radius: 20px;
+      background: linear-gradient(to right, white, #ff8c21);
+      box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+
+      .lineOne {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: max-content;
+
+        background: rgba(232, 232, 232, 0.2);
+        //box-shadow: 0 8px 32px 0 rgb(62 62 62 / 37%);
+        box-shadow: 0 3px 3px 0 rgb(0 0 0 / 5%), 0 5px 15px 0 rgb(0 0 0 / 5%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+
+        border-radius: 50px 12px 12px 50px;
+
+        @media (max-width: 1024px) {
+          justify-content: space-between;
+          border-radius: 12px;
+          padding: 15px;
+        }
+
+        img {
+          width: 10%;
+
+          @media (max-width: 1024px) {
+            display: none;
+          }
+        }
+
+        h3 {
+          margin: 0 0 0 15px;
+          width: 30%;
+        }
+
+        P {
+          width: 60%;
+          color: white;
+        }
+
+        .emptyLine {
+          background: white;
+          width: 100%;
+          height: 2rem;
+        }
+      }
+    }
+
+    .percents {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      margin: 15px;
+
+      width: 25%;
+
+      border-radius: 20px;
+      background: #ff8c21;
+      box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+
+        h2 {
+          transform: none !important;
+        }
+      }
+
+      h2 {
+        width: 100%;
+        font-size: 2.5rem;
+        text-align: center;
+        color: white;
+
+        @media (max-width: 1800px) {
+          font-size: 2rem;
+        }
+
+        @media (max-width: 800px) {
+          font-size: 2rem;
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}

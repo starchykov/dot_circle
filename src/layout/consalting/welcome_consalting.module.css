@@ -1,0 +1,49 @@
+.consultingPage {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.consultingPage .bgImage {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  transform: scale(1.1);
+}
+.consultingPage .consultingType {
+  margin-top: 100px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+  border: 2px white solid;
+}
+.consultingPage .consultingType h1 {
+  width: 90%;
+  text-transform: uppercase;
+  position: relative;
+}
+.consultingPage .consultingType p {
+  width: 90%;
+  border-top: 1px white solid;
+}
+.consultingPage .consultingType h1::after {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 20px solid white;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  content: "";
+}
+
+/*# sourceMappingURL=welcome_consalting.module.css.map */

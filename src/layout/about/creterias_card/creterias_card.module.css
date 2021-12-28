@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #dfe6e9;
+}
+@media (max-width: 900px) {
+  .container {
+    display: block;
+  }
+}
+.container .leftContent {
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .container .leftContent {
+    width: 100%;
+  }
+}
+.container .rightContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 15px;
+}
+@media (max-width: 900px) {
+  .container .rightContent {
+    width: 100%;
+  }
+}
+.container h1 {
+  color: #ff8c21;
+  font-weight: bold;
+  width: 100%;
+}
+@media (max-width: 1400px) {
+  .container h1 {
+    font-size: 1.2rem;
+  }
+}
+.container h1.title {
+  position: relative;
+  width: 100%;
+  color: dimgrey;
+  margin: 0 0 20px 0;
+}
+.container h1.title::before {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 4px;
+  width: 60px;
+  content: "";
+  background: #ff8C21;
+}
+.container p {
+  width: 100%;
+  color: #7A7A7A;
+}
+
+/*# sourceMappingURL=creterias_card.module.css.map */

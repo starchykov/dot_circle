@@ -1,0 +1,55 @@
+.whyWeSlider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .slideItem {
+    display: flex;
+
+    .item {
+      position: relative;
+      display: flex;
+      margin: auto;
+
+      h1 {
+        position: absolute;
+        top: -30%;
+        left: 0;
+        z-index: 1;
+
+        color: #ef7f1a;
+        font-size: 10rem;
+      }
+
+      .circle {
+        position: relative;
+        z-index: 2;
+        left: 9%;
+        margin: 15px;
+
+        border-radius: 50%;
+        border: 4px solid dimgray;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 10rem;
+          height: 10rem;
+          min-width: 200px;
+          min-height: 200px;
+          box-sizing: border-box;
+          padding: 10px;
+
+          border-radius: 50%;
+          background: white;
+          font-size: 11px;
+          font-weight: 600;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+}

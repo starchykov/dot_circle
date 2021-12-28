@@ -1,0 +1,60 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-underline: none;
+}
+
+.app {
+  position: relative;
+  width: calc(100vw - 9px);
+}
+.app .appContent {
+  padding-right: 200px;
+  float: right;
+  width: 85%;
+}
+@media (max-width: 1400px) {
+  .app .appContent {
+    position: relative;
+    width: calc(100% - 76px);
+    left: 76px;
+    padding: 0 15px;
+  }
+}
+
+::-webkit-scrollbar {
+  position: fixed;
+  right: 0;
+  z-index: 100;
+  width: 9px;
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background: transparent;
+  display: none;
+}
+
+::-webkit-scrollbar-track-piece {
+  /* 4 - видимая часть трека */
+}
+
+::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  border-radius: 12px;
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-corner {
+  /* 6 - уголок */
+}
+
+::-webkit-resizer {
+  /* 7 - изменение размеров */
+}
+
+/*# sourceMappingURL=App.module.css.map */

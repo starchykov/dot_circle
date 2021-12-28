@@ -1,0 +1,21 @@
+.consultingPage {
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  height: 100vh;
+  padding: 30px 0;
+
+  &.mute {
+    height: 0;
+  }
+
+  i {
+    z-index: 2;
+    color: white;
+    font-size: 75px;
+    transform: rotate(90deg);
+  }
+}

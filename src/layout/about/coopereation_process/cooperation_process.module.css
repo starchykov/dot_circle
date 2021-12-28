@@ -1,0 +1,66 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(to right, white, #ff8c21);
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+}
+.container .cardTitle {
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: #ff962e;
+}
+.container .topLine {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  background: rgba(232, 232, 232, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(62, 62, 62, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+}
+.container .topLine .item {
+  width: 20%;
+  position: relative;
+}
+.container .topLine .item img {
+  width: 50%;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 25%;
+}
+.container .topLine .item h1 {
+  width: 50%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #ff962e;
+}
+.container .topLine .item p {
+  width: 50%;
+  font-size: 18px;
+  text-align: center;
+  color: #878787;
+}
+.container .botLine {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .botLine .item {
+  width: 100%;
+  display: flex;
+}
+.container .botLine .item p {
+  width: 50%;
+  font-size: 18px;
+  text-align: center;
+  color: #878787;
+}
+
+/*# sourceMappingURL=cooperation_process.module.css.map */

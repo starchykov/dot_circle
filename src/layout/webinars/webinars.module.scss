@@ -1,0 +1,93 @@
+.webinars {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  min-height: 100vh;
+  padding: 30px 0 0 0;
+
+  i {
+    min-width: 50px;
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .title {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
+  }
+
+  .contentBox {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    margin: 0 auto;
+
+    min-height: 50px;
+    padding: 15px;
+
+    background: rgb(255 255 255 / 48%);
+    box-shadow: 0 8px 32px 0 rgb(62 62 62 / 37%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .containerTitle {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      font-size: x-large;
+      color: black;
+      text-transform: uppercase;
+    }
+
+    p {
+      display: flex;
+      gap: 15px;
+      width: 100%;
+
+      font-weight: 600;
+      font-size: medium;
+      white-space: pre-line;
+
+      &.listItem {
+        position: relative;
+        align-items: center;
+        margin: 0 0 0 60px;
+      }
+
+      &.listItem:before {
+        content: '';
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        left: -20px;
+        border-radius: 50%;
+        background: black;
+      }
+    }
+
+    .bold {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .normal {
+      text-align: left;
+    }
+  }
+}

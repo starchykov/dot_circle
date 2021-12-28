@@ -1,0 +1,14 @@
+.gallery {
+  min-height: 100vh;
+  padding: 30px 0;
+}
+.gallery h1 {
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  color: dimgrey;
+  text-shadow: 0 2px 4px rgba(71, 97, 206, 0.36);
+}
+
+/*# sourceMappingURL=gallery.module.css.map */

@@ -1,0 +1,37 @@
+.swiper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin: 50px 0;
+  border-radius: 20px;
+  box-shadow: #a3b1c6d9 9px 9px 16px, #a3b1c638 -9px -9px 16px;
+}
+.swiper .bgImage {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  vertical-align: middle;
+  filter: blur(5px);
+}
+.swiper .slide {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+}
+.swiper .slide h1 {
+  width: 80%;
+  font-size: 4rem;
+  margin: auto;
+  filter: drop-shadow(1px 6px 13px #000);
+}
+.swiper .slide p {
+  white-space: pre-line;
+  font-size: 1.3rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=top_slider.module.css.map */

@@ -1,0 +1,275 @@
+.immersion {
+  margin: -20px;
+  //padding: 35px;
+
+  .contentBox {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    margin: 0 auto;
+
+    min-height: 50px;
+    padding: 15px;
+
+    background: rgb(255 255 255 / 48%);
+    box-shadow: 0 8px 32px 0 rgb(62 62 62 / 37%);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 12px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .contentBoxItem {
+      width: 100%;
+    }
+
+    .commonBox {
+      display: flex;
+      align-content: flex-start;
+      flex-wrap: wrap;
+      gap: 15px;
+
+      width: 49%;
+
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    .containerTitle {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      width: 100%;
+
+      font-size: x-large;
+      color: black;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      width: 100%;
+      margin: 0;
+      white-space: pre-line;
+    }
+
+    p {
+      display: flex;
+      gap: 15px;
+      width: 100%;
+
+      font-weight: 600;
+      font-size: medium;
+      white-space: pre-line;
+
+      &.listItem {
+        position: relative;
+        align-items: center;
+        margin: 0 0 0 60px;
+      }
+
+      &.listItem:before {
+        content: '';
+        position: absolute;
+        height: 8px;
+        width: 8px;
+        left: -20px;
+        border-radius: 50%;
+        background: black;
+      }
+    }
+
+    .bold {
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .normal {
+      text-align: left;
+    }
+  }
+
+  .videoBox {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 100%;
+    width: 100%;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    .leftContent {
+      height: 200px;
+      width: 40%;
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+
+      iframe {
+        border: none;
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+
+        .ytp-impression-link {
+          display: none;
+          visibility: hidden;
+        }
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    .rightContent {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+
+      width: 50%;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+
+      h1 {
+        width: 100%;
+        color: white;
+      }
+
+      span {
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+  }
+
+  .file {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    min-width: 40%;
+    aspect-ratio: 11/7;
+
+    border-radius: 12px;
+    border: 2px transparent solid;
+    background: #dfe6e9;
+
+    font-size: 50px;
+    color: cornflowerblue;
+
+    &:hover {
+      position: relative;
+      color: white;
+      cursor: pointer;
+      border: 2px #8fa9b5 solid;
+      background: #4682b454;
+
+      &::after {
+        content: 'Download';
+        position: absolute;
+        bottom: 0;
+
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+
+      svg {
+        position: relative;
+        margin-top: 20px;
+
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .header {
+    position: relative;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    overflow: hidden;
+    min-height: 90vh;
+    height: max-content;
+    padding: 35px;
+
+    video {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      height: 100%;
+      filter: brightness(0.5);
+    }
+
+    .arrow {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      width: 100%;
+      z-index: 2;
+
+      margin-top: 10%;
+
+      font-size: 35px;
+      color: white;
+
+      .arrowText {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      .arrowText, svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding: 35px;
+  }
+
+  .hint {
+    display: block !important;
+    color: #888e91;
+    text-transform: uppercase;
+    font-weight: lighter !important;
+
+    &::before {
+      content: '* ';
+      color: red;
+    }
+  }
+
+  .feedback {
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 15px;
+  }
+}
