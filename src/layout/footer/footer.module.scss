@@ -80,6 +80,10 @@
     .footerWidget {
       width: 80%;
 
+      @media (max-width: 768px) {
+        flex: 100%;
+      }
+
       .footerLogo {
         margin-bottom: 30px;
         display: flex;

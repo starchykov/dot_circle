@@ -12,7 +12,6 @@
   width: 97%;
 
 
-
   p {
     color: black;
     text-align: left;
@@ -30,7 +29,6 @@
     width: 100%;
 
     border-radius: 20px;
-
 
 
     :nth-child(2) {
@@ -67,7 +65,7 @@
     }
 
     .reasons {
-      width: 300px;
+      min-width: 300px;
       text-align: left;
     }
   }
@@ -168,7 +166,7 @@
 
       @media (max-width: 768px) {
         flex: 100%;
-      border: none;
+        border: none;
       }
 
       &:first-child {

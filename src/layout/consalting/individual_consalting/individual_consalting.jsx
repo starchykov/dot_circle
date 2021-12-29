@@ -39,8 +39,10 @@ const IndividualConsulting = ({t}) => {
                 <i className={'bx bx-down-arrow-alt'}/>
                 <i className={'bx bx-down-arrow-alt'}/>
 
-                {reasons.map((item, idx) => <MaterialBox key={uuid(idx)}
-                                                         content={<p className={s.reasons}>{t(item)}</p>}/>)}
+                {reasons.map((item, idx) =>
+                    <MaterialBox key={uuid(idx)}
+                                 content={<p className={s.reasons}>{t(item)}</p>}
+                                 style={{flex: `${window.innerWidth <= 768 ? 1 : 100}`}}/>)}
             </div>
 
 

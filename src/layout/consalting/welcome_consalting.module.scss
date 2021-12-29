@@ -17,5 +17,9 @@
     color: white;
     font-size: 75px;
     transform: rotate(90deg);
+
+    @media (max-width: 768px) {
+      margin: auto;
+    }
   }
 }

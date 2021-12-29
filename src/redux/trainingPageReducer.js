@@ -21,7 +21,7 @@ const initialState = {
             },
             {
                 name: 'Organizational development',
-                massage: 'Organizational development, or as OD experts call it, is the most important business competence as a key employee',
+                massage: 'Organizational development, or as OD experts call it',
                 link: 'organizational_development',
                 src: 'organizational_development.png'
             }
