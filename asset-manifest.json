@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dot_circle/static/css/main.356dd54c.chunk.css",
-    "main.js": "/dot_circle/static/js/main.b27bf755.chunk.js",
-    "main.js.map": "/dot_circle/static/js/main.b27bf755.chunk.js.map",
+    "main.js": "/dot_circle/static/js/main.a844938b.chunk.js",
+    "main.js.map": "/dot_circle/static/js/main.a844938b.chunk.js.map",
     "runtime-main.js": "/dot_circle/static/js/runtime-main.6963ef72.js",
     "runtime-main.js.map": "/dot_circle/static/js/runtime-main.6963ef72.js.map",
     "static/css/2.acb3237e.chunk.css": "/dot_circle/static/css/2.acb3237e.chunk.css",
@@ -19,7 +19,7 @@
     "static/media/anar_why_we.103d31f3.png": "/dot_circle/static/media/anar_why_we.103d31f3.png",
     "static/media/arrow_cooperation_process.f1a92a90.svg": "/dot_circle/static/media/arrow_cooperation_process.f1a92a90.svg",
     "static/media/consalting.4c0b6c52.png": "/dot_circle/static/media/consalting.4c0b6c52.png",
-    "static/media/corp_training.67f7c283.png": "/dot_circle/static/media/corp_training.67f7c283.png",
+    "static/media/corp_training.ff907da3.png": "/dot_circle/static/media/corp_training.ff907da3.png",
     "static/media/dream_team.16fcb70b.png": "/dot_circle/static/media/dream_team.16fcb70b.png",
     "static/media/dt_bg_image.c30f6a37.png": "/dot_circle/static/media/dt_bg_image.c30f6a37.png",
     "static/media/dt_title_image.d6ef0b1e.png": "/dot_circle/static/media/dt_title_image.d6ef0b1e.png",
@@ -48,6 +48,6 @@
     "static/css/2.acb3237e.chunk.css",
     "static/js/2.249c83ab.chunk.js",
     "static/css/main.356dd54c.chunk.css",
-    "static/js/main.b27bf755.chunk.js"
+    "static/js/main.a844938b.chunk.js"
   ]
 }
