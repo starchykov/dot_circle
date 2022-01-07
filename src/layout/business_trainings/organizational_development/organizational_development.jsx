@@ -3,10 +3,12 @@ import {useCallback, useEffect} from "react";
 import {withNamespaces} from "react-i18next";
 import Background from "../../common/background/background";
 import background from "../../../assets/organizational_development.png";
-import PageTitle from "../../common/title/title";
+import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
 import {compose} from "redux";
 import {connect} from "react-redux";
+import {BiNotification, BsDot, RiArrowDropRightFill, RiArticleFill, RiAwardFill} from "react-icons/all";
+import {ItemText} from "../../common/text/text";
 
 
 const OrganizationalDevelopment = ({t, trainings}) => {
@@ -22,10 +24,9 @@ const OrganizationalDevelopment = ({t, trainings}) => {
         let blockOneTitle = trainings.organizationalDevelopment.blockOneTitle;
         let blockOneContent = trainings.organizationalDevelopment.blockOneContent;
         return <>
-            <h2 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t(h)}</h2>
-            <h2 className={s.containerTitle}><i className={'bx bx-message-square-detail'}/>{t(blockOneTitle)}</h2>
-
-            {t(blockOneContent).split('\n').map((e, idx) => <p key={uuid(idx)} className={`${s.listItem}`}>{e}</p>)}
+            <PageTitle key={uuid(this)} icon={<BiNotification/>} title={t(h)}/>
+            <PageTitle key={uuid(this)} icon={<BiNotification/>} title={t(blockOneTitle)}/>
+            {t(blockOneContent).split('\n').map((e, idx) => <ItemText key={uuid(idx)} icon={<BsDot/>} text={e}/>)}
         </>
     };
 
@@ -34,10 +35,10 @@ const OrganizationalDevelopment = ({t, trainings}) => {
         let middleContent = trainings.organizationalDevelopment.middleContent;
 
         return <>
-            <h2 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t(middleTitle)}</h2>
-            {middleContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
-                <h2>{t(i.title)}</h2>
-                <p>{t(i.content)}</p>
+            <PageTitle key={uuid(this)} icon={<RiAwardFill/>} title={t(middleTitle)}/>
+            {middleContent.map((i, idx) => <div key={uuid(idx)}>
+                <ContainerTitle key={uuid(this)} icon={<RiArrowDropRightFill/>} title={t(i.title)}/>
+                <ItemText text={t(i.content)} style={{paddingLeft: '42px'}}/>
             </div>)}
         </>
     };
@@ -47,15 +48,15 @@ const OrganizationalDevelopment = ({t, trainings}) => {
         let bottomContent = trainings.organizationalDevelopment.bottomContent;
 
         return <>
-            <h2 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t(bottomTitle)}</h2>
-            {t(bottomContent).split('\n').map((e, idx) => <p key={uuid(idx)} className={`${s.listItem}`}>{e}</p>)}
+            <PageTitle key={uuid(this)} icon={<RiArticleFill/>} title={t(bottomTitle)}/>
+            {t(bottomContent).split('\n').map((e, idx) => <ItemText key={uuid(idx)} icon={<BsDot/>} text={e}/>)}
         </>
     };
 
     return (
         <div className={s.organizationalDevelopment}>
             <Background background={background}/>
-            <PageTitle title={t(trainings.organizationalDevelopment.headerTitle)}/>
+            <Title title={t(trainings.organizationalDevelopment.headerTitle)}/>
             <MaterialBox content={<BlockOne/>}
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
             <MaterialBox content={<BlockTwo/>}

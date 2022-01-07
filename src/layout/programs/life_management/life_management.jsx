@@ -3,7 +3,9 @@ import {withNamespaces} from "react-i18next";
 import {useCallback, useEffect} from "react";
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
-import PageTitle from "../../common/title/title";
+import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
+import {BiNotification, BsDot, RiArrowDropRightFill, RiArticleFill, RiTeamFill} from "react-icons/all";
+import {BoldText, ItemText, Text} from "../../common/text/text";
 
 const LifeManagement = ({t}) => {
 
@@ -23,9 +25,12 @@ const LifeManagement = ({t}) => {
         let i = 1;
         return (
             <>
-                <h1 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t('For whom is this programme')}</h1>
-                {h.map((e, idx) => <div key={uuid(idx)} className={s.block}><h2>{i++}</h2><p>{t(e)}</p></div>)}
-                <h1 className={s.containerTitle}>{t('The training is held in an open')}</h1>
+                <PageTitle icon={<RiTeamFill/>} title={t('For whom is this programme')}/>
+                {h.map((e, idx) => <div key={uuid(idx)} className={s.block}>
+                    <Title title={i++} style={{width: '50px', margin: 0, color: '#ef7f1a', lineHeight: 1, alignItems: 'center'}}/>
+                    <Text text={t(e)} style={{alignItems: 'center'}}/>
+                </div>)}
+                <PageTitle icon={<RiArticleFill/>} title={t('The training is held in an open')}/>
             </>
         );
     };
@@ -34,13 +39,15 @@ const LifeManagement = ({t}) => {
         <div className={s.lifeManagement}>
             <Background background={`${process.env.PUBLIC_URL}/assets/life_management.png`}/>
 
-            <PageTitle title={t('Wheel of Events - LIFE MANAGEMENT')}/>
+            <Title title={t('Wheel of Events - LIFE MANAGEMENT')}/>
 
             <div className={s.contentBox}>
-                <h1 className={s.containerTitle}><i className={'bx bx-error-circle'}/>{t('Aims and goals of the training')}</h1>
-                <p className={`${s.normal}`}>{t('By attending this program')}</p>
-                <p className={`${s.normal}`}>{t('You should attend the program in the following cases')}</p>
-                {t('Develop personality traits and habits of').split('\n').map((e, idx) => <p key={uuid(idx)} className={`${s.listItem}`}>{e}</p>)}
+                <PageTitle icon={<BiNotification/>} title={t('Aims and goals of the training')}/>
+                <BoldText text={t('By attending this program')}/>
+                <ContainerTitle icon={<RiArrowDropRightFill/>} title={t('You should attend the program in the following cases')}/>
+                {t('Develop personality traits and habits of').split('\n').map((e, idx) => <ItemText key={uuid(idx)}
+                                                                                                     icon={<BsDot/>}
+                                                                                                     text={e}/>)}
             </div>
 
             <MaterialBox content={<InlineItems/>}

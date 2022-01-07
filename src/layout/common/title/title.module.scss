@@ -1,6 +1,11 @@
 @mixin common {
   position: relative;
   z-index: 2;
+
+  display: flex;
+  align-items: start;
+  justify-content: center;
+
   width: 100%;
 
   grid-area: hd;
@@ -9,6 +14,23 @@
   white-space: pre-line;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
+
+  svg {
+    width: auto;
+    min-width: fit-content;
+    font-size: xx-large;
+    margin-right: 10px;
+    color: #ef7f1a;
+
+    @media (max-width: 768px) {
+      font-size: x-large;
+    }
+
+    @media (max-width: 768px) {
+      font-size: large;
+    }
+  }
 }
 
 .title {
@@ -16,32 +38,35 @@
 
   margin: 0 0 50px 0;
 
-  font-size: larger;
+  font-size: xxx-large;
   font-weight: bold;
   white-space: pre-line;
 
   text-shadow: 0 2px 4px rgb(71 97 206 / 36%);
 
+
   @media (max-width: 768px) {
     margin: 70px 0 0 0;
-    font-size: large;
+    font-size: xx-large;
   }
 }
 
 .pageTitle {
   @include common;
 
+  justify-content: start;
   text-align: left;
   text-shadow: 0 2px 4px #3e4c589e;
 
   @media (max-width: 768px) {
-    font-size: small;
+    font-size: large;
   }
 }
 
 .containerTitle {
   @include common;
 
+  justify-content: start;
   text-align: left;
   text-shadow: 0 2px 4px #3e4c589e;
 }

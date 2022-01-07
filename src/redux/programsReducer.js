@@ -57,7 +57,7 @@ const initialState = {
             {number: '4', content: '- learn how to respond appropriately to various circumstances and'},
             {number: '5', content: '- master the technique of instant relaxation in the routine of everyday'},
             {number: '6', content: '- master the breathing technique for rapid regulation of psycho'},
-            {number: '7', content: '- master the techniques of anti-stress meditation;'},
+            {number: '7', content: '- master the techniques of anti-stress meditation'},
             {number: '8', content: '- learn how to build effective communication and relationships in the'},
             {number: '9', content: '- form a joyful and optimistic inner determination, which would allow you'},
             {number: '10', content: '- increase the level of internal concentration and efficiency;'},

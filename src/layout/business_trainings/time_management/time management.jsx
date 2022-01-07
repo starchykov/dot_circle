@@ -4,10 +4,11 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import background from "../../../assets/time_management.png"
 import Background from "../../common/background/background";
-import PageTitle from "../../common/title/title";
+import {Title, PageTitle} from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
-import {FaUserTie} from "react-icons/all";
+import {AiOutlineCarryOut, BiNotification, BsDot, FaUserTie, RiTeamFill} from "react-icons/all";
 import {useCallback} from "react";
+import {ItemText, Text} from "../../common/text/text";
 
 
 const TimeManagement = ({t, training}) => {
@@ -18,25 +19,34 @@ const TimeManagement = ({t, training}) => {
     const InfoContent = () => {
         let h = training.timeManagement.headerMessage;
         return <div className={s.topContent}>
-            {t(h).split(`\n`).map((e, idx) => <h1 key={uuid(idx)} className={s.title}><i className={'bx bx-message-square-detail'}/>{e}</h1>)}
-            {t(training.timeManagement.content).split(`\n`).map((e, idx) => <p key={uuid(idx)} className={`${s.listItem}`}>{e}</p>)}
+            {t(h).split(`\n`).map((e, idx) => <PageTitle key={uuid(idx)}
+                                                         icon={<BiNotification/>}
+                                                         title={e}/>
+            )}
+            {t(training.timeManagement.content).split(`\n`).map((e, idx) => <ItemText key={uuid(idx)}
+                                                                                      icon={<BsDot/>}
+                                                                                      text={e}/>)}
         </div>
     };
 
     const NumberRange = () => {
         return <div className={s.botContent}>
+            <PageTitle icon={<AiOutlineCarryOut/>}
+                       title={t(training.timeManagement.bottomTitle)}/>
             {training.timeManagement.bottomContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
-                <h1>{i.number}</h1>
-                <p>{t(i.content)}</p>
+                <Title title={i.number} style={{width: '50px', margin: 0, color: '#ef7f1a', alignItems: 'center'}}/>
+                <Text text={t(i.content)} style={{alignItems: 'center'}}/>
             </div>)}
         </div>
     };
 
     const Targets = () => {
         return <div className={s.botContent}>
+            <PageTitle icon={<RiTeamFill/>}
+                       title={t(training.timeManagement.middleTitle)}/>
             {training.timeManagement.middleContent.map((i, idx) => <div key={uuid(idx)} className={s.targets}>
                 <FaUserTie/>
-                <p>{t(i)}</p>
+                <Text text={t(i)} style={{justifyContent: 'center'}}/>
             </div>)}
         </div>
     };
@@ -44,14 +54,9 @@ const TimeManagement = ({t, training}) => {
     return (
         <div className={s.timeManagement}>
             <Background background={background}/>
-
-            <PageTitle title={t(training.timeManagement.headerTitle)}/>
-            <InfoContent/>
-
-            <h1 className={s.pageTitle}>{t(training.timeManagement.middleTitle)}</h1>
+            <Title title={t(training.timeManagement.headerTitle)}/>
+            <MaterialBox content={<InfoContent/>}/>
             <MaterialBox style={{width: '100%'}} content={<Targets/>}/>
-
-            <h1 className={s.pageTitle}>{t(training.timeManagement.bottomTitle)}</h1>
             <MaterialBox content={<NumberRange/>}/>
         </div>
     )

@@ -13,6 +13,7 @@ import mwmBg from "./../../assets/mwm_bg_image.png"
 import {NavLink} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import Background from "../common/background/background";
+import {PageTitle} from "../common/title/title";
 
 const WelcomePage = ({t}) => {
 
@@ -36,10 +37,8 @@ const WelcomePage = ({t}) => {
 
             <div className={s.products}>
 
-                <p className={s.productsHeader}>
-                    Welcome to Dot&Circle <br/>
-                    Select the product you are interested in
-                </p>
+                <PageTitle title={t('Welcome to Dot&Circle')} style={{fontWeight: 500, fontSize: '30px'}}/>
+                <PageTitle title={t('Select the product you are interested in')} style={{fontWeight: 500, fontSize: '30px'}}/>
 
                 <div className={`${s.card} ${s.slideRight}`}>
                     <NavLink to={'/'} className={s.cardContent} onMouseEnter={() => toggleClass(dtBgImage)}>

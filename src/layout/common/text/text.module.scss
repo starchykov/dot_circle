@@ -1,0 +1,64 @@
+@mixin common {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: start;
+  justify-content: start;
+
+  width: 100%;
+
+  grid-area: hd;
+
+  font-size: medium;
+  //color: #878787;
+  //color: #404040;
+  color: #333;
+
+  white-space: pre-line;
+  text-shadow: 0 2px 4px #3e4c589e;
+
+  svg {
+    width: auto;
+    min-width: fit-content;
+    font-size: xx-large;
+    margin-right: 10px;
+    color: #ef7f1a;
+
+    @media (max-width: 768px) {
+      font-size: x-large;
+    }
+
+    @media (max-width: 768px) {
+      font-size: large;
+    }
+  }
+}
+
+.text {
+  @include common;
+
+  @media (max-width: 425px) {
+    text-align: justify;
+  }
+}
+
+.boldText {
+  @include common;
+
+  font-weight: bold;
+
+  @media (max-width: 425px) {
+    text-align: justify;
+  }
+}
+
+.itemText {
+  @include common;
+
+  align-items: center;
+
+  @media (max-width: 425px) {
+    text-align: justify;
+  }
+}

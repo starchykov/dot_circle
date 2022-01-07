@@ -4,7 +4,15 @@ import {useEffect} from "react";
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
 import arrow from "../../../assets/arrow_cooperation_process.svg";
-import {BsBoxArrowInDown} from "react-icons/all";
+import {
+    BiNotification,
+    BsBoxArrowInDown, BsDot,
+    RiArrowDropRightFill,
+    RiArticleFill, RiNodeTree,
+    RiTeamFill
+} from "react-icons/all";
+import {ContainerTitle, PageTitle, Title} from "../../common/title/title";
+import {BoldText, ItemText, Text} from "../../common/text/text";
 
 const Transformation = ({t}) => {
 
@@ -12,6 +20,7 @@ const Transformation = ({t}) => {
     useEffect(() => document.title = t('Transformation'));
 
     const InlineItems = () => {
+        let titleStyle = {width: '50px', margin: 0, color: '#ef7f1a', lineHeight: 1, alignItems: 'center'};
         let h = [
             'For adults',
             'For those who are in searching of new achievements in life',
@@ -21,36 +30,39 @@ const Transformation = ({t}) => {
         let i = 1;
         return (
             <>
-                <h1 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t('For whom is this programme')}
-                </h1>
-                {h.map(e => <div className={s.block}><h2>{i++}</h2><p>{t(e)}</p></div>)}
+                <PageTitle icon={<RiTeamFill/>} title={t('For whom is this programme')}/>
+                {h.map(e => <div className={s.block}>
+                    <Title title={i++} style={titleStyle}/>
+                    <Text text={t(e)} style={{alignItems: 'center'}}/>
+                    </div>)}
             </>
         );
     };
 
     const Process = () => {
+        let titleStyle = {width: '50px', margin: 0, color: '#ef7f1a', lineHeight: 1, alignItems: 'center'};
         return (
             <div className={s.process}>
-                <h1 className={s.cardTitle}>{t('Program structure')}</h1>
-                <h1 className={s.containerTitle}>{t('The full program consists of')}</h1>
+                <PageTitle title={t('Program structure')}/>
+                <PageTitle icon={<RiNodeTree/>} title={t('The full program consists of')}/>
                 <div className={s.topLine}>
                     <div className={s.item}>
-                        <h1>1</h1>
+                        <Title title={1} style={titleStyle}/>
                         <img src={arrow} alt=""/>
-                        <p>{t('Movement. Breathing. Consciousness.')}</p>
+                        <Text text={t('Movement. Breathing. Consciousness.')} style={{color: '#878787'}}/>
                         <div className={s.file}><BsBoxArrowInDown/></div>
                         <p className={s.hint}>{t('Click to download the program')}</p>
                     </div>
                     <div className={s.item}>
-                        <h1>2</h1>
+                        <Title title={2} style={titleStyle}/>
                         <img src={arrow} alt=""/>
-                        <p>{t('Time. Energy. Action.')}</p>
+                        <Text text={t('Time. Energy. Action.')} style={{color: '#878787'}}/>
                         <div className={s.file}><BsBoxArrowInDown/></div>
                         <p className={s.hint}>{t('Click to download the program')}</p>
                     </div>
                     <div className={s.item}>
-                        <h1>3</h1>
-                        <p>{t('Course')}</p>
+                        <Title title={3} style={titleStyle}/>
+                        <Text text={t('Course')} style={{color: '#878787'}}/>
                         <div className={s.file}><BsBoxArrowInDown/></div>
                         <p className={s.hint}>{t('Click to download the program')}</p>
                     </div>
@@ -63,21 +75,27 @@ const Transformation = ({t}) => {
         <div className={s.transformation}>
             <Background background={`${process.env.PUBLIC_URL}/assets/transformation.png`}/>
 
-            <h1 className={s.title}>{t('Transformation')}</h1>
+            <Title title={t('Transformation')}/>
 
-            <div className={s.contentBox}>
-                <h1 className={s.containerTitle}><i className={'bx bx-info-square'}/>{t('Transformation program')}</h1>
-                <p className={s.normal}>{t('This program was created in the basis')}</p>
-                <h1 className={s.containerTitle}><i className={'bx bx-message-square-detail'}/>{t('Knowledge and practical skills')}</h1>
-                <p className={`${s.normal}`}>{t('Many of us live our lives')}</p>
-            </div>
+            <MaterialBox content={
+                <>
+                    <PageTitle icon={<BiNotification/>} title={t('Transformation program')}/>
+                    <BoldText text={t('This program was created in the basis')}/>
+                    <PageTitle icon={<RiArticleFill/>} title={t('Knowledge and practical skills')}/>
+                    <BoldText text={t('Many of us live our lives')}/>
+                </>
+            } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
 
-            <div className={s.contentBox}>
-                <h1 className={s.containerTitle}><i className={'bx bx-error-circle'}/>{t('Transformation')}</h1>
-                <p className={`${s.normal}`}>{t('By attending this program')}</p>
-                <p className={`${s.normal}`}>{t('You should attend the program in the following cases')}</p>
-                {t('You come to a dead-end in your life').split('\n').map(e => <p className={`${s.listItem}`}>{e}</p>)}
-            </div>
+            <MaterialBox content={
+                <>
+                    <PageTitle icon={<BiNotification/>} title={t('Transformation')}/>
+                    <BoldText text={t('By attending this program')}/>
+                    <ContainerTitle icon={<RiArrowDropRightFill/>}
+                                    title={t('You should attend the program in the following cases')}/>
+                    {t('You come to a dead-end in your life').split('\n').map(e => <ItemText text={e}
+                                                                                             icon={<BsDot/>}/>)}
+                </>
+            } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
 
             <MaterialBox content={<InlineItems/>}
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>

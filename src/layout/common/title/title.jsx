@@ -5,9 +5,11 @@ export const Title = (props) => {
     let style = props.style ?? {color: 'white'};
 
     return (
-        <div className={s.title}>
-            <h1 style={style}>{props.title}</h1>
-        </div>
+            <h1 className={s.title}
+                style={style}>
+                {props.icon && props.icon}
+                {props.title}
+            </h1>
     );
 };
 
@@ -15,9 +17,11 @@ export const PageTitle = (props) => {
     let style = props.style ?? {color: '#333'};
 
     return (
-        <div className={s.pageTitle}>
-            <h2 style={style}>{props.title}</h2>
-        </div>
+            <h2 className={s.pageTitle}
+                style={style}>
+                {props.icon && props.icon}
+                {props.title}
+            </h2>
     );
 };
 
@@ -25,9 +29,11 @@ export const ContainerTitle = (props) => {
     let style = props.style ?? {color: '#333'};
 
     return (
-        <div className={s.containerTitle}>
-            <h3 style={style}>{props.title}</h3>
-        </div>
+            <h3 className={s.containerTitle}
+                style={style}>
+                {props.icon && props.icon}
+                {props.title}
+            </h3>
     );
 };
 

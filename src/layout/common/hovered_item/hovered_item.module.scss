@@ -36,13 +36,14 @@
   }
 
   &:hover {
-    color: white;
+    color: white !important;
     border: 2px #8fa9b5 solid;
     background: #4682b454;
     cursor: pointer;
 
 
     p {
+      color: white !important;
       border-top: 1px #ef7f1a solid;
 
       &::after {

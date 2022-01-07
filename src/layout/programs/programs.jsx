@@ -11,6 +11,7 @@ import Immersion from "./immersion/immersion";
 import Transformation from "./transformation/transformation";
 import NoPage from "../common/no_page/no_page";
 import LifeManagement from "./life_management/life_management";
+import {Text} from "../common/text/text";
 
 const Programs = ({t, name, programs}) => {
 
@@ -49,7 +50,7 @@ const Programs = ({t, name, programs}) => {
             <div onMouseEnter={() => setActive(`${process.env.PUBLIC_URL}/assets/${i.src}.png`)}
                  onClick={() => setShowPopup(i.link)}>
                 <h1>{t(i.name)}</h1>
-                <p>{t(i.massage)}</p>
+                <Text text={t(i.massage)}/>
             </div>
         }/>
     );
