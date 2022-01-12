@@ -8,7 +8,7 @@
   "Meditate with me": "Meditate with me",
   "Learn more about us and our programs": "Learn more about us and our programs",
   "Anar Mammadov's online program how": "Anar Mammadov's online program how to love yourself and raise your self-esteem you will change your life just by changing your attitude towards yourself!",
-  "Meditate with me description": "Meditate with me description",
+  "Meditate with me description": "12 məşğələ ərzinddə meditasiya etməyi öyrən, meditasiyanın gizli təsirlərini kəşf et və ona həyatını dəyişmə imkanı ver!",
 
 
 
@@ -95,6 +95,14 @@
   "Theory": "Nəzəri̇yyə 30%",
 
 
+  "How is the process of cooperation": "Əməkdaşliq prosesi̇ necə qurulmuşdur",
+  "Training Information": "Təlim məlumatları",
+  "Personal meeting": "Fərdi görüş",
+  "Timing": "Vaxt seçimi",
+  "Contract": "Müqavilə",
+  "Training": "Təlim",
+  "Summary": "Xülasə",
+
 
   "Our trainings are for you, if ...": "Bizim təlimlərimiz Sizin\nüçündür Əgər siz ...",
   "1 You are development oriented": "1 İnkişafa hədəflənmisiniz",
@@ -179,11 +187,25 @@
   "Individual consulting is necessary in the following cases": "Fərdi konsaltinq aşağıdakı hallarda zəruridir:",
   "constant challenge at work": "- işdə daimi çətinliklər;\n- xroniki pul çatışmazlığı;\n- insanın özünün haqlı olmasından şübhələnməsi, başqasının yerini tutması barədə fikirlər;\n- yüksək əsəbilik və münaqişəyə meyllik;\n- tanışların sayının çox olmasına baxmayaraq kəskin tənhalıq hissi;\n- məqsədin və həyatda sevinclərinin olmaması;\n- itirilmiş fürsətlər barədə təəssüf hissi, keçmiş barədə düşüncələr, reallığın xatirələrə məğlub olması.",
 
-  "How to make a difference": "Dəyişikliklərə necə nail olmaq olar.",
+  "How to make a difference": "Dəyişikliklərə necə nail olmaq olar:",
   "First of all, you need to get rid of the burden of unnecessary memories": "1. Hər şeydən öncə, lazımsız xatirələr yükündən azad olmaqla.\n2. Düşdüyünüz vəziyyətə fərqli nöqteyi-nəzərdən baxmaqla.\n3. İdrak aktivliyini inkişaf etdirməklə. Bu, məhsuldarlığı artırar, vaxta qənaət edər.\n4. Biznesi yeni səviyyəyə qaldıracaq və çətin zamanlara qalib gəlmək imkanını verən ideyaları generasiya etməklə.\n5. Uğura və maliyyə rifahına daxilən köklənməklə.\n6. Bütün yaş dövrlərində gümrah və enerjili olmaq üçün sağlamlaşdırıcı strategiyaları öz qrafikinə daxil etməklə.\n7. Həyat eşqini ələ gətirmək, hər günü sevincli və mənalı etmək üçün özünətəlqin etməklə.",
 
   "We can’t help": "Kimə kömək edə bilmərik:",
   "An applicant who is trying to collect a confidential": "1. Müştərimiz barədə ətraflı məlumat toplamağa cəhd göstərən adama.\n2. Bu cür məsləhətlərin ona lazım olmadığına əmin olan insana.\n3. Psixiki pozğunluqları olan müştəriyə.\n4. Başqasının əvəzinə konsultasiya əldə etmək istəyən və öz interpretasiyasında ona hazır həll yolunu göstərmək istəyən xeyirxahlara.\n5. Müştəri daxilən dəyişikliklərə hazır deyilsə, məşğələlər faydasızdır.",
+  "RESULTS": "#NƏTICƏ",
+  "GOALS":"#MƏQSƏDLƏR",
+  "CHANGES": "#DƏYIŞIKLIKLƏR",
+  "STEPS":"#ADDIMLAR",
+  "MODELS": "#MODELLƏR",
+  "TOOLS":"#ALƏTLƏR",
+  "PROCESSES": "#MEXANIKA",
+  "SYSTEMS":"#PROSESLƏR",
+  "INFORMATION": "#MƏLUMAT",
+  "PERCEPTION":"#QAVRAYIŞ",
+  "UNDERSTANDING": "#ANLAYIŞ",
+  "STRATEGY":"#STRATEGİYA",
+  "THEORY": "#NƏZƏRİYYƏ",
+  "EXPERIENCE":"#TƏCRÜBƏ",
 
 
   "Individual consulting": "Fərdi̇ konsalti̇nq",
@@ -264,12 +286,12 @@
   "Aims and goals of self-development training": "ÖZÜNÜ İNKİŞAF TƏLİMİNİN MƏQSƏDİ:",
   "Training program": "Training program",
   "Series": "Blok",
-  "Series 1 - Self-determination": "Blok 1 Özünü müəyyən etmə",
-  "Series 2 – Planning": "Blok 2 – Planlaşdırma",
-  "Series 3 – Health potential": "Blok 3 – Sağlamlıq potensialı",
-  "Series 4 – Continuous practice": "Blok 4 – Fasiləsiz təcrübə",
-  "Series 5 – Mission": "Blok 5 - Missiya",
-  "Series 6 – “How I can be better” Project": "Blok 6 – “Mən necə daha yaxşı olacağam” layihəsi",
+  "Series 1 - Self-determination": "Blok - 1 Özünü müəyyən etmə",
+  "Series 2 - Planning": "Blok 2 - Planlaşdırma",
+  "Series 3 - Health potential": "Blok 3 - Sağlamlıq potensialı",
+  "Series 4 - Continuous practice": "Blok 4 - Fasiləsiz təcrübə",
+  "Series 5 - Mission": "Blok 5 - Missiya",
+  "Series 6 - “How I can be better” Project": "Blok 6 - “Mən necə daha yaxşı olacağam” layihəsi",
   "Trainings are held in a corporate and individual formats": "Məşğələlər korporativ və açıq formatlarda keçirilir.",
   "Targeted audience is managers of all levels": "Hədəf auditoriyası – istənilən səviyyəli rəhbərlər və menecerlər. Açıq formatda keçirilən təlimlərdə auditoriya geniş iştirakçı siyahısını əhatə edir, bu siyahıya daimi inkişafa can atan insanlar daxildir.",
 
@@ -284,16 +306,16 @@
 
 
   "Organizational development": "Organizational development",
-  "Organizational development, or as OD experts call it": "Organizational development or so called OD among professionals is the important businesslike competence of key employee.",
-  "Four reasons to sign up for this training now": "Four reasons to sign up for the training right now",
-  "For key specialists, including HR": "For key personnel including HR, who are willing to learn how to solve business problems on the same level with high level specialists of McKinsey, Boston Consulting Group and other leading companies. \nThis training will teach us both theory and practices of organizational development. \nThis training has not been developed for external consultants. Mainly, it has been developed for HR, therefore, with its level of comprehensibility it could be helpful even for HR Generalist. \nThe training will provide you with different valuable tools for your company, which you will be able to apply and get the feedback right away.",
-  "Goals and objectives of the Training": "Goals and missions of the training",
-  "Intensive work": "Intensive work",
-  "At the training, you are not a passive listener": "On this training you are not just a passive party, on the opposite, you are taking part in the whole process of analyzing training’s assignments, in addition you are practicing the knowledge gained and getting feedbacks during the training.",
-  "Tools": "Tools",
-  "You will get proven tools that the author has tested": "You are going to get proven tools, which were applied by the author in the variety of companies, majority of these tools were established by the author, in addition to those, which were taken from the cases of the best consulting companies.",
-  "Ready-made solutions": "Ready-made solutions",
-  "You will be able to independently develop solutions": "The training give you the possibility of elaborating your own business solutions to the issue. You will get the unique solution based on “Take and Act” principle. Your only task is to apply all gained tools to your company’s case.",
-  "How does the training about OD take place": "Details about OD training",
-  "The training is interactive - hybrid": "Interactive training – hybrid \nIncluded: individual and group work \nExercises \nReal Cases \nMini lectures \nUnique step by step game \"Development\" \nPresentation \nNumber of participants from 10 to 20 \nFormat - Corporate"
+  "Organizational development, or as OD experts call it": "Təşkilati inkişaf və ya ekspertlərin dediyi kimi OD – aparıcı işçinin ən vacib işgüzar səriştəsidir.",
+  "Four reasons to sign up for this training now": "Bu təlimə elə indicə yazılmağın dörd səbəbi",
+  "For key specialists, including HR": "Biznes problemlərini McKinsey, Boston Consulting Group və digər aparıcı şirkətlərin TOP konsultantları səviyyəsində həll etməyi öyrənmək istəyən HR daxil olmaqla aparıcı mütəxəssislər üçün nəzərdə tutulub. \nTəlimdə biz təşkilati inkişafın həm nəzəri və həm də təcrübi hissələrini öyrənəcəyik. \nBu təlim xarici konsultantlar üçün nəzərdə tutulmayıb. Bu ilk növbədə HR üçün nəzərdə tutulub və verilmiş məlumatın anlaşılma səviyyəsi hətta HR Generalist üçün müvafiqdir. \nTTəlimdə şirkətiniz üçün yararlı olacaq bir neçə alətləri artıq tətbiq edəcəksiniz və nəticələrə görə rəylər alacaqsınız.",
+  "Goals and objectives of the Training": "Təlimin məqsəd və tapşırıqları",
+  "Intensive work": "İntensiv iş",
+  "At the training, you are not a passive listener": "Təlimdə siz passiv dinləyici deyil, əksinə təlim tapşırıqlarının və materiallarının təhlili prosesində aktiv iştirak edirsiniz, həmçinin əldə edilmiş bütün bilikləri təcrübədən keçirir və aidiyyəti rəyləri alırsınız.",
+  "Tools": "Alətlər",
+  "You will get proven tools that the author has tested": "Müəllif tərəfindən müxtəlif şirkətlərdə tətbiq olunan və sınanmış alətlər əldə edəcəksiniz. Həmin alətlərin çoxu müəllifin özü tərəfindən işlənib hazırlanmış, həmçinin aparıcı şirkətlərin nümunələri də burada yer alır.",
+  "Ready-made solutions": "Hazır qərarlar",
+  "You will be able to independently develop solutions": "Siz qrupşəkilli formatda sərbəst şəkildə tapşırıqlarınıza əsasən qərarlar hazırlaya bilərsiniz. “Götür və et” prinsipi üzrə öz unikal qərarlarınızı əldə edə bilərsiniz. Sizin öhdənizə düşən əldə etdiyiniz alətləri şirkətinizə uyğunlaşdırmaq olacaq.",
+  "How does the training about OD take place": "OD təlimində iştirak şərtləri",
+  "The training is interactive - hybrid": "Təlim interaktiv – hibrit formatındadır \nNəzərdə tutulur:  fərdi və qrupşəkilli iş \nTapşırıqlar \nReal hadisələr  \nMini mühazirələt \nUnikal mərhələli oyun “İnkişaf” \nTəqdimatlar \nİştirakçıların sayı - 10 – 20 arası  \nFormat – Korporativ"
 }

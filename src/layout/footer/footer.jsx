@@ -58,15 +58,15 @@ const Footer = ({t}) => {
                                 <img className={s.footerLogo} src={logo} alt=""/>
                                 <div className={s.footerSocialIcon}>
                                     <h3 className={s.title}>Follow us</h3>
-                                    <Link to={'/'}>
+                                    <a href={'https://www.facebook.com/anar.mammadov.56211'}>
                                         <FaFacebookSquare className={s.faLogo}/>
-                                    </Link>
-                                    <Link to={'/'}>
+                                    </a>
+                                    <a href={'https://www.instagram.com/anarmammadov.az/'}>
                                         <FaInstagram className={s.faLogo}/>
-                                    </Link>
-                                    <Link to={'https://linkedin.com/in/anar-mammadov-a3a66727/'}>
+                                    </a>
+                                    <a href={'https://linkedin.com/in/anar-mammadov-a3a66727/'}>
                                         <FaLinkedinIn className={s.faLogo}/>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

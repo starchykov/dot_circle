@@ -5,6 +5,14 @@ import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";
 import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
+import {
+    AiFillCarryOut, AiFillInteraction,
+    BiNotification,
+    BsQuestionSquareFill,
+    RiArrowDropRightFill,
+    RiArticleFill,
+} from "react-icons/all";
+import {ItemText, Text} from "../../common/text/text";
 
 const IndividualConsulting = ({t}) => {
 
@@ -17,6 +25,35 @@ const IndividualConsulting = ({t}) => {
         'High efficiency. Close cooperation gives'
     ]
 
+    const BlockThree = () => <div className={s.blockThree}>
+
+        <PageTitle icon={<BiNotification/>} title={t('What is the essence of the individual')}/>
+
+
+        <details className={s.dropdownBox} open>
+            <summary className={s.dropdownTitle}>
+                <ContainerTitle title={t("Individual consulting is necessary in the following cases")}/>
+            </summary>
+            <Text text={t('constant challenge at work')} style={{textAlign: 'start'}}/>
+        </details>
+
+
+        <details className={s.dropdownBox} open>
+            <summary className={s.dropdownTitle}>
+                <ContainerTitle title={t("How to make a difference")}/>
+            </summary>
+            <Text text={t('First of all, you need to get rid of the burden of unnecessary memories')} style={{textAlign: 'start'}}/>
+        </details>
+
+
+        <details className={s.dropdownBox} open>
+            <summary className={s.dropdownTitle}>
+                <ContainerTitle title={t("We can’t help")}/>
+            </summary>
+            <Text text={t('An applicant who is trying to collect a confidential')} style={{textAlign: 'start'}}/>
+        </details>
+    </div>;
+
     return (
         <div className={s.individual}>
             <Background background={background}/>
@@ -25,15 +62,16 @@ const IndividualConsulting = ({t}) => {
 
             <MaterialBox content={
                 <>
-                    <PageTitle title={t('Immerse yourself')}/>
-                    <p>{t('Life Management consultation')}</p>
-                    <p>{t('We will show you the way out of difficult life')}</p>
+                    <PageTitle icon={<RiArticleFill/>} title={t('Immerse yourself')}/>
+                    <ContainerTitle icon={<RiArrowDropRightFill/>} title={t('Life Management consultation')}/>
+                    <ItemText text={t('We will show you the way out of difficult life')} style={{paddingLeft: '42px'}}/>
                 </>
             }/>
 
 
             <div className={s.blockTwo}>
-                <Title title={t('3 reasons to choose us')}/>
+                <PageTitle title={t('3 reasons to choose us')}
+                           style={{justifyContent: 'center', color: 'white'}}/>
 
                 <i className={'bx bx-down-arrow-alt'}/>
                 <i className={'bx bx-down-arrow-alt'}/>
@@ -41,70 +79,39 @@ const IndividualConsulting = ({t}) => {
 
                 {reasons.map((item, idx) =>
                     <MaterialBox key={uuid(idx)}
-                                 content={<p className={s.reasons}>{t(item)}</p>}
+                                 content={<Text text={t(item)}/>}
                                  style={{flex: `${window.innerWidth <= 768 ? 1 : 100}`}}/>)}
             </div>
 
 
-            <div className={s.blockThree}>
-
-                <PageTitle title={t('What is the essence of the individual')}/>
-
-
-                <details className={s.dropdownBox}>
-                    <summary className={s.dropdownTitle}>
-                        <ContainerTitle title={t("Individual consulting is necessary in the following cases")}/>
-                    </summary>
-                    <p className={s.dropdownMassage}>{t('constant challenge at work')}</p>
-                </details>
-
-
-                <details className={s.dropdownBox}>
-                    <summary className={s.dropdownTitle}>
-                        <ContainerTitle title={t("How to make a difference")}/>
-                    </summary>
-                    <p className={s.dropdownMassage}>
-                        {t('First of all, you need to get rid of the burden of unnecessary memories')}
-                    </p>
-                </details>
-
-
-                <details className={s.dropdownBox}>
-                    <summary className={s.dropdownTitle}>
-                        <ContainerTitle title={t("We can’t help")}/>
-                    </summary>
-                    <p className={s.dropdownMassage}>
-                        {t('An applicant who is trying to collect a confidential')}
-                    </p>
-                </details>
-            </div>
+            <MaterialBox content={<BlockThree/>}/>
 
 
             <div className={s.blockFour}>
                 <div className={s.item}>
-                    <PageTitle title={'In why'} style={{textAlign: 'center'}}/>
-                    <span>#RESULTS</span>
-                    <span>#GOALS</span>
-                    <span>#CHANGES</span>
-                    <span>#STEPS</span>
+                    <PageTitle icon={<BsQuestionSquareFill/>} title={'In why'} style={{justifyContent: 'center'}}/>
+                    <Text text={t('RESULTS')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('GOALS')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('CHANGES')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('STEPS')} style={{flex: 1, justifyContent: 'center'}}/>
                 </div>
 
                 <div className={s.item}>
-                    <PageTitle title={'Process'} style={{textAlign: 'center'}}/>
-                    <span>#MODELS</span>
-                    <span>#TOOLS</span>
-                    <span>#PROCESSES</span>
-                    <span>#SYSTEMS</span>
+                    <PageTitle icon={<AiFillInteraction/>} title={'Process'} style={{justifyContent: 'center'}}/>
+                    <Text text={t('MODELS')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('TOOLS')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('PROCESSES')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('SYSTEMS')} style={{flex: 1, justifyContent: 'center'}}/>
                 </div>
 
                 <div className={s.item}>
-                    <PageTitle title={'Out'} style={{textAlign: 'center'}}/>
-                    <span>#INFORMATION</span>
-                    <span>#PERCEPTION</span>
-                    <span>#UNDERSTANDING</span>
-                    <span>#STRATEGY</span>
-                    <span>#THEORY</span>
-                    <span>#EXPERIENCE</span>
+                    <PageTitle icon={<AiFillCarryOut/>} title={'Out'} style={{justifyContent: 'center'}}/>
+                    <Text text={t('INFORMATION')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('PERCEPTION')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('UNDERSTANDING')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('STRATEGY')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('THEORY')} style={{flex: 1, justifyContent: 'center'}}/>
+                    <Text text={t('EXPERIENCE')} style={{flex: 1, justifyContent: 'center'}}/>
                 </div>
             </div>
 

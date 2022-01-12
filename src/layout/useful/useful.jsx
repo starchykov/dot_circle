@@ -5,7 +5,9 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import {useCallback, useEffect} from "react";
 import Background from "../common/background/background";
-import PageTitle from "../common/title/title";
+import Title, {ContainerTitle, PageTitle} from "../common/title/title";
+import {ItemText, Text} from "../common/text/text";
+import {BiNotification} from "react-icons/all";
 
 
 const Useful = ({t, name, useful}) => {
@@ -19,15 +21,16 @@ const Useful = ({t, name, useful}) => {
     // Map store data to item list
     const dropdown = () => useful.data.map((i, idx) =>
         <details key={uuid(idx)} className={s.dropdownBox}>
-            <summary className={s.dropdownTitle}><h3>{t(i.title)}</h3></summary>
-            <p className={s.dropdownMassage}>{t(i.message)}</p>
+            <summary className={s.dropdownTitle}><PageTitle icon={<BiNotification/>} title={t(i.title)}/></summary>
+            <ItemText text={t(i.message)} style={{paddingLeft: '42px', color: 'white'}}/>
+
         </details>
     );
 
     return (
         <div className={s.useful}>
             <Background background={usefulBg}/>
-            <PageTitle title={t(name)}/>
+            <Title title={t(name)}/>
             {dropdown()}
         </div>
     )

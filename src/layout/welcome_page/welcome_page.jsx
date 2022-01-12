@@ -10,7 +10,7 @@ import jlyBg from "./../../assets/jly_bg_image.png"
 import mwmTitle from "./../../assets/mwm_title_image.png"
 import mwmBg from "./../../assets/mwm_bg_image.png"
 
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import Background from "../common/background/background";
 import {PageTitle} from "../common/title/title";
@@ -51,22 +51,22 @@ const WelcomePage = ({t}) => {
                 </div>
 
                 <div className={`${s.card} ${s.slideUp}`} onMouseEnter={() => toggleClass(jlyBg)}>
-                    <div className={s.cardContent}>
+                    <a href={'http://just-love-yourself.com/'} className={s.cardContent}>
                         <div className={s.cardImg}><img src={jlyTitle} alt=""/></div>
                         <div className={s.cardText}><h3>Just love yourself</h3>
                             <span>{t('Anar Mammadov\'s online program how')}</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div className={`${s.card} ${s.slideLeft}`} onMouseEnter={() => toggleClass(mwmBg)}>
-                    <div className={s.cardContent}>
+                    <a href={'https://www.meditatewithme.ru'} className={s.cardContent}>
                         <div className={s.cardImg}><img src={mwmTitle} alt=""/></div>
                         <div className={s.cardText}>
                             <h3>Meditate with me</h3>
                             <span>{t('Meditate with me description')}</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
             </div>

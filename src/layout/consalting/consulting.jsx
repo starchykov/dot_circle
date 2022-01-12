@@ -6,13 +6,9 @@ import Iframe from "../common/iframe/iframe";
 import IndividualConsulting from "./individual_consalting/individual_consalting";
 import CustomPopup from "../common/popup/popup";
 import Background from "../common/background/background";
-import PageTitle from "../common/title/title";
+import {Title, PageTitle} from "../common/title/title";
 import HoveredItem from "../common/hovered_item/hovered_item";
-import TimeManagement from "../business_trainings/time_management/time management";
-import StressManagement from "../business_trainings/stres_management/stress.management";
-import SelfDevelopment from "../business_trainings/self_devepment/self_development";
-import OrganizationalDevelopment from "../business_trainings/organizational_development/organizational_development";
-import NoPage from "../common/no_page/no_page";
+import {Text} from "../common/text/text";
 
 const Consulting = ({t}) => {
 
@@ -40,12 +36,12 @@ const Consulting = ({t}) => {
     return (
         <div className={`${s.consultingPage} ${showIndividual && s.mute} ${showPopup && s.mute}`}>
             <Background background={consulting}/>
-            <PageTitle title={t('Consulting')}/>
+            <Title title={t('Consulting')}/>
 
             <HoveredItem content={
                 <div onClick={() => setShowPopup('individual_consulting')}>
-                    <h1>{t('Individual consulting')}</h1>
-                    <p>{t('Discover your talents')}</p>
+                    <PageTitle title={t('Individual consulting')} style={{justifyContent: 'center'}}/>
+                    <Text text={t('Discover your talents')}/>
                 </div>
             }/>
 
@@ -57,8 +53,8 @@ const Consulting = ({t}) => {
 
             <HoveredItem content={
                 <div onClick={() => setShowPopup('management_consulting')}>
-                    <h1>{t('Management consulting')}</h1>
-                    <p>{t('www.altempuscapital.com')}</p>
+                    <PageTitle title={t('Management consulting')} style={{justifyContent: 'center'}}/>
+                    <Text text={t('www.altempuscapital.com')}/>
                 </div>
             }/>
 

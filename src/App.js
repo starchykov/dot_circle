@@ -15,6 +15,7 @@ import StressManagement from "./layout/business_trainings/stres_management/stres
 import ScrollTop from "./layout/common/scroll_top/scroll_top";
 import SelfDevelopment from "./layout/business_trainings/self_devepment/self_development";
 import Programs from "./layout/programs/programs";
+import Travel from "./layout/travel/travel";
 
 
 const App = () => {
@@ -33,6 +34,7 @@ const App = () => {
                 <Route path={'/time_management'} render={() => <TimeManagement name={'Time_management'}/>}/>
                 <Route path={'/stress_management'} render={() => <StressManagement name={'Stress_management'}/>}/>
                 <Route exact path={'/self_development'} render={() => <SelfDevelopment name={'Self_development'}/>}/>
+                <Route exact path={'/travel'} render={() => <Travel name={'Self_development'}/>}/>
                 <Route path={'/welcome'} render={() => <WelcomePage/>}/>
                 <Footer/>
                 <ScrollTop/>

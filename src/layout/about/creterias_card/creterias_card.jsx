@@ -11,7 +11,7 @@ const CriterionCard = ({t}) => {
 
 
             <div className={style.rightContent}>
-                <h1 className={style.title}>{t('Our trainings are for you, \nif ...')}</h1>
+                <h1 className={style.title}>{t('Our trainings are for you, if ...')}</h1>
                 <h1>{t('1 You are development oriented')}</h1>
                 <span>{t('And your goals are far beyond an average company goals')}</span>
                 <h1>{t('2 You increase sales')}</h1>
