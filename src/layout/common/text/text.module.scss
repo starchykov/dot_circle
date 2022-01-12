@@ -62,3 +62,16 @@
     text-align: justify;
   }
 }
+
+.hintText {
+  display: block !important;
+  //color: #888e91;
+  color: white;
+  text-transform: uppercase;
+  font-weight: lighter !important;
+
+  &::before {
+    content: '* ';
+    color: red;
+  }
+}

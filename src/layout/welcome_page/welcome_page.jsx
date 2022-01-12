@@ -45,7 +45,7 @@ const WelcomePage = ({t}) => {
                         <div className={s.cardImg}><img src={dtTitleImage} alt=""/></div>
                         <div className={s.cardText}>
                             <h3>DOT&CIRCLE</h3>
-                            <span>{t('Learn more about us and our programs')}</span>
+                            <span>{t('Consulting, Learning & Development')}</span>
                         </div>
                     </NavLink>
                 </div>

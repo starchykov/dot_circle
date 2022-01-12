@@ -36,3 +36,15 @@ export const ItemText = (props) => {
         </p>
     );
 };
+
+export const HintText = (props) => {
+    let style = props.style ?? {width: '100%'};
+
+    return (
+        <p className={s.hintText}
+           style={style}>
+            {props.icon && props.icon}
+            {props.text}
+        </p>
+    );
+};

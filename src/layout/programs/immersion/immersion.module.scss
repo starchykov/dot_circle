@@ -104,6 +104,7 @@
       align-content: flex-start;
       flex-wrap: wrap;
       gap: 15px;
+      flex-direction: column;
 
       width: 49%;
 
@@ -174,47 +175,6 @@
 
   }
 
-  .file {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex: 1;
-    min-width: 40%;
-    aspect-ratio: 11/7;
-
-    border-radius: 12px;
-    border: 2px transparent solid;
-    background: #dfe6e9;
-
-    font-size: 50px;
-    color: cornflowerblue;
-
-    &:hover {
-      position: relative;
-      color: white;
-      cursor: pointer;
-      border: 2px #8fa9b5 solid;
-      background: #4682b454;
-
-      &::after {
-        content: 'Download';
-        position: absolute;
-        top: 0;
-
-        font-size: 15px;
-        text-transform: uppercase;
-      }
-
-      svg {
-        position: relative;
-        margin-top: 20px;
-
-        transition: all 0.5s;
-      }
-    }
-  }
-
   .header {
     position: relative;
     display: flex;
@@ -273,19 +233,6 @@
     gap: 30px;
 
     padding: 35px;
-  }
-
-  .hint {
-    display: block !important;
-    //color: #888e91;
-    color: white;
-    text-transform: uppercase;
-    font-weight: lighter !important;
-
-    &::before {
-      content: '* ';
-      color: red;
-    }
   }
 
   .socialLink {

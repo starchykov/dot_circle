@@ -12,11 +12,22 @@ import Transformation from "./transformation/transformation";
 import NoPage from "../common/no_page/no_page";
 import LifeManagement from "./life_management/life_management";
 import {Text} from "../common/text/text";
+import {useHistory} from "react-router-dom";
 
 const Programs = ({t, name, programs}) => {
 
+    const history = useHistory();
+
     // Set document title wia hook effect
     useEffect(() => document.title = t('Open programs'));
+
+    // Check path and open popup window
+    useEffect(() => {
+        let compare = (p) => window.location.pathname.includes(`/${p}`);
+        if (compare('immersion')) setShowPopup('immersion');
+        else if (compare('transformation')) setShowPopup('transformation');
+        else if (compare('life_management')) setShowPopup('life_management');
+    });
 
     // Set page background image on mouse enter event
     const [currentBackground, setActive] = useState(`${process.env.PUBLIC_URL}/assets/transformation.png`);
@@ -44,11 +55,16 @@ const Programs = ({t, name, programs}) => {
         }
     };
 
+    // Set new path and show popup window
+    const show = (path) => {
+        history.push(`/programs/${path}`)
+        setShowPopup(`${path}`);
+    };
 
     let Content = () => programs.programs.content.map((i, idx) =>
         <HoveredItem key={uuid(idx)} content={
             <div onMouseEnter={() => setActive(`${process.env.PUBLIC_URL}/assets/${i.src}.png`)}
-                 onClick={() => setShowPopup(i.link)}>
+                 onClick={() => show(i.link)}>
                 <h1>{t(i.name)}</h1>
                 <Text text={t(i.massage)}/>
             </div>
@@ -63,7 +79,9 @@ const Programs = ({t, name, programs}) => {
             <Content/>
             <CustomPopup onClose={() => setShowPopup(null)}
                          show={showPopup != null}
-                         children={getComponent(showPopup)}/>
+                         children={getComponent(showPopup)}
+                         backPath={'programs'}
+            />
         </div>
     );
 };

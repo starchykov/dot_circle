@@ -13,7 +13,8 @@ import {
     RiFeedbackFill, RiInstagramFill, RiLinkedinBoxFill, RiMailSendFill,
     RiMedalLine,
 } from "react-icons/all";
-import {BoldText, ItemText} from "../../common/text/text";
+import {BoldText, HintText, ItemText} from "../../common/text/text";
+import File from "../../common/file/file";
 
 const Immersion = ({t}) => {
 
@@ -81,8 +82,7 @@ const Immersion = ({t}) => {
                         {t('Dive - is a specially developed program').split(`\n`).map((e, idx) => {
                             return <ContainerTitle key={uuid(idx)} title={e}/>
                         })}
-                        {file.map(() => <div className={s.file}><BsBoxArrowInDown/></div>)}
-                        <p className={s.hint}>{t('Click to download the program')}</p>
+                        {file.map(() => <File/>)}
                     </div>
 
                     <div className={s.commonBox}>
@@ -91,7 +91,6 @@ const Immersion = ({t}) => {
                             return <div className={s.contentBoxItem}>
                                 <ContainerTitle key={uuid(idx)} icon={<RiArrowDropRightFill/>} title={e.split('\n')[0]}/>
                                 <ItemText key={uuid(idx)} text={e.split('\n')[1]} style={{paddingLeft: '42px'}}/>
-
                             </div>
                         })}
                     </div>
@@ -109,15 +108,15 @@ const Immersion = ({t}) => {
                         <ContainerTitle icon={<RiMailSendFill/>} title={t('Email: anar.m@dot-circle.com')}/>
                         <a className={s.socialLink} href="#">
                             <ContainerTitle icon={<RiInstagramFill/>} title={t('Instagram')} style={{width: 'max-content'}}/>
-                            <p className={s.hint}>{t('Click to open')}</p>
+                            <HintText text={t('Click to open')}/>
                         </a>
                         <a className={s.socialLink} href="#">
                             <ContainerTitle icon={<RiLinkedinBoxFill/>} title={t('LinkedIn')} style={{width: 'max-content'}}/>
-                            <p className={s.hint}>{t('Click to open')}</p>
+                            <HintText text={t('Click to open')}/>
                         </a>
                         <a className={s.socialLink} href="#">
                             <ContainerTitle icon={<RiFacebookBoxFill/>} title={t('Facebook')} style={{width: 'max-content'}}/>
-                            <p className={s.hint}>{t('Click to open')}</p>
+                            <HintText text={t('Click to open')}/>
                         </a>
                     </div>
                 </div>

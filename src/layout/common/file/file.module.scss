@@ -1,0 +1,62 @@
+.file {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  flex: 1;
+
+  border-radius: 12px;
+  border: 2px transparent solid;
+  background: #28647e1f;
+
+
+  color: cornflowerblue;
+
+  @media (max-width: 768px) {
+    aspect-ratio: 16 / 10;
+    font-size: 20px;
+  }
+
+  &:hover {
+    position: relative;
+    color: white;
+    cursor: pointer;
+    border: 2px #8fa9b5 solid;
+    background: #4682b454;
+
+    &::after {
+      content: 'Download';
+      position: absolute;
+      top: 0;
+
+      font-size: 15px;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 10px;
+      }
+    }
+
+    svg {
+      position: relative;
+      margin-top: 15px;
+      transition: all 0.5s;
+
+      @media (max-width: 768px) {
+        margin-top: 5px;
+      }
+    }
+  }
+
+  svg {
+    font-size: 50px;
+  }
+
+  p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+  }
+}
