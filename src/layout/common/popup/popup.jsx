@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import popupStyles from "./custom-popup.module.scss";
 import PropTypes from "prop-types";
+import {NavLink} from "react-router-dom";
 
 const CustomPopup = (props) => {
 
@@ -20,7 +21,11 @@ const CustomPopup = (props) => {
 
             <div className={popupStyles.popup}>
                 {props.title != null && <h2>{props.title}</h2>}
-                <span className={popupStyles.close} onClick={closeHandler}>&times;</span>
+                <NavLink to={`/${props.backPath}`}
+                         className={popupStyles.close}
+                         onClick={closeHandler}>
+                    &times;
+                </NavLink>
                 <div className={popupStyles.content}>{props.children}</div>
             </div>
 
