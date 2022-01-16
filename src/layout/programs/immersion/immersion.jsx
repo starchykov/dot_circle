@@ -106,15 +106,15 @@ const Immersion = ({t}) => {
                     <div className={s.commonBox}>
                         <PageTitle icon={<RiContactsFill/>} title={t('Contact us')}/>
                         <ContainerTitle icon={<RiMailSendFill/>} title={t('Email: anar.m@dot-circle.com')}/>
-                        <a className={s.socialLink} href="#">
+                        <a className={s.socialLink} href="https://www.instagram.com/anarmammadov.az/">
                             <ContainerTitle icon={<RiInstagramFill/>} title={t('Instagram')} style={{width: 'max-content'}}/>
                             <HintText text={t('Click to open')}/>
                         </a>
-                        <a className={s.socialLink} href="#">
+                        <a className={s.socialLink} href="https://www.facebook.com/anar.mammadov.56211/">
                             <ContainerTitle icon={<RiLinkedinBoxFill/>} title={t('LinkedIn')} style={{width: 'max-content'}}/>
                             <HintText text={t('Click to open')}/>
                         </a>
-                        <a className={s.socialLink} href="#">
+                        <a className={s.socialLink} href="https://www.facebook.com/anar.mammadov.56211/">
                             <ContainerTitle icon={<RiFacebookBoxFill/>} title={t('Facebook')} style={{width: 'max-content'}}/>
                             <HintText text={t('Click to open')}/>
                         </a>

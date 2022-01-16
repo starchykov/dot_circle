@@ -12,8 +12,10 @@ import NoPage from "../common/no_page/no_page";
 import TimeManagement from "./time_management/time management";
 import StressManagement from "./stres_management/stress.management";
 import OrganizationalDevelopment from "./organizational_development/organizational_development";
-import {Text} from "../common/text/text";
+import {BoldText, Text} from "../common/text/text";
 import {useHistory} from "react-router-dom";
+import trainings_1 from '../../assets/trainings_1.png';
+import trainings_2 from '../../assets/trainings_2.png';
 
 
 const BusinessTrainings = ({t, trainings, name}) => {
@@ -72,11 +74,53 @@ const BusinessTrainings = ({t, trainings, name}) => {
         }/>
     );
 
+    let Trainings = () => {
+        return (
+            <div className={`${s.otherTrainings} ${showPopup != null && s.mute}`}>
+                <Title title={t('Corporate trainings')} style={{margin: '50px 0', color: 'white'}}/>
+                <div className={s.training_1}>
+                    <img src={trainings_1} alt=""/>
+                    <BoldText text={t('Cooperation & Effective Team building')}
+                              style={{top: '-10%', left: '20%', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('«Self- Efficiency» Program')}
+                              style={{top: '30%', left: '0', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Corporate culture Implementation')}
+                              style={{top: '5%', right: '-8%', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Organizational Development')}
+                              style={{top: '35%', right: '-2%', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Train the Trainer program')}
+                              style={{top: '80%', right: '-5%', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Business Retreat Based')}
+                              style={{bottom: '-30px', left: '20%', position: 'absolute', width: 'auto'}}/>
+                </div>
+
+                <div className={s.training_2}>
+                    <img src={trainings_2} alt=""/>
+                    <BoldText text={t('Management of Changes')}
+                              style={{top: '0', left: '20%', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Effective Communications')}
+                              style={{top: '35%', left: '0', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Decision Making')}
+                              style={{top: '10%', right: '8%', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Effective organizations')}
+                              style={{top: '30%', right: '-15%', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Strategic sessions')}
+                              style={{top: '65%', right: '0', position: 'absolute', width: 'auto'}}/>
+                    <BoldText text={t('Business Couching For')}
+                              style={{bottom: '-10%', left: '30%', position: 'absolute', width: 'auto'}}/>
+                </div>
+
+
+            </div>
+        )
+    };
+
     return (
         <div className={`${s.businessTrainings} ${showPopup != null && s.mute}`}>
             <Title title={t(name)}/>
             <Background background={currentBackground}/>
             <Content/>
+            <Trainings/>
             <CustomPopup onClose={() => setShowPopup(null)}
                          show={showPopup != null}
                          children={getComponent(showPopup)}

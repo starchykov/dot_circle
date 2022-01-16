@@ -4,12 +4,19 @@ import {useCallback, useEffect} from "react";
 import {ContainerTitle, PageTitle, Title} from "../common/title/title";
 import MaterialBox from "../common/material_box/material_box";
 import {BoldText, ItemText} from "../common/text/text";
-import {BiWorld, BsDot, RiArrowDropRightFill, RiArticleFill} from "react-icons/all";
+import {
+    BiWorld,
+    BsDot,
+    FaExternalLinkSquareAlt,
+    RiArrowDropRightFill,
+    RiArticleFill
+} from "react-icons/all";
 import nepal from '../../assets/travel_nepal.jpeg'
 import korea from '../../assets/travel_korea.png'
 import travel from '../../assets/travel.jpeg'
 import Background from "../common/background/background";
 import File from "../common/file/file";
+import {NavLink} from "react-router-dom";
 
 const Travel = ({t}) => {
 
@@ -38,8 +45,7 @@ const Travel = ({t}) => {
                     <img src={nepal} alt=""/>
                     <PageTitle icon={<BiWorld/>}
                                title={t('Непал Программа 1 – «В поисках смыслов»')}
-                               style={{marginTop: '30px'}}
-                    />
+                               style={{marginTop: '30px'}}/>
 
                     <div className={s.videoBox}>
                         <div className={s.leftContent}>
@@ -51,9 +57,14 @@ const Travel = ({t}) => {
                     </div>
 
                     <PageTitle icon={<BiWorld/>}
-                               title={t('Непал Программа 2 – «Трансформация 3»')}/>
+                               title={t('Непал Программа 2 – «Трансформация 3»')}
+                               style={{marginTop: '30px'}}/>
                     <BoldText
                         text={t('В эту практическую программу на стадии завершения могут попасть только участники программы «Трансформация». ')}/>
+                    <NavLink to={'/programs/transformation'}>
+                        <ContainerTitle icon={<FaExternalLinkSquareAlt/>}
+                                        title={'Navigate to Transformation program'}/>
+                    </NavLink>
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
 
