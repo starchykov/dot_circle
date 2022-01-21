@@ -48,7 +48,7 @@
       }
 
       p:hover {
-        color: #ff8c21;
+        color: #ff8c21 !important;
         cursor: pointer;
         transform: scale(1.1);
       }
@@ -63,7 +63,7 @@
         margin: 10% 15%;
       }
 
-      @media (max-width: 1024px) {
+      @media (max-width: 425px) {
         width: 90%;
         margin: 10% 9%;
         p {

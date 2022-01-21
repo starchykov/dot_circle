@@ -1,6 +1,6 @@
 import s from "./individual_consulting.module.scss"
 import {withNamespaces} from "react-i18next";
-import background from "../../../assets/personal-consalting.png"
+import background from "../../../assets/individual_consalting.png"
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";

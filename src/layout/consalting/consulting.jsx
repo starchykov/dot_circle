@@ -1,8 +1,8 @@
 import s from "./welcome_consalting.module.scss"
 import {withNamespaces} from "react-i18next";
-import consulting from "../../assets/consalting.png"
+import consulting from "../../assets/individual_consalting.png"
+import managementBg from "../../assets/management_consulting.png"
 import {useEffect, useState} from "react";
-import Iframe from "../common/iframe/iframe";
 import IndividualConsulting from "./individual_consalting/individual_consalting";
 import CustomPopup from "../common/popup/popup";
 import Background from "../common/background/background";
@@ -10,6 +10,7 @@ import {Title, PageTitle} from "../common/title/title";
 import HoveredItem from "../common/hovered_item/hovered_item";
 import {Text} from "../common/text/text";
 import { useHistory } from "react-router-dom";
+import ManagementConsulting from "./ management_consultation/management_consulting";
 
 const Consulting = ({t}) => {
 
@@ -25,11 +26,11 @@ const Consulting = ({t}) => {
         else if (compare('management_consulting')) setShowPopup('management_consulting');
     });
 
-
+    // Set page background image on mouse enter event
+    const [currentBackground, setActive] = useState(`${process.env.PUBLIC_URL}/assets/transformation.png`);
 
     // Set current component to show in popup menu
     const [showPopup, setShowPopup] = useState(null);
-    const [showIndividual, setShowIndividual] = useState(false);
 
     // Set new path and show popup window
     const show = (path) => {
@@ -41,10 +42,8 @@ const Consulting = ({t}) => {
         switch (cn) {
             case 'individual_consulting':
                 return <IndividualConsulting/>;
-
             case 'management_consulting':
-                return <Iframe source={'https://dot-circle.com/pages/consulting.html'}/>;
-
+                return <ManagementConsulting/>;
             default:
                 return <IndividualConsulting name={cn}/>
         }
@@ -52,27 +51,25 @@ const Consulting = ({t}) => {
 
 
     return (
-        <div className={`${s.consultingPage} ${showIndividual && s.mute} ${showPopup && s.mute}`}>
-            <Background background={consulting}/>
+        <div className={`${s.consultingPage} ${showPopup && s.mute}`}>
+            <Background background={currentBackground}/>
             <Title title={t('Consulting')}/>
 
             <HoveredItem content={
-                <div onClick={() => show('individual_consulting')}>
+                <div onClick={() => show('individual_consulting')}
+                     onMouseEnter={() => setActive(`${consulting}`)}>
                     <PageTitle title={t('Individual consulting')} style={{justifyContent: 'center'}}/>
                     <Text text={t('Discover your talents')}/>
                 </div>
             }/>
 
-            <CustomPopup onClose={() => setShowIndividual(!showIndividual)}
-                         show={showIndividual}
-                         children={<IndividualConsulting/>}/>
-
             <i className={'bx bx-sort-alt-2'}/>
 
             <HoveredItem content={
-                <div onClick={() => show('management_consulting')}>
+                <div onClick={() => show('management_consulting')}
+                     onMouseEnter={() => setActive(`${managementBg}`)}>
                     <PageTitle title={t('Management consulting')} style={{justifyContent: 'center'}}/>
-                    <Text text={t('www.altempuscapital.com')}/>
+                    <Text text={t('When you need to take bold')}/>
                 </div>
             }/>
 

@@ -3,7 +3,7 @@ import {withNamespaces} from "react-i18next";
 import {useCallback, useEffect} from "react";
 import {ContainerTitle, PageTitle, Title} from "../common/title/title";
 import MaterialBox from "../common/material_box/material_box";
-import {BoldText, ItemText} from "../common/text/text";
+import {BoldText, HintText, ItemText} from "../common/text/text";
 import {
     BiWorld,
     BsDot,
@@ -33,37 +33,25 @@ const Travel = ({t}) => {
 
             <MaterialBox content={
                 <>
-                    <PageTitle icon={<RiArticleFill/>}
-                               title={t('Для каждого человека смысл путешествий разный – релакс, общение с семьей, изучение истории или искусств, гастро-туризм, экстрим или оздоровление, обмен опытом или новые знания.')}/>
-                    <BoldText
-                        text={t('Мы предлагаем найти новый смысл и отправиться в одно из наших групповых путешествий с определенной темой. Или мы придумаем для вас уникальный маршрут, узнав вашу мечту или цель. Ведь планирование такого путешествия занимает много времени, постоянно возникают вопросы, поэтому мы предлагаем создать для вас уникальный продукт, воспользовавшись нашими ресурсами, опытом и партнерскими связями.')}/>
+                    <PageTitle icon={<RiArticleFill/>} title={t('Travelling means something different')}/>
+                    <BoldText text={t('We invite you to find a new meaning')}/>
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
 
             <MaterialBox content={
                 <>
                     <img src={nepal} alt=""/>
-                    <PageTitle icon={<BiWorld/>}
-                               title={t('Непал Программа 1 – «В поисках смыслов»')}
-                               style={{marginTop: '30px'}}/>
-
+                    <PageTitle icon={<BiWorld/>} title={t('Nepal Program 1')} style={{marginTop: '30px'}}/>
                     <div className={s.videoBox}>
                         <div className={s.leftContent}>
                             <iframe src={'https://www.youtube.com/embed/0sp4AqKj2iA'}/>
                         </div>
-                        <div className={s.rightContent}>
-                            <File/>
-                        </div>
+                        <div className={s.rightContent}><File/></div>
                     </div>
-
-                    <PageTitle icon={<BiWorld/>}
-                               title={t('Непал Программа 2 – «Трансформация 3»')}
-                               style={{marginTop: '30px'}}/>
-                    <BoldText
-                        text={t('В эту практическую программу на стадии завершения могут попасть только участники программы «Трансформация». ')}/>
+                    <PageTitle icon={<BiWorld/>} title={t('Nepal Program 2')} style={{marginTop: '30px'}}/>
+                    <BoldText text={t('This practical program that is in its')}/>
                     <NavLink to={'/programs/transformation'}>
-                        <ContainerTitle icon={<FaExternalLinkSquareAlt/>}
-                                        title={'Navigate to Transformation program'}/>
+                        <ContainerTitle icon={<FaExternalLinkSquareAlt/>} title={'Navigate to Transformation program'}/>
                     </NavLink>
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
@@ -71,15 +59,15 @@ const Travel = ({t}) => {
 
             <MaterialBox content={
                 <>
-                    <img src={korea} alt=""/>
-                    <PageTitle icon={<BiWorld/>}
-                               title={t('Южная Корея « Приключения в времени »')}/>
-                    <BoldText
-                        text={t('Вы будете очарованы природными красотами Кореи, великолепным Сеулом – его величественными дворцами и не повторимыми садами. ')}/>
+                    <img src={korea} alt="South Korea"/>
+                    <PageTitle icon={<BiWorld/>} title={t('South Korea - Travelling in Time')}/>
+                    <BoldText text={t('You will be amazed by the breathtaking')}/>
                     <ContainerTitle icon={<RiArrowDropRightFill/>}
-                                    title={t('9 полных дней Активного отдыха который в себя включает:')}/>
-                    {'Медицинские процедуры красоты  - Посещение исторических мест - Не обычный опыт жизни в монастыре  - Посещение образовательных учреждений  - Гастрономическое знакомство - Культурные мероприятия'.split('-').map((e, idx) =>
-                        <ItemText key={uuid(idx)} icon={<BsDot/>} text={t(e)}/>)}
+                                    title={t('9 full days of active leisure which include')}/>
+                    {t('Medical beauty procedures').split('-').map((e, idx) => <ItemText key={uuid(idx)}
+                                                                                         icon={<BsDot/>}
+                                                                                         text={t(e)}/>)}
+                    <HintText text={t('Program to be announced')} style={{color: 'darkgrey'}} />
 
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
