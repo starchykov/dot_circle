@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dot_circle/static/css/main.10925f0b.chunk.css",
-    "main.js": "/dot_circle/static/js/main.cbeaa52d.chunk.js",
-    "main.js.map": "/dot_circle/static/js/main.cbeaa52d.chunk.js.map",
+    "main.css": "/dot_circle/static/css/main.a166d462.chunk.css",
+    "main.js": "/dot_circle/static/js/main.54851f94.chunk.js",
+    "main.js.map": "/dot_circle/static/js/main.54851f94.chunk.js.map",
     "runtime-main.js": "/dot_circle/static/js/runtime-main.6963ef72.js",
     "runtime-main.js.map": "/dot_circle/static/js/runtime-main.6963ef72.js.map",
     "static/css/2.acb3237e.chunk.css": "/dot_circle/static/css/2.acb3237e.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.e47287c0.chunk.js.map": "/dot_circle/static/js/2.e47287c0.chunk.js.map",
     "index.html": "/dot_circle/index.html",
     "static/css/2.acb3237e.chunk.css.map": "/dot_circle/static/css/2.acb3237e.chunk.css.map",
-    "static/css/main.10925f0b.chunk.css.map": "/dot_circle/static/css/main.10925f0b.chunk.css.map",
+    "static/css/main.a166d462.chunk.css.map": "/dot_circle/static/css/main.a166d462.chunk.css.map",
     "static/js/2.e47287c0.chunk.js.LICENSE.txt": "/dot_circle/static/js/2.e47287c0.chunk.js.LICENSE.txt",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/dot_circle/static/media/Nurtac_dream_team.8fc70f12.png",
     "static/media/Zulfia_dream_team.dc2a4f89.png": "/dot_circle/static/media/Zulfia_dream_team.dc2a4f89.png",
@@ -19,6 +19,7 @@
     "static/media/anar_why_we.103d31f3.png": "/dot_circle/static/media/anar_why_we.103d31f3.png",
     "static/media/arrow_cooperation_process.f1a92a90.svg": "/dot_circle/static/media/arrow_cooperation_process.f1a92a90.svg",
     "static/media/corp_training.ff907da3.png": "/dot_circle/static/media/corp_training.ff907da3.png",
+    "static/media/corporate_trainings.ced74ef9.png": "/dot_circle/static/media/corporate_trainings.ced74ef9.png",
     "static/media/dream_team.16fcb70b.png": "/dot_circle/static/media/dream_team.16fcb70b.png",
     "static/media/dt_bg_image.c30f6a37.png": "/dot_circle/static/media/dt_bg_image.c30f6a37.png",
     "static/media/dt_title_image.d6ef0b1e.png": "/dot_circle/static/media/dt_title_image.d6ef0b1e.png",
@@ -52,7 +53,7 @@
     "static/js/runtime-main.6963ef72.js",
     "static/css/2.acb3237e.chunk.css",
     "static/js/2.e47287c0.chunk.js",
-    "static/css/main.10925f0b.chunk.css",
-    "static/js/main.cbeaa52d.chunk.js"
+    "static/css/main.a166d462.chunk.css",
+    "static/js/main.54851f94.chunk.js"
   ]
 }
