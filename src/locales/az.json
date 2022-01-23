@@ -14,12 +14,24 @@
 
   "About": "Haqqimizda",
   "Business trainings": "Bi̇znes təli̇mləri̇",
+  "Corporate trainings": "Corporate trainings",
   "Open programs": "Açıq proqramlar",
   "Dream team": "Dream team",
   "Consulting": "Konsaltİnq",
   "Webinars": "Vebİnarlar",
   "Useful": "Faydalı",
   "Gallery": " Qalereya",
+
+  "Find us": "Find us",
+  "Call us": "Call us",
+  "Contact us": "Contact us",
+  "Mail us": "Mail us",
+  "Useful Links": "Useful Links",
+  "Subscribe": "Subscribe",
+  "Follow us": "Follow us",
+
+  "Position": "Position",
+  "Contacts": "Contacts",
 
   "Corporate Training": "KORPORATİV TƏLİM KOMANDA İŞİNİN SƏMƏRƏLİLİYİNİ ARTIRIR",
   "Corporate training programs can effectively": "Təlim zamanı bir neçə işçinin, bir şöbənin və ya şirkət bölməsinin işçilərinin eyni vaxtda yeni bilik və bacarıqlara yiyələnməsi məsələsi həll olunur.",
@@ -76,7 +88,7 @@
   "Want to say “NO” to unnecessary time-eaters?": "Vaxtınızı alanlara \"YOX\" demək istəyirsiniz?̇",
 
 
-  "Let's get to know each other": "Let's get to know each other",
+  "Let`s get to know each other": "Let's get to know each other",
   "Hello everyone, my name is Anar": "Hamını salamlayıram. Adım Anardır! Biznes təlimçi, biznes məsləhətçi, mentor və kouç kimi fəaliyyət göstərirəm. Təhsilim ali iqtisadi, sosial, biznes, təlimçi və kouçinq üzrədir. 1998-ci ildən bəri biznesin aparılması, restruktizasiya, biznesin inkişafı, biznesin yeni bazara inteqrasiyası, həmçinin investorların cəlb olunması sahəsində 50-dən yuxarı şirkət üçün biznes konsultasiyalar keçirmişəm. Bir neçə layihələrin müəllifiyəm : \" Tridend Project\", \"Entertainment & Amusement Park\", \"Lotus Residence\" və s. 2018-ci ildə yaradılmış \"Dot & Circle\" şirkətinin təsisçisiyəm. Britaniya \"Altempus Capital\" konsultasiya şitkətinin həmtəsisçisi olmuşam . \"Arkade\" komersiya şirkətinin həmtəsisçisi olmuşam. TMWIG Ltd USA Investisiya qrupunun həmtəsisçisi olmuşam. Təlimçi fəaliyyətinə 2000-ci illərdə başlamışam. Biznes və korporativ sahədə fərdi inkişaf üzrə mentor proqramlarının müəllifiyəm. Keçirdiyim təlimləri həm biznesin inkişafında, həm də fərdi inkişaf müstəvisində daxili gizli bacariqların və yaradıcılıq potensialının inkişafına yönəlmiş müəllif modeli üzrə işləyib hazırlayıram. Gənc yaşlarımdan şərq döyüş sənəti ilə maraqlanıram və məşqul oluram. Nəticə olaraq döyüş sənətinin ustası, 6-cı dan qara kəmər sahibiyəm. Hal hazırda Azərbaycanda Hap Ki Do federasiyasının vitse prezidenti simasında təmsilçisiyəm, həmçinin Su Bak Do federasiyasının həmtəsisçisiyəm. Döyüş sənətində 20 illik təcrübəmi həmtəsisçisi olduğum \"Döyüş sənəti ensiklopediyası\" və \"Taekvon do döyüş sənətinə yeni başlayanlar üçün dərslik\" kitablarında əks etdirmişəm. 30 + ildir ki, Şərq- Ortodoksal yoqa sistemini təcrübə edirəm. İnsan təbiətinin müşahidəsində böyük təcrübəm var. Dəqiq bilirəm ki, bütün dünya insan əqlində cəmləşib. Bu səbəbdən də insanla iş metodikası əsasında unikal meditativ texnikalardan, daxili konsentrasiya və gizli istedadların üzə çıxarılması sistemlərindən istifadə edirəm. Mənim məqsədim - öz təcrübə və bacarıqlarımı sizinlə paylaşmaq və sizin hərtərəfli inkişafınız və maksimal özünü reallaşdırmaq üçün ən yaxşı şəraiti yaratmaqdır.",
 
 
@@ -128,6 +140,13 @@
 
   "Why we?": "Ni̇yə bi̇z ?",
   "Each training is a": "Hər bir təlim düşünülmüş, biznesin müasir tələblərini nəzərə alaraq mövzunun hər tərəfli təsvirini və izahını əhatə edən və müştərinin məqsəd və gözləntilərinə uyğunlaşdırılan açıq və çevik poqramdır. Biz təlim prosesini elə təşkil etməyə çalışırıq ki, qısa müddət ərzində iştirakçılara, onlara özlərini ifadə etməyə (və yaxud bacarıqlarını nümayiş etməyə) kömək edəcək vacib bilikləri ötürək və bu da biznesin inkişafı üçün səmərəli investisiya yatırımı olsun.",
+  "We are one of only few": "Biz yalnız korporativ deyil, həmçinin fərdi şəxslərdən ibarət qruplara təlim keçən azsaylı şirkətlərdən biriyik ",
+  "70% of our training": "Təlim proqramlarımızın 70% -nin mövzusu unikaldır və bazarda analoqu yoxdur ",
+  "Our training programs": "Təlimlərimiz minimum darıxdırıcı qaydalar və maksimum tətbiq oluna bilən bilik və bacarıqların ötürülməsindən ibarətdir. İnteraktiv şəkildə təqdim edilən nəzəri material dərhal praktiki tapşırıqlarla təkrarlanır",
+  "We teach programs tested": "Biz şəxsi təcrübə ilə sınanmış və müasir bazarın reallıqlarına uyğun material təqdim edirik",
+  "At our training programs": "Bizim təlimlərimizdə \niştirakçılar 1-2 gün ərzində bilik sistemi əldə edir, yeni tanışlıqlar qazanır, təcrübə mübadiləsi aparır ki, bu da onların sonrakı fəaliyyəti üçün güclü təkan verir",
+  "Upon the completion of": "Təlimdən sonra biz iştirakçını müşayiət edirik və iştirakçılarla telefon, e-poçt, skype ilə davamlı olaraq əlaqə saxlayırıq",
+  "We are available for our clients": "Biz hər zaman öz müştərilərimizin yanındayıq və onların istənilən suallarına cavab verməyə hazırıq!",
 
 
   "How to live an interesting live?": " Necə maraqlı yaşamaq olar? 15 sadə məsləhət",
@@ -192,6 +211,9 @@
 
   "We can’t help": "Kimə kömək edə bilmərik:",
   "An applicant who is trying to collect a confidential": "1. Müştərimiz barədə ətraflı məlumat toplamağa cəhd göstərən adama.\n2. Bu cür məsləhətlərin ona lazım olmadığına əmin olan insana.\n3. Psixiki pozğunluqları olan müştəriyə.\n4. Başqasının əvəzinə konsultasiya əldə etmək istəyən və öz interpretasiyasında ona hazır həll yolunu göstərmək istəyən xeyirxahlara.\n5. Müştəri daxilən dəyişikliklərə hazır deyilsə, məşğələlər faydasızdır.",
+  "In why": "Gi̇ri̇ş",
+  "Process": "Proses",
+  "Out": "Çixiş",
   "RESULTS": "#NƏTICƏ",
   "GOALS":"#MƏQSƏDLƏR",
   "CHANGES": "#DƏYIŞIKLIKLƏR",
@@ -236,9 +258,11 @@
   "For those who are looking for a new self": "Yenilik axtarışında olanlar üçün",
   "Program structure": "Proqramın strukturu",
   "The full program consists of": "Tam proqram 3-4 aylıq fasilələrlə 3 kursdan ibarətdir",
-  "Movement. Breathing. Consciousness.": "Hərəkət Tənəffüs Şüur",
-  "Time. Energy. Action.": "Vaxt Enerji Fəaliyyət",
+  "Movement. Breathing. Consciousness.": "Kurs 1\nHərəkət Tənəffüs Şüur",
+  "Time. Energy. Action.": "Kurs 2\nVaxt Enerji Fəaliyyət",
   "Course": "Kurs",
+  "3 - 4 month": "3 - 4 ay",
+  "Feedback": "Rəylər",
 
 
 
@@ -324,7 +348,7 @@
   "'Self- Efficiency' Program": "'Self Efficiency' \nprogramı",
   "usiness Retreat Based": "Business Retrit\nBased on corporate goals",
   "Corporate culture Implementation": "Korporativ dəyərlərin tətbiqi",
-  "Organizational Development": "Təşkilatın inkişafı",
+  "Organizational Development": "Təşkilatın \ninkişafı",
   "Train the Trainer program": "Train the Trainer \nprogramı",
   "Management of Changes": "Dəyişikliklərin idarə olunması",
   "Effective Communications": "Effektiv ünsiyyət\nKorporativ mühittə",

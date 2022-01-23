@@ -9,6 +9,7 @@ import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";
 import {AiOutlineCarryOut, BiNotification, RiTeamFill} from "react-icons/all";
 import {BoldText, Text} from "../../common/text/text";
+import Footer from "../../footer/footer";
 
 
 const StressManagement = ({t, trainings}) => {
@@ -38,22 +39,31 @@ const StressManagement = ({t, trainings}) => {
         return <div className={s.numberRange}>
             <PageTitle icon={<AiOutlineCarryOut/>}
                        title={t(trainings.stressManagement.blockTwoTitle)}/>
-            {trainings.stressManagement.blockTwoContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
-                <Title title={i.number} style={{width: '50px', margin: 0, color: '#ef7f1a', alignItems: 'center'}}/>
-                <Text text={t(i.content)} style={{alignItems: 'center'}}/>
-            </div>)}
+            {trainings.stressManagement.blockTwoContent.map((i, idx) =>
+                <MaterialBox key={uuid(idx)} content={
+                    <>
+                        <Title title={i.number}
+                               style={{width: '60px', margin: 0, fontSize: '70px', color: '#878787', alignItems: 'center'}}/>
+                        <Text text={t(i.content)} style={{alignItems: 'center'}}/>
+                    </>
+                } style={{display: 'flex'}}/>
+            )}
         </div>
     };
 
     const BlockThree = () => {
-        let titleStyle = {width: '50px', margin: 0, color: '#ef7f1a', lineHeight: 1, alignItems: 'start'};
+        let titleStyle = {width: '60px', margin: 0, color: '#878787', fontSize: '70px', alignItems: 'center'};
         return <div className={s.numberRange}>
             <PageTitle icon={<RiTeamFill/>}
                        title={t(trainings.stressManagement.blockThreeTitle)}/>
-            {trainings.stressManagement.blockThreeContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
-                <Title title={i.number} style={titleStyle}/>
-                <Text text={t(i.content)}/>
-            </div>)}
+            {trainings.stressManagement.blockThreeContent.map((i, idx) =>
+                    <MaterialBox key={uuid(idx)} content={
+                        <>
+                            <Title title={i.number} style={titleStyle}/>
+                            <Text text={t(i.content)} style={{alignItems: 'center'}}/>
+                        </>
+                    } style={{display: 'flex'}}/>
+                )}
         </div>
     };
 
@@ -64,6 +74,7 @@ const StressManagement = ({t, trainings}) => {
             <MaterialBox content={<BlockOne/>}/>
             <MaterialBox content={<BlockTwo/>}/>
             <MaterialBox content={<BlockThree/>}/>
+            <Footer style={{borderRadius: '12px'}}/>
         </div>
     )
 }

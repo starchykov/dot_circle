@@ -27,7 +27,7 @@ const LifeManagement = ({t}) => {
             <>
                 <PageTitle icon={<RiTeamFill/>} title={t('For whom is this programme')}/>
                 {h.map((e, idx) => <div key={uuid(idx)} className={s.block}>
-                    <Title title={i++} style={{width: '50px', margin: 0, color: '#ef7f1a', lineHeight: 1, alignItems: 'center'}}/>
+                    <Title title={i++} style={{width: '50px', margin: 0, color: '#ff962e', lineHeight: 1, alignItems: 'center'}}/>
                     <Text text={t(e)} style={{alignItems: 'center'}}/>
                 </div>)}
                 <PageTitle icon={<RiArticleFill/>} title={t('The training is held in an open')}/>

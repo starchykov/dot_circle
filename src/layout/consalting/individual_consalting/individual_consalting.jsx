@@ -89,7 +89,7 @@ const IndividualConsulting = ({t}) => {
 
             <div className={s.blockFour}>
                 <div className={s.item}>
-                    <PageTitle icon={<BsQuestionSquareFill/>} title={'In why'} style={{justifyContent: 'center'}}/>
+                    <PageTitle icon={<BsQuestionSquareFill/>} title={t('In why')} style={{justifyContent: 'center'}}/>
                     <Text text={t('RESULTS')} style={{flex: 1, justifyContent: 'center'}}/>
                     <Text text={t('GOALS')} style={{flex: 1, justifyContent: 'center'}}/>
                     <Text text={t('CHANGES')} style={{flex: 1, justifyContent: 'center'}}/>
@@ -97,7 +97,7 @@ const IndividualConsulting = ({t}) => {
                 </div>
 
                 <div className={s.item}>
-                    <PageTitle icon={<AiFillInteraction/>} title={'Process'} style={{justifyContent: 'center'}}/>
+                    <PageTitle icon={<AiFillInteraction/>} title={t('Process')} style={{justifyContent: 'center'}}/>
                     <Text text={t('MODELS')} style={{flex: 1, justifyContent: 'center'}}/>
                     <Text text={t('TOOLS')} style={{flex: 1, justifyContent: 'center'}}/>
                     <Text text={t('PROCESSES')} style={{flex: 1, justifyContent: 'center'}}/>
@@ -105,7 +105,7 @@ const IndividualConsulting = ({t}) => {
                 </div>
 
                 <div className={s.item}>
-                    <PageTitle icon={<AiFillCarryOut/>} title={'Out'} style={{justifyContent: 'center'}}/>
+                    <PageTitle icon={<AiFillCarryOut/>} title={t('Out')} style={{justifyContent: 'center'}}/>
                     <Text text={t('INFORMATION')} style={{flex: 1, justifyContent: 'center'}}/>
                     <Text text={t('PERCEPTION')} style={{flex: 1, justifyContent: 'center'}}/>
                     <Text text={t('UNDERSTANDING')} style={{flex: 1, justifyContent: 'center'}}/>

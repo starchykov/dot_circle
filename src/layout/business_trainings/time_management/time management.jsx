@@ -9,6 +9,7 @@ import MaterialBox from "../../common/material_box/material_box";
 import {AiOutlineCarryOut, BiNotification, BsDot, FaUserTie, RiTeamFill} from "react-icons/all";
 import {useCallback} from "react";
 import {ItemText, Text} from "../../common/text/text";
+import Footer from "../../footer/footer";
 
 
 const TimeManagement = ({t, training}) => {
@@ -34,7 +35,7 @@ const TimeManagement = ({t, training}) => {
             <PageTitle icon={<AiOutlineCarryOut/>}
                        title={t(training.timeManagement.bottomTitle)}/>
             {training.timeManagement.bottomContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
-                <Title title={i.number} style={{width: '50px', margin: 0, color: '#ef7f1a', alignItems: 'center'}}/>
+                <Title title={i.number} style={{width: '50px', margin: 0, color: '#ff962e', alignItems: 'center'}}/>
                 <Text text={t(i.content)} style={{alignItems: 'center'}}/>
             </div>)}
         </div>
@@ -58,6 +59,7 @@ const TimeManagement = ({t, training}) => {
             <MaterialBox content={<InfoContent/>}/>
             <MaterialBox style={{width: '100%'}} content={<Targets/>}/>
             <MaterialBox content={<NumberRange/>}/>
+            <Footer style={{borderRadius: '12px'}}/>
         </div>
     )
 };

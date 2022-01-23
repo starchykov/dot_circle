@@ -48,17 +48,11 @@ const ManagementConsulting = ({t}) => {
     const BlockThree = () => {
         return <>
             <PageTitle key={uuid(this)} icon={<BiNotification/>} title={t('Consulting Services')}/>
-
             <ItemText icon={<FaChartLine/>} text={t('Learning & Development')}/>
-
             <ItemText icon={<FaConnectdevelop/>} text={t('Organizational development')}/>
-
             <ItemText icon={<FaHandshake/>} text={t('Business development')}/>
-
             <ItemText icon={<MdTransform/>} text={t('Business Transformation')}/>
-
             <ItemText icon={<GiStoneTower/>} text={t('Sustainability & Responsibility')}/>
-
             <ItemText icon={<SiHomeadvisor/>} text={t('Property Management')}/>
         </>;
     };
@@ -76,10 +70,9 @@ const ManagementConsulting = ({t}) => {
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
 
         </div>
-    )
-
-
+    );
 }
+
 export default withNamespaces()(ManagementConsulting);
 
 

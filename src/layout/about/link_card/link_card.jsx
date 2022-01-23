@@ -22,21 +22,21 @@ const LinkCard = ({t}) => {
                 <img src={img2} alt=""/>
                 <p>{t('Useful')}</p>
                 <hr/>
-                <NavLink to={'/'}><span>{t('Go to')}</span></NavLink>
+                <NavLink to={'/useful'}><span>{t('Go to')}</span></NavLink>
             </div>
 
             <div className={style.box}>
                 <img src={img3} alt=""/>
                 <p>{t('Webinars')}</p>
                 <hr/>
-                <NavLink to={'/'}><span >{t('Go to')}</span></NavLink>
+                <NavLink to={'/webinars'}><span >{t('Go to')}</span></NavLink>
             </div>
 
             <div className={style.box}>
                 <img src={img4} alt=""/>
                 <p>{t('Gallery')}</p>
                 <hr/>
-                <NavLink to={'/'}><span>{t('Go to')}</span></NavLink>
+                <NavLink to={'/gallery'}><span>{t('Go to')}</span></NavLink>
             </div>
 
         </div>

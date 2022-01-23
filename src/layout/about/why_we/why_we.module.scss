@@ -19,14 +19,14 @@
     display: flex;
     width: 65%;
     background: linear-gradient(to right, white, #ff8c21);
-    padding: 0 0 0 15px;
+    padding: 15px;
 
     @media (max-width: 768px) {
       width: 100%;
     }
 
     .leftContent {
-      width: 67%;
+      width: 100%;
 
       @media (max-width: 768px) {
         width: 100%;
@@ -35,20 +35,6 @@
       h1 {
         color: #ff962e;
         text-transform: uppercase;
-      }
-    }
-
-    .rightContent {
-      width: 20%;
-      display: flex;
-      align-items: flex-end;
-
-      @media (max-width: 768px) {
-        display: none;
-      }
-
-      img {
-        height: 90%;
       }
     }
   }

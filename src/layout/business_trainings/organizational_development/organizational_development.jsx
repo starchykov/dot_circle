@@ -9,6 +9,7 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import {BiNotification, BsDot, RiArrowDropRightFill, RiArticleFill, RiAwardFill} from "react-icons/all";
 import {ItemText} from "../../common/text/text";
+import Footer from "../../footer/footer";
 
 
 const OrganizationalDevelopment = ({t, trainings}) => {
@@ -63,6 +64,7 @@ const OrganizationalDevelopment = ({t, trainings}) => {
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
             <MaterialBox content={<BlockThree/>}
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
+            <Footer style={{borderRadius: '12px'}}/>
         </div>
     )
 };

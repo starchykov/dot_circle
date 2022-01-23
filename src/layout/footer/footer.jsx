@@ -1,7 +1,6 @@
 import s from "./footer.module.scss"
 import {NavLink} from "react-router-dom";
 import logo from "../../assets/logo.png"
-import {Link} from "react-router-dom";
 import {
     FaEnvelope,
     FaFacebookSquare,
@@ -15,9 +14,9 @@ import {compose} from "redux";
 import {withNamespaces} from "react-i18next";
 import {connect} from "react-redux";
 
-const Footer = ({t}) => {
+const Footer = ({t, style}) => {
     return (
-        <footer className={s.footer}>
+        <footer className={s.footer} style={style}>
 
             <div className={s.infoArea}>
 
@@ -27,7 +26,7 @@ const Footer = ({t}) => {
                         <div className={s.col}>
                             <div className={s.singleCta}>
                                 <FaMapMarkerAlt className={s.faLogo}/>
-                                <h4 className={s.title}>Find us</h4>
+                                <h4 className={s.title}>{t('Find us')}</h4>
                                 <span>{'Sabit Rahman 72 A , Baku'}</span>
                             </div>
                         </div>
@@ -35,7 +34,7 @@ const Footer = ({t}) => {
                         <div className={s.col}>
                             <div className={s.singleCta}>
                                 <FaPhone className={s.faLogo}/>
-                                <h4 className={s.title}>Call us</h4>
+                                <h4 className={s.title}>{t('Call us')}</h4>
                                 <span><a href="tel:+1234567890"><span>{'+994503353548'}</span></a></span>
                             </div>
                         </div>
@@ -43,7 +42,7 @@ const Footer = ({t}) => {
                         <div className={s.col}>
                             <div className={s.singleCta}>
                                 <FaEnvelope className={s.faLogo}/>
-                                <h4 className={s.title}>Mail us</h4>
+                                <h4 className={s.title}>{t('Mail us')}</h4>
                                 <span>anar.m@dot-circle.com</span>
                             </div>
                         </div>
@@ -57,7 +56,7 @@ const Footer = ({t}) => {
                             <div className={s.footerWidget}>
                                 <img className={s.footerLogo} src={logo} alt=""/>
                                 <div className={s.footerSocialIcon}>
-                                    <h3 className={s.title}>Follow us</h3>
+                                    <h3 className={s.title}>{t('Follow us')}</h3>
                                     <a href={'https://www.facebook.com/anar.mammadov.56211'}>
                                         <FaFacebookSquare className={s.faLogo}/>
                                     </a>
@@ -72,7 +71,7 @@ const Footer = ({t}) => {
                         </div>
                         <div className={s.col}>
                             <div className={s.footerWidget}>
-                                <h3 className={`${s.title} ${s.underlined}`}>Useful Links</h3>
+                                <h3 className={`${s.title} ${s.underlined}`}>{t('Useful Links')}</h3>
                                 <ul>
                                     <li><NavLink to={'/'}>{t('About')}</NavLink></li>
                                     <li><NavLink to={'/trainings'}>{t('Business trainings')}</NavLink></li>
@@ -85,7 +84,7 @@ const Footer = ({t}) => {
                         </div>
                         <div className={s.col}>
                             <div className={s.footerWidget}>
-                                <h3 className={`${s.title} ${s.underlined}`}>Subscribe</h3>
+                                <h3 className={`${s.title} ${s.underlined}`}>{t('Subscribe')}</h3>
                                 <div className={s.footerText}>
                                     <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                                 </div>

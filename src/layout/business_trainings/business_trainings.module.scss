@@ -20,6 +20,10 @@
     height: max-content;
   }
 
+  @media (max-width: 600px) {
+    padding: 15px;
+  }
+
   .otherTrainings {
     display: flex;
     justify-content: space-between;
@@ -39,6 +43,7 @@
       align-items: center;
 
       width: 45%;
+      margin-bottom: 150px;
 
       text-align: center;
 
@@ -48,7 +53,7 @@
       }
 
       p:hover {
-        color: #ff8c21 !important;
+        color: white !important;
         cursor: pointer;
         transform: scale(1.1);
       }
@@ -65,11 +70,10 @@
 
       @media (max-width: 425px) {
         width: 90%;
-        margin: 10% 9%;
+        margin: 10% 12%;
         p {
-          font-size: small !important;
+          font-size: x-small !important;
         }
-
       }
     }
 

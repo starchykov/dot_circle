@@ -16,6 +16,7 @@ import {BoldText, Text} from "../common/text/text";
 import {useHistory} from "react-router-dom";
 import trainings_1 from '../../assets/trainings_1.png';
 import trainings_2 from '../../assets/trainings_2.png';
+import corporate_trainings from '../../assets/corporate_trainings.png';
 
 
 const BusinessTrainings = ({t, trainings, name}) => {
@@ -35,7 +36,7 @@ const BusinessTrainings = ({t, trainings, name}) => {
     });
 
     // Set page background image on mouse enter event
-    const [currentBackground, setActive] = useState(`${process.env.PUBLIC_URL}/assets/time_management.png`);
+    const [currentBackground, setActive] = useState(`${corporate_trainings}`);
 
     // Set current component to show in popup menu
     const [showPopup, setShowPopup] = useState(null);
@@ -76,38 +77,39 @@ const BusinessTrainings = ({t, trainings, name}) => {
 
     let Trainings = () => {
         return (
-            <div className={`${s.otherTrainings} ${showPopup != null && s.mute}`}>
+            <div className={`${s.otherTrainings} ${showPopup != null && s.mute}`}
+                 onMouseEnter={() => setActive(`${corporate_trainings}`)}>
                 <Title title={t('Corporate trainings')} style={{margin: '50px 0', color: 'white'}}/>
                 <div className={s.training_1}>
                     <img src={trainings_1} alt=""/>
                     <BoldText text={t('Cooperation & Effective Team building')}
-                              style={{top: '-10%', left: '20%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '-15%', left: '20%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('«Self- Efficiency» Program')}
-                              style={{top: '30%', left: '0', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '30%', left: '-5%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Corporate culture Implementation')}
-                              style={{top: '5%', right: '-8%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '5%', right: '-8%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Organizational Development')}
-                              style={{top: '35%', right: '-2%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '45%', right: '-8%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Train the Trainer program')}
-                              style={{top: '80%', right: '-5%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '80%', right: '-5%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Business Retreat Based')}
-                              style={{bottom: '-30px', left: '20%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{bottom: '-30px', left: '20%', position: 'absolute', width: 'auto'}}/>
                 </div>
 
                 <div className={s.training_2}>
                     <img src={trainings_2} alt=""/>
                     <BoldText text={t('Management of Changes')}
-                              style={{top: '0', left: '20%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '-5%', left: '20%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Effective Communications')}
-                              style={{top: '35%', left: '0', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '35%', left: '-13%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Decision Making')}
-                              style={{top: '10%', right: '8%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '10%', right: '8%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Effective organizations')}
-                              style={{top: '30%', right: '-15%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '45%', right: '-20%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Strategic sessions')}
-                              style={{top: '65%', right: '0', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{top: '80%', right: '-5%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Business Couching For')}
-                              style={{bottom: '-10%', left: '30%', position: 'absolute', width: 'auto', color: 'white'}}/>
+                              style={{bottom: '-15%', left: '30%', position: 'absolute', width: 'auto'}}/>
                 </div>
             </div>
         )

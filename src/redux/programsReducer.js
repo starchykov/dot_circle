@@ -3,7 +3,7 @@ const initialState = {
         content: [
             {
                 name: 'Immersion',
-                massage: 'Live a quality stop in one day and connect with yourself. Several hours of deep immersion in practice for your reboot. You can take a one-day or three-day DIVE retreat.',
+                massage: 'Live a quality stop in one day',
                 link: 'immersion',
                 src: 'immersion'
             },

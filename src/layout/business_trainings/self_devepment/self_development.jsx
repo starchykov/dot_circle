@@ -9,6 +9,7 @@ import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";
 import {BiNotification} from "react-icons/all";
 import {BoldText, Text} from "../../common/text/text";
+import Footer from "../../footer/footer";
 
 
 const SelfDevelopment = ({t, trainings}) => {
@@ -27,7 +28,7 @@ const SelfDevelopment = ({t, trainings}) => {
         return <div className={s.numberRange}>
             {InfoContent(trainings.selfDevelopment.headerMessage)}
             {trainings.selfDevelopment.blockOneContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
-                <Title title={i.number} style={{width: '50px', margin: 0, color: '#ef7f1a', alignItems: 'center'}}/>
+                <Title title={i.number} style={{width: '50px', margin: 0, color: '#ff962e', alignItems: 'center'}}/>
                 <Text text={t(i.content)} style={{alignItems: 'center', flex: 1}}/>
             </div>)}
         </div>
@@ -45,7 +46,7 @@ const SelfDevelopment = ({t, trainings}) => {
             {InfoContent(trainings.selfDevelopment.bottomFirstTitle)}
             {trainings.selfDevelopment.bottomContent.map((i, idx) =>
                 <div key={uuid(idx)} className={s.item}>
-                    <PageTitle title={(t(i.content)).split('-')[0]} style={{width: '100%', margin: 0, color: '#ef7f1a'}}/>
+                    <PageTitle title={(t(i.content)).split('-')[0]} style={{width: '100%', margin: 0, color: '#ff962e'}}/>
                     <Text text={(t(i.content)).split('-')[1]} style={{alignItems: 'center', flex: 1}}/>
                 </div>)}
         </div>
@@ -69,6 +70,7 @@ const SelfDevelopment = ({t, trainings}) => {
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
             <MaterialBox content={<InfoBox/>}
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
+            <Footer style={{borderRadius: '12px'}}/>
         </div>
     );
 };

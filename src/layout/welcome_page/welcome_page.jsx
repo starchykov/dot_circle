@@ -13,7 +13,8 @@ import mwmBg from "./../../assets/mwm_bg_image.png"
 import {Link, NavLink} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import Background from "../common/background/background";
-import {PageTitle} from "../common/title/title";
+import {ContainerTitle, PageTitle} from "../common/title/title";
+import {Text} from "../common/text/text";
 
 const WelcomePage = ({t}) => {
 
@@ -38,14 +39,15 @@ const WelcomePage = ({t}) => {
             <div className={s.products}>
 
                 <PageTitle title={t('Welcome to Dot&Circle')} style={{fontWeight: 500, fontSize: '30px'}}/>
-                <PageTitle title={t('Select the product you are interested in')} style={{fontWeight: 500, fontSize: '30px'}}/>
+                <PageTitle title={t('Select the product you are interested in')}
+                           style={{fontWeight: 500, fontSize: '30px'}}/>
 
                 <div className={`${s.card} ${s.slideRight}`}>
                     <NavLink to={'/'} className={s.cardContent} onMouseEnter={() => toggleClass(dtBgImage)}>
                         <div className={s.cardImg}><img src={dtTitleImage} alt=""/></div>
                         <div className={s.cardText}>
-                            <h3>DOT&CIRCLE</h3>
-                            <span>{t('Consulting, Learning & Development')}</span>
+                            <ContainerTitle title={'DOT&CIRCLE'}/>
+                            <Text text={t('Consulting, Learning & Development')}/>
                         </div>
                     </NavLink>
                 </div>
@@ -53,8 +55,9 @@ const WelcomePage = ({t}) => {
                 <div className={`${s.card} ${s.slideUp}`} onMouseEnter={() => toggleClass(jlyBg)}>
                     <a href={'http://just-love-yourself.com/'} className={s.cardContent}>
                         <div className={s.cardImg}><img src={jlyTitle} alt=""/></div>
-                        <div className={s.cardText}><h3>Just love yourself</h3>
-                            <span>{t('Anar Mammadov\'s online program how')}</span>
+                        <div className={s.cardText}>
+                            <ContainerTitle title={'Just love yourself'}/>
+                            <Text text={t('Anar Mammadov\'s online program how')}/>
                         </div>
                     </a>
                 </div>
@@ -63,8 +66,8 @@ const WelcomePage = ({t}) => {
                     <a href={'https://www.meditatewithme.ru'} className={s.cardContent}>
                         <div className={s.cardImg}><img src={mwmTitle} alt=""/></div>
                         <div className={s.cardText}>
-                            <h3>Meditate with me</h3>
-                            <span>{t('Meditate with me description')}</span>
+                            <ContainerTitle title={'Meditate with me'}/>
+                            <Text text={t('Meditate with me description')}/>
                         </div>
                     </a>
                 </div>

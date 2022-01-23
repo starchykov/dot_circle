@@ -17,7 +17,6 @@ const WhyWe = () => {
                     <h1>{t('Why we?')}</h1>
                     <p>{t('Each training is a')}</p>
                 </div>
-                <div className={s.rightContent}><img src={img} alt=""/></div>
             </div>
             <div className={s.whyWeSlider}><WhyWeSlider/></div>
         </div>

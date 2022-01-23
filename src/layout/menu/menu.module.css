@@ -118,7 +118,7 @@
   background: #dfe6e9;
 }
 .sidebar .item_list li a:hover {
-  background: #ef7f1a;
+  background: #ff962e;
 }
 .sidebar .item_list li a .links_name {
   color: dimgray;
@@ -130,7 +130,7 @@
   transition: 0.4s;
 }
 .sidebar .item_list li .activeLink {
-  background: #ef7f1a;
+  background: #ff962e;
 }
 .sidebar .item_list li .activeLink i {
   color: white;
@@ -190,7 +190,7 @@
 .sidebar .item_list .langPanel .current {
   display: block;
   padding: 5px;
-  background: #ef7f1a;
+  background: #ff962e;
   border-radius: 8px;
   color: white;
 }

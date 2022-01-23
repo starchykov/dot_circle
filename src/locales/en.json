@@ -13,6 +13,7 @@
 
   "About": "About",
   "Business trainings": "Business trainings",
+  "Corporate trainings": "Corporate trainings",
   "Open programs": "Open programs",
   "Dream team": "Dream team",
   "Consulting": "Consulting",
@@ -21,6 +22,16 @@
   "Gallery": "Gallery",
   "Welcome": "Welcome",
 
+  "Find us": "Find us",
+  "Call us": "Call us",
+  "Contact us": "Contact us",
+  "Mail us": "Mail us",
+  "Useful Links": "Useful Links",
+  "Subscribe": "Subscribe",
+  "Follow us": "Follow us",
+
+  "Position": "Position",
+  "Contacts": "Contacts",
 
   "Corporate Training": "Corporate Training ",
   "Corporate training programs can effectively": "Corporate training programs can effectively improve the effectiveness of teamwork. In the process of implementation, issues of simultaneous training of several employees, personnel a department or a division of a company are solved",
@@ -75,7 +86,7 @@
   "Want to say “NO” to unnecessary time-eaters?": "Want to say “NO” to unnecessary time-eaters?̇",
 
 
-  "Let's get to know each other": "Let's get to know each other",
+  "Let`s get to know each other": "Let's get to know each other",
   "Hello everyone, my name is Anar": "Hello everyone, my name is Anar! \nI am a business coach, business consultant, mentor and coach. I have a higher economic, social, business, training and coaching education, which I received throughout my life. \nSince 1998 I have been conducting business consultations for more than 50 companies in the areas of doing business, restructuring, business development, integrating business into new markets, as well as attracting investors. \nI am an author of several projects: “Tridend Project”; “Entertaiment & Amusement Park”, “Lotus Residence”, etc. I am the founder of the company - “Dot & Circle” since 2018, co-founder of the British consulting company - Altempus Capital, founder of the commercial company 'Arkade' and the co-founder of the Investment Group - TMWIG Ltd USA. \nI began my coaching and trainer career in the 2000s. I am the author of the mentoring programs for personal growth and development in business and the corporate environment. I develop and conduct my training programs according to my own developed model based on the discovery of internal opportunities hidden inside of an individual and the development of creative potential and creativity, both from business development and personal growth perspectives. \nFrom early ages I am interested in and engage in oriental martial arts. As a result, I am a master of martial arts, the owner of the 6th dan of the black belt. \nAt present, I am Vice President of the Hap Ki Do Federation of Azerbaijan, as well as co-founder of the Su Bak Do Federation. My 20 years’ experience in martial arts is reflected in the books 'The Encyclopedia of Martial Arts' and 'The Primer in Taekwon Do', I am a co-author of. I have been practicing the Eastern - Orthodox system of yogis for 30+ years. I have a unique experience in the study of human nature. I know for certain that the whole world is enclosed in the mind of man. Therefore, based on my methodology for working with people, I use unique meditative techniques, systems of internal concentration and disclosure of hidden talents. \nMy goal is to share my experience and skills with you, and create the best conditions for your comprehensive development and maximum self-realization.",
 
 
@@ -126,6 +137,13 @@
 
   "Why we?": "Why we ?",
   "Each training is a": "Each training is a well-thought-out open and flexible program, which includes comprehensive coverage of the problem taking into account modern business requirements, which adapts to individual goals and objectives of the client. We always strive to arrange learning process so that in shortest time we deliver most important knowledge to students, which will help them to fulfill themselves and become a profitable investment in business development",
+  "We are one of only few": "We are one of only few training companies that provide courses both for companies and for individuals.",
+  "70% of our training": "70% of our training programs are unique and have no analogy in the market.",
+  "Our training programs": "Our training programs have a minimum of boring rules and a maximum of practical skills. The theoretical content is provided in an interactive way and immediately fixed by practical tasks.",
+  "We teach programs tested": "We teach programs tested on a personal experience and consistent with the realities of our market.",
+  "At our training programs": "At our training programs the participants get knowledge within 1-2 days, make new acquaintances, exchange experience, which give them a strong motivation for actions!",
+  "Upon the completion of": "Upon the completion of our training programs we provide a follow-up support and guidance to the clients and happy to keep in touch with all participants by phone, email and skype.",
+  "We are available for our clients": "We are available for our clients and always ready to respond to any of your questions! ",
 
 
   "How to live an interesting live?": "How to live an interesting life? 15 simple tips.",
@@ -190,6 +208,9 @@
 
   "We can’t help": "We can’t help:",
   "An applicant who is trying to collect a confidential": "1. An applicant who is trying to collect a confidential information about our client.\n2. A person who is sure that no consultation is needed from us.\n3. A client with mental disorders.\n4. A well-wisher who wants to get advice for another person and present him a ready-made solution in his own interpretation.\n5. Trainings are useless if a client is not open to changes.",
+  "In why": "In why",
+  "Process": "Процесс",
+  "Out": "Out",
   "RESULTS": "#RESULTS",
   "GOALS":"#GOALS",
   "CHANGES": "#CHANGES",
@@ -234,9 +255,11 @@
   "For those who are looking for a new self": "For those who are looking for a new self",
   "Program structure": "Program structure",
   "The full program consists of": "The full program consists of 3 courses with 3-4 month interval in between",
-  "Movement. Breathing. Consciousness.": "Movement Breathing Consciousness",
-  "Time. Energy. Action.": "Time Energy Action",
+  "Movement. Breathing. Consciousness.": "Course 1\nMovement Breathing Consciousness",
+  "Time. Energy. Action.": "Course 2\nTime Energy Action",
   "Course": "Course",
+  "3 - 4 month": "3 - 4 month",
+  "Feedback": "Feedback",
 
 
   "Immersion": "Immersion",
@@ -346,7 +369,6 @@
   "Adjust the design of your": "Adjust the design of your transformation roadmap in a response to new competitive situations or opportunities, market changes, and other factors.",
   "Consulting Services": "Consulting Services",
   "Learning & Development": "Learning & Development",
-  "Organizational Development": "Business development",
   "Business development": "Business development",
   "Business Transformation": "Business Transformation",
   "Sustainability & Responsibility": "Sustainability & Responsibility",
@@ -368,5 +390,16 @@
   "9 full days of active leisure which include": "9 full days of active leisure which include:",
   "Medical beauty procedures": "Medical beauty procedures - Historical sightseeing - Memorable experience of living in a monastery - Visits to educational institutions - Acquaintance with local culinary traditions - Cultural activities - Martial arts - Amazing and unforgettable shopping",
   "Program to be announced": "Program: to be announced on 02.02.2022",
+
+
+  "Я очень рада, что участвовала на семинарах": "Я очень рада, что участвовала на семинарах 'Трансформация 1' и 'Трансформация 2', где получила истинные знания, которые давно искала. По-моему мнению, эти тренинги будут полезны для каждого человека потому, что затрагивают основные аспекты существования в этом мире-здоровье, счастье, успех. Я благодарна, что смогла стать здоровее, счастливее и успешнее благодаря мудрому инструктору, сделать ещё несколько шагов на своём духовном пути, чтобы стать лучшей версией себя. Рада, что смогла быть более смелой и уверенной и поэтому быть ближе к реализации своих целей.  С удовольствием буду учавствовать в дальнейших программах центра 'Dot&Circle'.",
+  "Глубоко убеждена, что все встречи не случайны": "Глубоко убеждена, что все встречи не случайны… А некоторые становятся совершенно особенным событием, раскрывая свою ценность со временем. Что дало лично мне прохождение курса «Трансформация»? Изменение системы мышления, широту взгляда, простор мысли, смелость прикоснуться к знаниям, которые меняют тебя. Я всегда думала, что можно стремиться к познанию мира через красоту, путешествия, служение богу, через разговоры с детьми, да даже через финансы – у каждого свой путь, и каждый путь уникален. Можно стараться приблизиться к тайнам мироздания, пытаясь осознать их умом. Но самое потрясающее открытие для меня состоит в том, что, выполняя некоторые упражнения и практики, ты с легкостью получаешь То, за чем гонялся много лет. Соединенность с собой, глубину проживания жизни и широту взглядов. Если говорить о конкретных изменениях в моей жизни, то это обретение уверенности и силы раскрытие творческого потенциала, распаковку талантов, о которых раньше я даже думать боялась. Сейчас в стадии разработки у меня несколько проектов, каждый из которых необыкновенно вдохновляет и наполняет мою жизнь особыми красками и особым звучанием. Стали возможны в моей жизни многочисленные путешествия, каждое из которых проживается мной совершенно иначе, чем это было раньше. Ну и, конечно, важно отметиь еще безупречный контент, приятный формат подачи информации - емко, информацитивно, без воды, с примерами и упражнениями, которые легко и эмоционально раскрывают глубину информации. Вообще, я думаю, что уровень знаний и эрудиции Анара, его жизненный опыт – одна из граней того обаяния и магнетизма, которые раскрываются при личном общении, и которые никогда не заменят никакие маркетинговые штучки). Можно разными словами говорить о ценности курса «Трансформация», самое важное – то, что говорит сейчас ваше сердце. Мое сердце говорит, что самое главное еще впереди, и с каждым днем я к этому все ближе …",
+  "Я прошла Трансформацию 1": "Я прошла Трансформацию 1. Очень содержательно и практично. У нас была возможность попробовать практики концентрации и медитации, дыхательные и энергетические упражнения, составить для себя комплекс суставной гимнастики. Каждый получал обратную связь в процессе тренировок. Очень комфортная и располагающая атмосфера. Мы занимались и в саду на природе, и в зале. Особо хочется отметить последствия прохождения семинара. По результатам каждый из нас получил план действий, который лично мне удаётся реализовывать каждый день. Не всегда получается в полном объёме, но 20 минут в день - обязательно. Через 2 месяца я отчётливо стала ощущать подсказки внешней среды. Видеть их. Отношение к жизненным ситуациям стало становится более взвешенным и ровным. Стало получаться все больше событий отпускать, а не пытаться их контролировать и нервничать. Огромное спасибо Анару и Сабине! Друзья, рекомендую от всей души!»",
+  "Я очень благодарен за такую возможность": "Я очень благодарен за такую возможность, посетить программу не один раз. Этот ценный опыт повлиял но мое отношение ко многим аспектам моей жизни. Анар всегда был и останется для меня наставником, у которого я рад перенимать опыт и навыки. Сами практики я назвал бы для себя «особенными». Некоторые из них даются легко, некоторые сложнее. Но точно могу сказать-для меня это запредельный опыт.",
+  "Благодаря семинару Трансформация понятия кармы": "Благодаря семинару “Трансформация” понятия кармы, эфирное и ментальное тела человека, правильное дыхание, медитация и другие понятия, о которых я слышала но не до конца осознавала, стали для меня не только понятными, но и самое главное - управляемыми мною! Тренера программы учат правильно управлять ими для достижения своих целей и избавлять от того, что мешает нам жить и отвлекает нас от главного. Семинар проходит в очень комфортных условиях: в загородном доме, под пение птиц, шелест листьев, дуновение ветерка... Звуки и запахи природы очень благотворно действуют на переосмысление жизни... Очень вкусная и разнообразная еда и несколько перерывов на чай не только позволили насладиться этими днями, но также дали возможность обсудить с другими участниками семинара что нового мы узнали  жизни и поделиться мыслями. Благодаря программе я познакомилась с новыми людьми, а из созданной тренерами группы WhatsApp мы до сих пор ...",
+  "Программа Трансформация - это уникальный": "Программа Трансформация - это уникальный в своем роде продукт. Это тренинг, дающий знания и навыки обязательный для того, кто хочет разобраться в себе и других. Также он для того, кто хочет научиться реально оценивать жизненные ситуации и правильно на них реагировать. Это не привычные и знакомые техники soft skills. На программе я получила базовые и самые витальные навыки современного человека: умение правильно дышать, навык фильтрации информации, умение правильно анализировать, медитация, концентрация сознания. Для меня эта программа стала большим первым шагом к изменению своей жизни!  А еще она стала возможностью для новых знакомств с людьми, которые со мной на одной волне! Это ценный опыт!",
+  "Меня зовут Светлана и я участвовала": "Меня зовут Светлана и я участвовала в первых потоках тренингов: Трансформация 1 и 2. Скоро пройдёт год, как я прошла первую часть. То, как я ощущаю себя сейчас и по сравнению с той женщиной год назад - это существенная разница, которая, я уверена, в дальнейшем будет продолжать увеличиваться :) Мои изменения касаются, как внутренних процессов, так и внешней стороны моей жизни. Я открыла в себе новые грани личности, увидела то, что меня ограничивает, приняла то, что не признавала, приобрела эмоциональную стабильность и как следствие - новую философию своей жизни. Я нашла в себе силы принять сложные решения, сменила свою занятость, окружение и пересмотрела отношение к деньгам. Увидела жизнь такой же интересной, как тогда, когда я была ещё маленьким ребенком. Искренне, благодарю вас, Анар и Сабина, что когда то вы заинтересовались тем же обучением, что и я и приехали в Москву)) ",
+  "Я принял участие на тренинге": "Я принял участие на тренинге Трансформация-1. Уникальность пограммы состоит в том, что она полностью направлена на познание самого себя, своих внутренних потенциалов, и глубинных жизненных навыков. В программе также освещаются темы и материалы которые в обыденной жизни и на других тренингах редко освещаются. Теоретический материал очень успешно чередовался высококачестванными практическими упражнениями. Высокий пилотаж инструкторов значительно помог усвоить материал. Я очень рекоммендую эту программу тренингов. Любой посетивший эти тренинги только Приобретет и ничего не Потеряет.",
+  "От души благодарю организаторов": "От души благодарю организаторов и ведущих модуля Трансформация ! В свое время принял решение изменяться, изучать и участвовать. Посетил программу и ни разу не пожалел – много теории, практики и поддержки. Как и все участники, получил индивидуальную программу для самостоятельных занятий – концентрация и медитация (оказывается, это разные вещи), дыхательные упражнения, гимнастика. Сейчас, по прошествии некоторого времени после программы, выработалась хорошая привычка утренних упражнений, без медитации утро уже не может состояться, и это – хорошо, потому что понимаешь: жизнь значительно шире, образней и глубже. Лучше понимаешь себя и мир вокруг.",
   "": ""
 }
