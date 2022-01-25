@@ -12,6 +12,8 @@ import {
 } from "react-icons/all";
 import {ContainerTitle, PageTitle, Title} from "../../common/title/title";
 import {BoldText, ItemText, Text} from "../../common/text/text";
+import transformation_1 from '../../../assets/files/transformation_1.pdf';
+import transformation_2 from '../../../assets/files/transformation_2.pdf';
 
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -29,6 +31,7 @@ import comm8 from "../../../assets/comm8.png";
 import comm9 from "../../../assets/comm9.png";
 import comm10 from "../../../assets/comm10.png";
 import File from "../../common/file/file";
+import Footer from "../../footer/footer";
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
@@ -99,13 +102,16 @@ const Transformation = ({t}) => {
                 <div className={s.bottomLine}>
                     <File content={<ContainerTitle title={t('Movement. Breathing. Consciousness.')}
                                                    style={{justifyContent: 'center', textAlign: 'center' ,color: '#333'}}/>}
-                          style={{width: '350px', height: '180px', margin: '10px 0'}}/>
+                          style={{width: '350px', height: '180px', margin: '10px 0'}}
+                          link={transformation_1}/>
                     <File content={<ContainerTitle title={t('Time. Energy. Action.')}
                                                    style={{justifyContent: 'center', textAlign: 'center' ,color: '#333'}}/>}
-                          style={{width: '350px', height: '180px', margin: '10px 0'}}/>
+                          style={{width: '350px', height: '180px', margin: '10px 0'}}
+                          link={transformation_2}/>
                     <File content={<ContainerTitle title={t('Course')}
                                                    style={{justifyContent: 'center', textAlign: 'center' ,color: '#333'}}/>}
-                          style={{width: '350px', height: '180px', margin: '10px 0'}}/>
+                          style={{width: '350px', height: '180px', margin: '10px 0'}}
+                          link={transformation_2}/>
                 </div>
             </div>
         );
@@ -285,6 +291,8 @@ const Transformation = ({t}) => {
                          style={{width: '-webkit-fill-available', display: 'flex'}}/>
             <MaterialBox content={<FeedBack/>}
                          style={{width: '-webkit-fill-available', height: 'auto', display: 'flex', flexWrap: 'wrap'}}/>
+
+            <Footer style={{borderRadius: '12px'}}/>
 
         </div>
     );

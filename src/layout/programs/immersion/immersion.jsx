@@ -2,10 +2,9 @@ import s from './immersion.module.scss'
 import {withNamespaces} from "react-i18next";
 import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import video from './../../../assets/immersion.mp4'
-import {useCallback, useRef} from "react";
+import React, {useCallback, useRef} from "react";
 import {
-    BiNotification,
-    BsBoxArrowInDown, BsDot, FcLeave,
+    BiNotification, BsDot, FcLeave,
     MdOutlineKeyboardArrowDown, RiArrowDropRightFill,
     RiArticleFill,
     RiChatHistoryFill,
@@ -15,6 +14,11 @@ import {
 } from "react-icons/all";
 import {BoldText, HintText, ItemText} from "../../common/text/text";
 import File from "../../common/file/file";
+import Footer from "../../footer/footer";
+import program_1_rus from '../../../assets/files/immersion_1_rus.pdf';
+import program_2_rus from '../../../assets/files/immersion_2_rus.pdf';
+import program_1_eng from '../../../assets/files/immersion_1_eng.pdf';
+import i18n from "i18next";
 
 const Immersion = ({t}) => {
 
@@ -23,7 +27,11 @@ const Immersion = ({t}) => {
 
     const contentBlock = useRef(null);
 
-    let file = ['', '']
+    let file = [];
+
+    if(i18n.language === 'ru') file = [program_1_rus, program_2_rus];
+    if(i18n.language === 'en') file = [program_1_eng];
+    if(i18n.language === 'az') file = [program_1_eng];
 
     return (
         <div className={s.immersion}>
@@ -82,7 +90,7 @@ const Immersion = ({t}) => {
                         {t('Dive - is a specially developed program').split(`\n`).map((e, idx) => {
                             return <ContainerTitle key={uuid(idx)} title={e}/>
                         })}
-                        {file.map(() => <File/>)}
+                        {file.map((el, idx) => <File key={uuid(idx)} link={el}/>)}
                     </div>
 
                     <div className={s.commonBox}>
@@ -120,6 +128,9 @@ const Immersion = ({t}) => {
                         </a>
                     </div>
                 </div>
+
+                <Footer style={{borderRadius: '12px'}}/>
+
             </div>
 
         </div>

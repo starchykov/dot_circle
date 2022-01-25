@@ -71,9 +71,9 @@ const StressManagement = ({t, trainings}) => {
         <div className={s.stressManagement}>
             <Background background={background}/>
             <Title title={t(trainings.stressManagement.headerTitle)}/>
-            <MaterialBox content={<BlockOne/>}/>
-            <MaterialBox content={<BlockTwo/>}/>
-            <MaterialBox content={<BlockThree/>}/>
+            <MaterialBox content={<BlockOne/>} style={{width: '-webkit-fill-available'}}/>
+            <MaterialBox content={<BlockTwo/>} style={{width: '-webkit-fill-available'}}/>
+            <MaterialBox content={<BlockThree/>} style={{width: '-webkit-fill-available'}}/>
             <Footer style={{borderRadius: '12px'}}/>
         </div>
     )

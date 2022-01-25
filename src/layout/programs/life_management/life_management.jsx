@@ -6,6 +6,7 @@ import MaterialBox from "../../common/material_box/material_box";
 import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import {BiNotification, BsDot, RiArrowDropRightFill, RiArticleFill, RiTeamFill} from "react-icons/all";
 import {BoldText, ItemText, Text} from "../../common/text/text";
+import Footer from "../../footer/footer";
 
 const LifeManagement = ({t}) => {
 
@@ -52,6 +53,8 @@ const LifeManagement = ({t}) => {
 
             <MaterialBox content={<InlineItems/>}
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
+
+            <Footer style={{borderRadius: '12px'}}/>
 
         </div>
     );

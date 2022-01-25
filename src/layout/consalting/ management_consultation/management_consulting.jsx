@@ -3,7 +3,7 @@ import {withNamespaces} from "react-i18next";
 import background from "../../../assets/management_consulting.png"
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
-import {useCallback} from "react";
+import React, {useCallback} from "react";
 import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import {
     BiNotification,
@@ -15,6 +15,7 @@ import {
     SiHomeadvisor,
 } from "react-icons/all";
 import {BoldText, ItemText, Text} from "../../common/text/text";
+import Footer from "../../footer/footer";
 
 const ManagementConsulting = ({t}) => {
 
@@ -68,7 +69,7 @@ const ManagementConsulting = ({t}) => {
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
             <MaterialBox content={<BlockThree/>}
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
-
+            <Footer style={{borderRadius: '12px'}}/>
         </div>
     );
 }

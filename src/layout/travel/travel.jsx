@@ -17,6 +17,7 @@ import travel from '../../assets/travel.jpeg'
 import Background from "../common/background/background";
 import File from "../common/file/file";
 import {NavLink} from "react-router-dom";
+import program from '../../assets/files/travel.pdf'
 
 const Travel = ({t}) => {
 
@@ -46,7 +47,7 @@ const Travel = ({t}) => {
                         <div className={s.leftContent}>
                             <iframe src={'https://www.youtube.com/embed/0sp4AqKj2iA'}/>
                         </div>
-                        <div className={s.rightContent}><File/></div>
+                        <div className={s.rightContent}><File link={program}/></div>
                     </div>
                     <PageTitle icon={<BiWorld/>} title={t('Nepal Program 2')} style={{marginTop: '30px'}}/>
                     <BoldText text={t('This practical program that is in its')}/>

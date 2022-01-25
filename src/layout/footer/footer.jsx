@@ -13,10 +13,15 @@ import {
 import {compose} from "redux";
 import {withNamespaces} from "react-i18next";
 import {connect} from "react-redux";
+import {useCallback} from "react";
 
 const Footer = ({t, style}) => {
+
+    // Generate UUID key
+    const uuid = useCallback((idx) => encodeURI(`${idx}`), [])
+
     return (
-        <footer className={s.footer} style={style}>
+        <footer key={uuid(new Date())} className={s.footer} style={style}>
 
             <div className={s.infoArea}>
 

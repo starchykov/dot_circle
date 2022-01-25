@@ -93,7 +93,7 @@ const BusinessTrainings = ({t, trainings, name}) => {
                     <BoldText text={t('Train the Trainer program')}
                               style={{top: '80%', right: '-5%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Business Retreat Based')}
-                              style={{bottom: '-30px', left: '20%', position: 'absolute', width: 'auto'}}/>
+                              style={{bottom: '-15%', left: '20%', position: 'absolute', width: 'auto'}}/>
                 </div>
 
                 <div className={s.training_2}>

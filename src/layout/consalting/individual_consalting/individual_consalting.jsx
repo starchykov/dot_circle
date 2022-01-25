@@ -3,21 +3,53 @@ import {withNamespaces} from "react-i18next";
 import background from "../../../assets/individual_consalting.png"
 import Background from "../../common/background/background";
 import MaterialBox from "../../common/material_box/material_box";
-import {useCallback} from "react";
+import {useCallback, useState} from "react";
 import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import {
-    AiFillCarryOut, AiFillInteraction,
     BiNotification,
-    BsQuestionSquareFill,
     RiArrowDropRightFill,
     RiArticleFill,
 } from "react-icons/all";
 import {ItemText, Text} from "../../common/text/text";
+import circleBg from '../../../assets/circle.png';
+import Footer from "../../footer/footer";
+import File from "../../common/file/file";
+import i18n from "i18next";
+import program_rus from "../../../assets/files/consulting_rus.pdf";
+import program_az from "../../../assets/files/consulting_az.pdf";
 
 const IndividualConsulting = ({t}) => {
 
     // Generate UUID key
     const uuid = useCallback((idx) => encodeURI(`${idx}`), []);
+
+    let file = [];
+
+    if(i18n.language === 'ru') file = [program_rus];
+    if(i18n.language === 'en') file = [program_rus];
+    if(i18n.language === 'az') file = [program_az];
+
+    const [styleWhy, setStyleWhy] = useState({display: 'flex'});
+    const [styleHow, setStyleHow] = useState({display: 'none'});
+    const [styleWhom, setStyleWhom] = useState({display: 'none'});
+
+    const setWhy = () => {
+        setStyleWhy({display: 'flex'});
+        setStyleHow({display: 'none'});
+        setStyleWhom({display: 'none'});
+
+    }
+    const setHow = () => {
+        setStyleWhy({display: 'none'});
+        setStyleHow({display: 'flex'});
+        setStyleWhom({display: 'none'});
+
+    }
+    const setWhom = () => {
+        setStyleWhy({display: 'none'});
+        setStyleHow({display: 'none'});
+        setStyleWhom({display: 'flex'});
+    }
 
     let reasons = [
         'We are result-oriented',
@@ -64,7 +96,11 @@ const IndividualConsulting = ({t}) => {
                 <>
                     <PageTitle icon={<RiArticleFill/>} title={t('Immerse yourself')}/>
                     <ContainerTitle icon={<RiArrowDropRightFill/>} title={t('Life Management consultation')}/>
-                    <ItemText text={t('We will show you the way out of difficult life')} style={{paddingLeft: '42px'}}/>
+                    <div style={{display: 'flex', gap: '0 20px'}}>
+                        <ItemText text={t('We will show you the way out of difficult life')}
+                                  style={{paddingLeft: '42px', flex: 3, textAlign: 'justify'}}/>
+                        <File link={file} style={{height: '130px'}}/>
+                    </div>
                 </>
             }/>
 
@@ -88,32 +124,87 @@ const IndividualConsulting = ({t}) => {
 
 
             <div className={s.blockFour}>
-                <div className={s.item}>
-                    <PageTitle icon={<BsQuestionSquareFill/>} title={t('In why')} style={{justifyContent: 'center'}}/>
-                    <Text text={t('RESULTS')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('GOALS')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('CHANGES')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('STEPS')} style={{flex: 1, justifyContent: 'center'}}/>
-                </div>
+                <MaterialBox content={
+                    <>
+                        <div className={s.container}>
 
-                <div className={s.item}>
-                    <PageTitle icon={<AiFillInteraction/>} title={t('Process')} style={{justifyContent: 'center'}}/>
-                    <Text text={t('MODELS')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('TOOLS')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('PROCESSES')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('SYSTEMS')} style={{flex: 1, justifyContent: 'center'}}/>
-                </div>
+                            <div className={s.circleHeaders}>
+                                <PageTitle title={t('In why')}
+                                           style={{justifyContent: 'center', color: 'dimgray', width: '115px'}}/>
+                                <PageTitle title={t('Process')}
+                                           style={{justifyContent: 'center', color: 'dimgray', width: '115px'}}/>
+                                <PageTitle title={t('Out')}
+                                           style={{justifyContent: 'center', color: 'dimgray', width: '115px'}}/>
+                            </div>
 
-                <div className={s.item}>
-                    <PageTitle icon={<AiFillCarryOut/>} title={t('Out')} style={{justifyContent: 'center'}}/>
-                    <Text text={t('INFORMATION')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('PERCEPTION')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('UNDERSTANDING')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('STRATEGY')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('THEORY')} style={{flex: 1, justifyContent: 'center'}}/>
-                    <Text text={t('EXPERIENCE')} style={{flex: 1, justifyContent: 'center'}}/>
-                </div>
+                            <div className={s.circleBox}
+                                 style={{marginLeft: '-15%'}}
+                                 onMouseEnter={() => setWhy()}
+                            >
+                                <img src={circleBg} alt="circle"/>
+                                <PageTitle title={t('Why')}
+                                           style={{justifyContent: 'center', position: 'absolute', color: 'white', width: '190px'}}/>
+                            </div>
+
+                            <div className={s.circleBox}
+                                 onMouseEnter={() => setHow()}
+                            >
+                                <img src={circleBg} alt="circle"/>
+                                <PageTitle title={t('How')}
+                                           style={{justifyContent: 'center', position: 'absolute', color: 'white', width: '190px'}}/>
+                            </div>
+
+                            <div className={s.circleBox}
+                                 style={{marginRight: '-15%'}}
+                                 onMouseEnter={() => setWhom()}
+                            >
+                                <img src={circleBg} alt="circle"/>
+                                <PageTitle title={t('For whom')}
+                                           style={{justifyContent: 'center', position: 'absolute', color: 'white', width: '190px'}}/>
+                            </div>
+                        </div>
+
+                        <div className={s.item} style={styleWhy}>
+                            <ContainerTitle title={t('RESULTS')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('GOALS')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('CHANGES')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('STEPS')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                        </div>
+
+                        <div className={s.item} style={styleHow}>
+                            <ContainerTitle title={t('MODELS')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('TOOLS')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('PROCESSES')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('SYSTEMS')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                        </div>
+
+                        <div className={s.item} style={styleWhom}>
+                            <ContainerTitle title={t('INFORMATION')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('PERCEPTION')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('UNDERSTANDING')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('STRATEGY')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('THEORY')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                            <ContainerTitle title={t('EXPERIENCE')}
+                                            style={{flex: 1, justifyContent: 'center', color: 'dimgray'}}/>
+                        </div>
+                    </>
+                } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap', gap: '50px 15px'}}/>
             </div>
+
+            <Footer style={{borderRadius: '12px'}}/>
 
         </div>
     )
