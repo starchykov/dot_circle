@@ -9,6 +9,7 @@ import {useCallback, useEffect} from "react";
 import Background from "../common/background/background";
 import Title, {ContainerTitle, PageTitle} from "../common/title/title";
 import {Text} from "../common/text/text";
+import {BsYoutube} from "react-icons/all";
 
 
 const DreamTeam = ({t}) => {
@@ -25,6 +26,7 @@ const DreamTeam = ({t}) => {
             position: 'Executive Director',
             image: executiveDirector,
             social: [
+                {icon: 'youtube', link: 'https://www.facebook.com/anar.mammadov.56211'},
                 {icon: 'facebook', link: 'https://www.facebook.com/anar.mammadov.56211/'},
                 {icon: 'instagram', link: 'https://www.instagram.com/anarmammadov.az/'},
                 {icon: 'linkedin', link: 'https://www.linkedin.com/in/anar-mamm/'},
@@ -62,6 +64,7 @@ const DreamTeam = ({t}) => {
                 <div className={s.social}>{
                     i.social?.map((i, idx) =>
                         <a key={uuid(idx)} className={s.socialLink} href={i.link}>
+                            {i.icon === 'youtube' && <BsYoutube className={s.faLogo}/>}
                             {i.icon === 'facebook' && <FaFacebookSquare className={s.faLogo}/>}
                             {i.icon === 'instagram' && <FaInstagram className={s.faLogo}/>}
                             {i.icon === 'linkedin' && <FaLinkedinIn className={s.faLogo}/>}
