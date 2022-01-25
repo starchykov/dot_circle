@@ -49,6 +49,7 @@ const initialState = {
         {
             src: `business_9.jpg`,
             thumbnail: `business_9.jpg`,
+            thumbnailWidth: 500,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
@@ -68,20 +69,21 @@ const initialState = {
         {
             src: `business_12.jpg`,
             thumbnail: `business_12.jpg`,
+            thumbnailWidth: 500,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
         {
             src: `business_13.jpg`,
             thumbnail: `business_13.jpg`,
-            thumbnailWidth: 200,
+            thumbnailWidth: 500,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
         {
             src: `business_14.jpg`,
             thumbnail: `business_14.jpg`,
-            thumbnailWidth: 200,
+            thumbnailWidth: 500,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
@@ -94,12 +96,14 @@ const initialState = {
         {
             src: `business_15.jpg`,
             thumbnail: `business_15.jpg`,
+            thumbnailWidth: 500,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
         {
             src: `business_17.jpg`,
             thumbnail: `business_17.jpg`,
+            thumbnailWidth: 500,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
@@ -179,12 +183,14 @@ const initialState = {
         {
             src: `business_30.jpg`,
             thumbnail: `business_30.jpg`,
+            thumbnailWidth: 200,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
         {
             src: `business_31.jpg`,
             thumbnail: `business_31.jpg`,
+            thumbnailWidth: 200,
             tags: [{value: `Business trainings`, title: "Business trainings"}],
             caption: ""
         },
@@ -268,7 +274,7 @@ const initialState = {
         {
             src: `open_7.jpg`,
             thumbnail: `open_7.jpg`,
-            thumbnailWidth: 200,
+            thumbnailWidth: 400,
             tags: [{value: `Open programs`, title: "Open programs"}],
             caption: ""
         },
@@ -363,20 +369,21 @@ const initialState = {
         {
             src: `open_22.jpg`,
             thumbnail: `open_22.jpg`,
+            thumbnailWidth: 500,
             tags: [{value: `Open programs`, title: "Open programs"}],
             caption: ""
         },
         {
             src: `open_23.jpg`,
             thumbnail: `open_23.jpg`,
-            thumbnailWidth: 200,
+            thumbnailWidth: 300,
             tags: [{value: `Open programs`, title: "Open programs"}],
             caption: ""
         },
         {
             src: `open_24.jpg`,
             thumbnail: `open_24.jpg`,
-            thumbnailWidth: 200,
+            thumbnailWidth: 300,
             tags: [{value: `Open programs`, title: "Open programs"}],
             caption: ""
         },
@@ -409,6 +416,20 @@ const initialState = {
             src: `open_29.jpg`,
             thumbnail: `open_29.jpg`,
             thumbnailWidth: 400,
+            tags: [{value: `Open programs`, title: "Open programs"}],
+            caption: ""
+        },
+        {
+            src: `open_30.jpg`,
+            thumbnail: `open_30.jpg`,
+            thumbnailWidth: 400,
+            tags: [{value: `Open programs`, title: "Open programs"}],
+            caption: ""
+        },
+        {
+            src: `open_31.jpg`,
+            thumbnail: `open_31.jpg`,
+            thumbnailWidth: 200,
             tags: [{value: `Open programs`, title: "Open programs"}],
             caption: ""
         },
