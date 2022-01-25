@@ -3,6 +3,7 @@ import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import aboutMeBg from '../../../assets/about_me.png'
 import {FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import {BsYoutube} from "react-icons/all";
 
 
 let AboutMe = () => {
@@ -18,6 +19,9 @@ let AboutMe = () => {
             <div className={s.rightContent}>
                 <img src={aboutMeBg} alt="" className={s.aboutMeBg}/>
                 <div className={s.social}>
+                    <a href={'https://www.youtube.com/channel/UCkrJlMOqKg_8GlbQL5_y44w'} className={s.socialLink}>
+                        <BsYoutube className={s.faLogo}/>
+                    </a>
                     <a href={'https://www.facebook.com/anar.mammadov.56211'} className={s.socialLink}>
                         <FaFacebookSquare className={s.faLogo}/>
                     </a>

@@ -14,6 +14,7 @@ import {compose} from "redux";
 import {withNamespaces} from "react-i18next";
 import {connect} from "react-redux";
 import {useCallback} from "react";
+import {BsYoutube, ImYoutube2} from "react-icons/all";
 
 const Footer = ({t, style}) => {
 
@@ -32,7 +33,7 @@ const Footer = ({t, style}) => {
                             <div className={s.singleCta}>
                                 <FaMapMarkerAlt className={s.faLogo}/>
                                 <h4 className={s.title}>{t('Find us')}</h4>
-                                <span>{'Sabit Rahman 72 A , Baku'}</span>
+                                <span><a href="https://goo.gl/maps/n84XFtehTvHDRy596"><span>Sabit Rahman 72 A , Baku</span></a></span>
                             </div>
                         </div>
 
@@ -48,7 +49,7 @@ const Footer = ({t, style}) => {
                             <div className={s.singleCta}>
                                 <FaEnvelope className={s.faLogo}/>
                                 <h4 className={s.title}>{t('Mail us')}</h4>
-                                <span>anar.m@dot-circle.com</span>
+                                <span><a href='mailto:anar.m@dot-circle.com'><span>anar.m@dot-circle.com</span></a></span>
                             </div>
                         </div>
 
@@ -62,6 +63,9 @@ const Footer = ({t, style}) => {
                                 <img className={s.footerLogo} src={logo} alt=""/>
                                 <div className={s.footerSocialIcon}>
                                     <h3 className={s.title}>{t('Follow us')}</h3>
+                                    <a href={'https://www.youtube.com/channel/UCkrJlMOqKg_8GlbQL5_y44w'}>
+                                        <BsYoutube className={s.faLogo}/>
+                                    </a>
                                     <a href={'https://www.facebook.com/anar.mammadov.56211'}>
                                         <FaFacebookSquare className={s.faLogo}/>
                                     </a>
