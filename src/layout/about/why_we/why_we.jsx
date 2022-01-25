@@ -1,7 +1,6 @@
 import s from './why_we.module.scss';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
-import img from '../../../assets/anar_why_we.png'
 import WhyWeSlider from "./why_we_slider/why_we_slider";
 
 

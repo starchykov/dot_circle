@@ -30,7 +30,7 @@ const VideoCard = () => {
     const videos = () => slideData.map((i, idx) => {
         return (
             <SwiperSlide key={uuid(idx)} className={s.videoBox}>
-                <div className={s.leftContent}><iframe src={i.src}/></div>
+                <div className={s.leftContent}><iframe title={i.src} src={i.src}/></div>
                 <div className={s.rightContent}><h1>{t(i.title)}</h1><span>{t(i.message)}</span></div>
             </SwiperSlide>
         )

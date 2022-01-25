@@ -5,8 +5,8 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import {useCallback, useEffect} from "react";
 import Background from "../common/background/background";
-import Title, {ContainerTitle, PageTitle} from "../common/title/title";
-import {ItemText, Text} from "../common/text/text";
+import Title, {PageTitle} from "../common/title/title";
+import {ItemText} from "../common/text/text";
 import {BiNotification} from "react-icons/all";
 
 

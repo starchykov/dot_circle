@@ -40,7 +40,6 @@ const initialState = {
 };
 
 const usefulPageReducer = (state = initialState, action) => {
-    console.log(action);
     return state;
 };
 

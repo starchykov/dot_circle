@@ -3,7 +3,7 @@
   z-index: 2;
 
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
 
   width: 100%;
@@ -54,7 +54,7 @@
 .pageTitle {
   @include common;
 
-  justify-content: start;
+  justify-content: flex-start;
   text-align: left;
   text-shadow: 0 2px 4px #3e4c589e;
 
@@ -66,7 +66,7 @@
 .containerTitle {
   @include common;
 
-  justify-content: start;
+  justify-content: flex-start;
   text-align: left;
   text-shadow: 0 2px 4px #3e4c589e;
 }

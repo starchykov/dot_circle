@@ -19,7 +19,7 @@ const Programs = ({t, name, programs}) => {
     const history = useHistory();
 
     // Set document title wia hook effect
-    useEffect(() => document.title = t('Open programs'));
+    useEffect(() => document.title = t('Open programs'), [t]);
 
     // Check path and open popup window
     useEffect(() => {
@@ -27,7 +27,7 @@ const Programs = ({t, name, programs}) => {
         if (compare('immersion')) setShowPopup('immersion');
         else if (compare('transformation')) setShowPopup('transformation');
         else if (compare('life_management')) setShowPopup('life_management');
-    });
+    }, [t]);
 
     // Set page background image on mouse enter event
     const [currentBackground, setActive] = useState(`${process.env.PUBLIC_URL}/assets/transformation.png`);

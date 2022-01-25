@@ -10,7 +10,7 @@ import jlyBg from "./../../assets/jly_bg_image.png"
 import mwmTitle from "./../../assets/mwm_title_image.png"
 import mwmBg from "./../../assets/mwm_bg_image.png"
 
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import React, {useEffect, useState} from "react";
 import Background from "../common/background/background";
 import {ContainerTitle, PageTitle} from "../common/title/title";

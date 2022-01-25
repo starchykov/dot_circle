@@ -6,7 +6,7 @@ const Iframe = ({source}) => {
 
     return (
         <div className={s.iFrame}>
-            <iframe className={s.viewPort} src={source}/>
+            <iframe title="iframe" className={s.viewPort} src={source}/>
         </div>
     );
 };

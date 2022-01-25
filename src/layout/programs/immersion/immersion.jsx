@@ -49,7 +49,7 @@ const Immersion = ({t}) => {
                 <div className={s.contentBox}>
                     <div className={s.videoBox}>
                         <div className={s.leftContent}>
-                            <iframe src={'https://www.youtube.com/embed/0sp4AqKj2iA'}/>
+                            <iframe title='immersion' src={'https://www.youtube.com/embed/0sp4AqKj2iA'}/>
                         </div>
                         <div className={s.rightContent}>
                             <PageTitle title={t('Watch this teaser')}/>
@@ -108,7 +108,7 @@ const Immersion = ({t}) => {
                 <div className={s.contentBox}>
                     <div className={s.commonBox}>
                         <PageTitle icon={<RiFeedbackFill/>} title={t('Feedback')}/>
-                        <iframe className={s.feedback} src={'https://www.youtube.com/embed/SvABVGRBph0?start=128'}/>
+                        <iframe title="immersion" className={s.feedback} src={'https://www.youtube.com/embed/SvABVGRBph0?start=128'}/>
                     </div>
 
                     <div className={s.commonBox}>

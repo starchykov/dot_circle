@@ -33,7 +33,7 @@ const BusinessTrainings = ({t, trainings, name}) => {
         else if (compare('stress_management')) setShowPopup('stress_management');
         else if (compare('self_development')) setShowPopup('self_development');
         else if (compare('organizational_development')) setShowPopup('organizational_development');
-    });
+    }, []);
 
     // Set page background image on mouse enter event
     const [currentBackground, setActive] = useState(`${corporate_trainings}`);

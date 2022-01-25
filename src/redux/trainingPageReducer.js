@@ -125,7 +125,6 @@ const initialState = {
 
 
 const trainingPageReducer = (state = initialState, action) => {
-    console.log(action);
     return state;
 };
 

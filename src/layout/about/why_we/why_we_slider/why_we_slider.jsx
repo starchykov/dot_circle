@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React from "react";
 import s from "./why_we_slider.module.scss";
 
 // Import Swiper React components

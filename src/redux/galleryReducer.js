@@ -437,7 +437,6 @@ const initialState = {
 }
 
 const galleryReducer = (state = initialState, action) => {
-    console.log(action);
     return state;
 }
 

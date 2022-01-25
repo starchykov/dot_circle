@@ -6,11 +6,14 @@ import MaterialBox from "../../common/material_box/material_box";
 import {useCallback, useState} from "react";
 import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import {
+    AiOutlineFileDone,
     BiNotification,
+    BsPersonXFill, ImArrowDown2, ImArrowDownLeft2, ImArrowDownRight2,
+    MdPublishedWithChanges,
     RiArrowDropRightFill,
     RiArticleFill,
 } from "react-icons/all";
-import {ItemText, Text} from "../../common/text/text";
+import {ItemText} from "../../common/text/text";
 import circleBg from '../../../assets/circle.png';
 import Footer from "../../footer/footer";
 import File from "../../common/file/file";
@@ -64,25 +67,35 @@ const IndividualConsulting = ({t}) => {
 
         <details className={s.dropdownBox} open>
             <summary className={s.dropdownTitle}>
-                <ContainerTitle title={t("Individual consulting is necessary in the following cases")}/>
+                <ContainerTitle icon={<RiArticleFill/>} title={t("Individual consulting is necessary in the following cases")}/>
             </summary>
-            <Text text={t('constant challenge at work')} style={{textAlign: 'start'}}/>
+            {t('constant challenge at work').split('\n').map((e, idx) =>
+                <ItemText key={uuid(idx)}
+                          text={e}
+                          style={{paddingLeft: '42px', textAlign: 'start'}}/>)}
+
         </details>
 
 
         <details className={s.dropdownBox} open>
             <summary className={s.dropdownTitle}>
-                <ContainerTitle title={t("How to make a difference")}/>
+                <ContainerTitle icon={<MdPublishedWithChanges/>} title={t("How to make a difference")}/>
             </summary>
-            <Text text={t('First of all, you need to get rid of the burden of unnecessary memories')} style={{textAlign: 'start'}}/>
+            {t('First of all, you need to get rid of the burden of unnecessary memories').split('\n').map((e, idx) =>
+                <ItemText key={uuid(idx)}
+                          text={e}
+                          style={{paddingLeft: '42px', textAlign: 'start'}}/>)}
         </details>
 
 
         <details className={s.dropdownBox} open>
             <summary className={s.dropdownTitle}>
-                <ContainerTitle title={t("We can’t help")}/>
+                <ContainerTitle icon={<BsPersonXFill/>} title={t("We can’t help")}/>
             </summary>
-            <Text text={t('An applicant who is trying to collect a confidential')} style={{textAlign: 'start'}}/>
+            {t('An applicant who is trying to collect a confidential').split('\n').map((e, idx) =>
+                <ItemText key={uuid(idx)}
+                          text={e}
+                          style={{paddingLeft: '42px', textAlign: 'start'}}/>)}
         </details>
     </div>;
 
@@ -96,7 +109,7 @@ const IndividualConsulting = ({t}) => {
                 <>
                     <PageTitle icon={<RiArticleFill/>} title={t('Immerse yourself')}/>
                     <ContainerTitle icon={<RiArrowDropRightFill/>} title={t('Life Management consultation')}/>
-                    <div style={{display: 'flex', gap: '0 20px'}}>
+                    <div style={{display: 'flex', flexWrap: 'wrap', gap: '20px'}}>
                         <ItemText text={t('We will show you the way out of difficult life')}
                                   style={{paddingLeft: '42px', flex: 3, textAlign: 'justify'}}/>
                         <File link={file} style={{height: '130px'}}/>
@@ -109,14 +122,16 @@ const IndividualConsulting = ({t}) => {
                 <PageTitle title={t('3 reasons to choose us')}
                            style={{justifyContent: 'center', color: 'white'}}/>
 
-                <i className={'bx bx-down-arrow-alt'}/>
-                <i className={'bx bx-down-arrow-alt'}/>
-                <i className={'bx bx-down-arrow-alt'}/>
+               <ImArrowDownLeft2/>
+               <ImArrowDown2/>
+               <ImArrowDownRight2/>
 
                 {reasons.map((item, idx) =>
                     <MaterialBox key={uuid(idx)}
-                                 content={<Text text={t(item)}/>}
-                                 style={{flex: `${window.innerWidth <= 768 ? 1 : 100}`}}/>)}
+                                 style={{flex: `${window.innerWidth <= 768 ? 1 : 100}`}}
+                                 content={<ContainerTitle icon={<AiOutlineFileDone/>}
+                                                          title={t(item)}/>}
+                    />)}
             </div>
 
 

@@ -45,7 +45,7 @@ const Travel = ({t}) => {
                     <PageTitle icon={<BiWorld/>} title={t('Nepal Program 1')} style={{marginTop: '30px'}}/>
                     <div className={s.videoBox}>
                         <div className={s.leftContent}>
-                            <iframe src={'https://www.youtube.com/embed/0sp4AqKj2iA'}/>
+                            <iframe title="travel" src={'https://www.youtube.com/embed/0sp4AqKj2iA'}/>
                         </div>
                         <div className={s.rightContent}><File link={program}/></div>
                     </div>

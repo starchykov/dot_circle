@@ -17,14 +17,14 @@ const Consulting = ({t}) => {
     const history = useHistory();
 
     // Set document title wia hook effect
-    useEffect(() => document.title = t('Consulting'));
+    useEffect(() => document.title = t('Consulting'), [t]);
 
     // Check path and open popup window
     useEffect(() => {
         let compare = (p) => window.location.pathname.includes(`/${p}`);
         if (compare('individual_consulting')) setShowPopup('individual_consulting');
         else if (compare('management_consulting')) setShowPopup('management_consulting');
-    });
+    }, [t]);
 
     // Set page background image on mouse enter event
     const [currentBackground, setActive] = useState(`${process.env.PUBLIC_URL}/assets/transformation.png`);
