@@ -15,6 +15,9 @@ const Menu = (props) => {
 
     // Change language
     const switchLang = (lng) => {
+        // Set lang attribute to html document
+        document.documentElement.setAttribute('lang', lng);
+
         // Set language code
         localStorage.setItem('i18nextLng', lng);
 
