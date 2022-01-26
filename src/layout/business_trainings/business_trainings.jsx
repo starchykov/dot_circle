@@ -88,7 +88,7 @@ const BusinessTrainings = ({t, trainings, name}) => {
                               style={{top: '30%', left: '-5%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Corporate culture Implementation')}
                               style={{top: '5%', right: '-8%', position: 'absolute', width: 'auto'}}/>
-                    <BoldText text={t('Organizational Development')}
+                    <BoldText text={t('Organizational development')}
                               style={{top: '45%', right: '-8%', position: 'absolute', width: 'auto'}}/>
                     <BoldText text={t('Train the Trainer program')}
                               style={{top: '80%', right: '-5%', position: 'absolute', width: 'auto'}}/>

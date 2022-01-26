@@ -16,9 +16,13 @@ import ScrollTop from "./layout/common/scroll_top/scroll_top";
 import SelfDevelopment from "./layout/business_trainings/self_devepment/self_development";
 import Programs from "./layout/programs/programs";
 import Travel from "./layout/travel/travel";
+import {useEffect} from "react";
+import i18n from "i18next";
 
 
 const App = () => {
+    // Set document title wia hook effect
+    useEffect(() => document.documentElement.setAttribute('lang', i18n.language));
     return (
         <div className={s.app}>
             <Header/>
