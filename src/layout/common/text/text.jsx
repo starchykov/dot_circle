@@ -1,11 +1,12 @@
 import s from './text.module.scss'
+import { v4 as uuidv4 } from 'uuid';
 
 
 export const Text = (props) => {
     let style = props.style ?? {width: '100%'};
 
     return (
-        <p className={s.text}
+        <p key={uuidv4()} className={s.text}
             style={style}>
             {props.icon && props.icon}
             {props.text}
@@ -17,7 +18,7 @@ export const BoldText = (props) => {
     let style = props.style ?? {width: '100%'};
 
     return (
-        <p className={s.boldText}
+        <p key={uuidv4()} className={s.boldText}
            style={style}>
             {props.icon && props.icon}
             {props.text}
@@ -29,7 +30,7 @@ export const ItemText = (props) => {
     let style = props.style ?? {width: '100%'};
 
     return (
-        <p className={s.itemText}
+        <p key={uuidv4()} className={s.itemText}
            style={style}>
             {props.icon && props.icon}
             {props.text}
@@ -41,7 +42,7 @@ export const HintText = (props) => {
     let style = props.style ?? {width: '100%'};
 
     return (
-        <p className={s.hintText}
+        <p key={uuidv4()} className={s.hintText}
            style={style}>
             {props.icon && props.icon}
             {props.text}

@@ -13,6 +13,7 @@ import NoPage from "../common/no_page/no_page";
 import LifeManagement from "./life_management/life_management";
 import {Text} from "../common/text/text";
 import {useHistory} from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 
 const Programs = ({t, name, programs}) => {
 
@@ -65,7 +66,7 @@ const Programs = ({t, name, programs}) => {
         <HoveredItem key={uuid(idx)} content={
             <div onMouseEnter={() => setActive(`${process.env.PUBLIC_URL}/assets/${i.src}.png`)}
                  onClick={() => show(i.link)}>
-                <h1>{t(i.name)}</h1>
+                <h1 key={uuidv4()}>{t(i.name)}</h1>
                 <Text text={t(i.massage)}/>
             </div>
         }/>

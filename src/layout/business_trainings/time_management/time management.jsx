@@ -36,7 +36,7 @@ const TimeManagement = ({t, training}) => {
                        title={t(training.timeManagement.bottomTitle)}/>
             {training.timeManagement.bottomContent.map((i, idx) => <div key={uuid(idx)} className={s.item}>
                 <Title title={i.number} style={{width: '50px', margin: 0, color: '#ff962e', alignItems: 'center'}}/>
-                <Text text={t(i.content)} style={{alignItems: 'center'}}/>
+                <Text text={t(i.content)} style={{alignItems: 'center', flex: 1}}/>
             </div>)}
         </div>
     };

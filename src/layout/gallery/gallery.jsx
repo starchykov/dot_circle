@@ -4,6 +4,7 @@ import {withNamespaces} from "react-i18next";
 import {compose} from "redux";
 import {connect} from "react-redux";
 import {useCallback, useEffect} from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 const PhotoGallery = ({t, name, photos}) => {
 
@@ -40,7 +41,7 @@ const PhotoGallery = ({t, name, photos}) => {
 
     return (
         <div className={s.gallery}>
-            <h1>{t(name)}</h1>
+            <h1 key={uuidv4()}>{t(name)}</h1>
             <Gallery enableImageSelection={false} images={data} tagStyle={tagStyle()}/>
         </div>
     );

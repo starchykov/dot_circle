@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./why_we_slider.module.scss";
+import { v4 as uuidv4 } from 'uuid';
 
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -27,7 +28,7 @@ const WhyWeSlider = ({t}) => {
 
             <SwiperSlide className={s.slideItem}>
                 <div className={s.item}>
-                    <h1>1</h1>
+                    <h1 key={uuidv4()}>1</h1>
                     <div className={s.circle}>
                         <span>{t('We are one of only few')}</span>
                     </div>
@@ -36,7 +37,7 @@ const WhyWeSlider = ({t}) => {
 
             <SwiperSlide className={s.slideItem}>
                 <div className={s.item}>
-                    <h1>2</h1>
+                    <h1 key={uuidv4()}>2</h1>
                     <div className={s.circle}>
                         <span>{t('70% of our training')}</span>
                     </div>
@@ -45,7 +46,7 @@ const WhyWeSlider = ({t}) => {
 
             <SwiperSlide className={s.slideItem}>
                 <div className={s.item}>
-                    <h1>3</h1>
+                    <h1 key={uuidv4()}>3</h1>
                     <div className={s.circle}>
                         <span>{t('Our training programs')}</span>
                     </div>
@@ -54,7 +55,7 @@ const WhyWeSlider = ({t}) => {
 
             <SwiperSlide className={s.slideItem}>
                 <div className={s.item}>
-                    <h1>4</h1>
+                    <h1 key={uuidv4()}>4</h1>
                     <div className={s.circle}>
                         <span>{t('We teach programs tested')}</span>
                     </div>
@@ -63,7 +64,7 @@ const WhyWeSlider = ({t}) => {
 
             <SwiperSlide className={s.slideItem}>
                 <div className={s.item}>
-                    <h1>5</h1>
+                    <h1 key={uuidv4()}>5</h1>
                     <div className={s.circle}>
                         <span>{t('At our training programs')}</span>
                     </div>
@@ -72,7 +73,7 @@ const WhyWeSlider = ({t}) => {
 
             <SwiperSlide className={s.slideItem}>
                 <div className={s.item}>
-                    <h1>6</h1>
+                    <h1 key={uuidv4()}>6</h1>
                     <div className={s.circle}>
                         <span>{t('Upon the completion of')}</span>
                     </div>
@@ -81,7 +82,7 @@ const WhyWeSlider = ({t}) => {
 
             <SwiperSlide className={s.slideItem}>
                 <div className={s.item}>
-                    <h1>7</h1>
+                    <h1 key={uuidv4()}>7</h1>
                     <div className={s.circle}>
                         <span>{t('We are available for our clients')}</span>
                     </div>

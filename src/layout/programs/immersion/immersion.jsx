@@ -19,6 +19,7 @@ import program_1_rus from '../../../assets/files/immersion_1_rus.pdf';
 import program_2_rus from '../../../assets/files/immersion_2_rus.pdf';
 import program_1_eng from '../../../assets/files/immersion_1_eng.pdf';
 import i18n from "i18next";
+import { v4 as uuidv4 } from 'uuid';
 
 const Immersion = ({t}) => {
 
@@ -58,7 +59,7 @@ const Immersion = ({t}) => {
                 </div>
 
                 <div className={s.arrow} onClick={() => contentBlock.current.scrollIntoView({ behavior: "smooth"})}>
-                    <p className={s.arrowText}>{t('See more')}</p>
+                    <p key={uuidv4()} className={s.arrowText}>{t('See more')}</p>
                     <MdOutlineKeyboardArrowDown/>
                 </div>
 

@@ -1,6 +1,7 @@
 import s from './empty_page.module.scss'
 import {withNamespaces} from "react-i18next";
 import {useEffect} from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 const NoPage = ({t, name}) => {
 
@@ -9,7 +10,7 @@ const NoPage = ({t, name}) => {
 
     return (
         <div className={s.noPage}>
-            <h1>
+            <h1 key={uuidv4()}>
                 <span className={s.pageName}>{t(name)}</span> {t('page in development')}
             </h1>
         </div>

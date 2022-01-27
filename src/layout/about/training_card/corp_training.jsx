@@ -2,6 +2,7 @@ import style from './corp_training.module.scss';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import cardImage from '../../../assets/corp_training.png'
+import { v4 as uuidv4 } from 'uuid';
 
 
 const Corp_training = () => {
@@ -13,7 +14,7 @@ const Corp_training = () => {
             <div className={style.topLine}>
                 <div className={style.leftContent}><img src={cardImage} alt=""/></div>
                 <div className={style.rightContent}>
-                    <h1>{t('Corporate Training')}</h1>
+                    <h1 key={uuidv4()}>{t('Corporate Training')}</h1>
                     <span>{t('Corporate training programs can effectively')}</span>
                 </div>
             </div>

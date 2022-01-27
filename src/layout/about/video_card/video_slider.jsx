@@ -1,6 +1,7 @@
 import s from './video_card.module.scss'
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
+import { v4 as uuidv4 } from 'uuid';
 
 // Import Swiper React components
 import {Swiper, SwiperSlide} from "swiper/react";
@@ -31,7 +32,7 @@ const VideoCard = () => {
         return (
             <SwiperSlide key={uuid(idx)} className={s.videoBox}>
                 <div className={s.leftContent}><iframe title={i.src} src={i.src}/></div>
-                <div className={s.rightContent}><h1>{t(i.title)}</h1><span>{t(i.message)}</span></div>
+                <div className={s.rightContent}><h1 key={uuidv4()}>{t(i.title)}</h1><span>{t(i.message)}</span></div>
             </SwiperSlide>
         )
     })

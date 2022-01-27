@@ -5,6 +5,7 @@ import img2 from '../../../assets/iitem2_link_card.png'
 import img3 from '../../../assets/iitem3_link_card.png'
 import img4 from '../../../assets/item4_link_card.png'
 import {NavLink} from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 
 const LinkCard = ({t}) => {
     return (
@@ -13,28 +14,28 @@ const LinkCard = ({t}) => {
 
             <div className={style.box}>
                 <img src={img1} alt=""/>
-                <p>{t('Dream team')}</p>
+                <p key={uuidv4()}>{t('Dream team')}</p>
                 <hr/>
                 <NavLink to={'/useful'}><span>{t('Go to')}</span></NavLink>
             </div>
 
             <div className={style.box}>
                 <img src={img2} alt=""/>
-                <p>{t('Useful')}</p>
+                <p key={uuidv4()}>{t('Useful')}</p>
                 <hr/>
                 <NavLink to={'/useful'}><span>{t('Go to')}</span></NavLink>
             </div>
 
             <div className={style.box}>
                 <img src={img3} alt=""/>
-                <p>{t('Webinars')}</p>
+                <p key={uuidv4()}>{t('Webinars')}</p>
                 <hr/>
                 <NavLink to={'/webinars'}><span >{t('Go to')}</span></NavLink>
             </div>
 
             <div className={style.box}>
                 <img src={img4} alt=""/>
-                <p>{t('Gallery')}</p>
+                <p key={uuidv4()}>{t('Gallery')}</p>
                 <hr/>
                 <NavLink to={'/gallery'}><span>{t('Go to')}</span></NavLink>
             </div>

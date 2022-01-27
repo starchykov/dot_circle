@@ -14,7 +14,8 @@ import {compose} from "redux";
 import {withNamespaces} from "react-i18next";
 import {connect} from "react-redux";
 import {useCallback} from "react";
-import {BsYoutube, ImYoutube2} from "react-icons/all";
+import {BsYoutube} from "react-icons/all";
+import { v4 as uuidv4 } from 'uuid';
 
 const Footer = ({t, style}) => {
 
@@ -95,7 +96,7 @@ const Footer = ({t, style}) => {
                             <div className={s.footerWidget}>
                                 <h3 className={`${s.title} ${s.underlined}`}>{t('Subscribe')}</h3>
                                 <div className={s.footerText}>
-                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    <p key={uuidv4()}>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                                 </div>
                                 <div className={s.subscribeForm}>
                                     <form action="#">
@@ -110,15 +111,15 @@ const Footer = ({t, style}) => {
             </div>
 
             <div className={s.copyrightArea}>
-                <div className={s.container}>
+
                     <div className={s.row}>
                         <div className={s.col}>
                             <div className={s.copyrightText}>
-                                <p>© 2019 Copyright: dot-circle.com</p>
+                                <p key={uuidv4()}>© 2019 Copyright: dot-circle.com</p>
                             </div>
                         </div>
                     </div>
-                </div>
+
             </div>
 
         </footer>

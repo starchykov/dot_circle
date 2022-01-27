@@ -10,6 +10,7 @@ import 'swiper/swiper-bundle.min.css'
 
 import bgImage from './../../../assets/top_slider_bg.png'
 import {useCallback} from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Pagination, Mousewheel, Keyboard, Autoplay]);
@@ -28,7 +29,7 @@ const TopSlider = ({t}) => {
     ];
 
     const slides = () => slideData.map((i, idx) => {
-        return <SwiperSlide key={uuid(idx)} className={s.slide}><h1>{t(i.title)}</h1><p>{t(i.message)}</p></SwiperSlide>
+        return <SwiperSlide key={uuid(idx)} className={s.slide}><h1 key={uuidv4()}>{t(i.title)}</h1><p key={uuidv4()}>{t(i.message)}</p></SwiperSlide>
     });
 
     return (

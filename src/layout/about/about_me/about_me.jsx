@@ -4,6 +4,7 @@ import i18next from 'i18next';
 import aboutMeBg from '../../../assets/about_me.png'
 import {FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 import {BsYoutube} from "react-icons/all";
+import { v4 as uuidv4 } from 'uuid';
 
 
 let AboutMe = () => {
@@ -12,8 +13,8 @@ let AboutMe = () => {
         <div className={s.aboutMe}>
 
             <div className={s.leftContent}>
-                <h1>{t('Let`s get to know each other')}</h1>
-                <p>{t('Hello everyone, my name is Anar')}</p>
+                <h1 key={uuidv4()}>{t('Let`s get to know each other')}</h1>
+                <p key={uuidv4()}>{t('Hello everyone, my name is Anar')}</p>
             </div>
 
             <div className={s.rightContent}>

@@ -52,7 +52,7 @@ const Travel = ({t}) => {
                     <PageTitle icon={<BiWorld/>} title={t('Nepal Program 2')} style={{marginTop: '30px'}}/>
                     <BoldText text={t('This practical program that is in its')}/>
                     <NavLink to={'/programs/transformation'}>
-                        <ContainerTitle icon={<FaExternalLinkSquareAlt/>} title={'Navigate to Transformation program'}/>
+                        <ContainerTitle icon={<FaExternalLinkSquareAlt/>} title={t('Navigate to Transformation program')}/>
                     </NavLink>
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
@@ -68,7 +68,7 @@ const Travel = ({t}) => {
                     {t('Medical beauty procedures').split('-').map((e, idx) => <ItemText key={uuid(idx)}
                                                                                          icon={<BsDot/>}
                                                                                          text={t(e)}/>)}
-                    <HintText text={t('Program to be announced')} style={{color: 'darkgrey'}} />
+                    <HintText text={t('Program to be announced')} style={{color: 'dimgray'}} />
 
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>

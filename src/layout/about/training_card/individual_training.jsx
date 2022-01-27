@@ -2,6 +2,7 @@ import style from './corp_training.module.scss';
 import {withNamespaces} from "react-i18next";
 import i18next from 'i18next';
 import openTrainingBg from '../../../assets/open_training.png'
+import { v4 as uuidv4 } from 'uuid';
 
 
 const IndividualTraining = () => {
@@ -17,7 +18,7 @@ const IndividualTraining = () => {
                 </div>
 
                 <div className={style.rightContent}>
-                    <h1>{t('Open training')}</h1>
+                    <h1 key={uuidv4()}>{t('Open training')}</h1>
                     <span>{t('An open training format involves a combined composition')}</span>
                 </div>
             </div>
