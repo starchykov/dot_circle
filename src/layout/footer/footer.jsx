@@ -63,7 +63,7 @@ const Footer = ({t, style}) => {
                             <div className={s.footerWidget}>
                                 <img className={s.footerLogo} src={logo} alt=""/>
                                 <div className={s.footerSocialIcon}>
-                                    <h3 className={s.title}>{t('Follow us')}</h3>
+                                    <h3 key={uuidv4()} className={s.title}>{t('Follow us')}</h3>
                                     <a href={'https://www.youtube.com/channel/UCkrJlMOqKg_8GlbQL5_y44w'}>
                                         <BsYoutube className={s.faLogo}/>
                                     </a>
@@ -81,7 +81,7 @@ const Footer = ({t, style}) => {
                         </div>
                         <div className={s.col}>
                             <div className={s.footerWidget}>
-                                <h3 className={`${s.title} ${s.underlined}`}>{t('Useful Links')}</h3>
+                                <h3 key={uuidv4()} className={`${s.title} ${s.underlined}`}>{t('Useful Links')}</h3>
                                 <ul>
                                     <li><NavLink to={'/'}>{t('About')}</NavLink></li>
                                     <li><NavLink to={'/trainings'}>{t('Business trainings')}</NavLink></li>
@@ -94,7 +94,7 @@ const Footer = ({t, style}) => {
                         </div>
                         <div className={s.col}>
                             <div className={s.footerWidget}>
-                                <h3 className={`${s.title} ${s.underlined}`}>{t('Subscribe')}</h3>
+                                <h3 key={uuidv4()} className={`${s.title} ${s.underlined}`}>{t('Subscribe')}</h3>
                                 <div className={s.footerText}>
                                     <p key={uuidv4()}>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                                 </div>

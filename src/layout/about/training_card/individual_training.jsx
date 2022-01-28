@@ -24,7 +24,7 @@ const IndividualTraining = () => {
             </div>
 
             <div className={style.item}>
-                <h3>
+                <h3 key={uuidv4()}>
                     <div className={style.circle}>
                         <span className={style.number}>1</span>
                     </div>
@@ -37,7 +37,7 @@ const IndividualTraining = () => {
 
             <div className={style.item}>
 
-                <h3>
+                <h3 key={uuidv4()}>
                     <div className={style.circle}>
                         <span className={style.number}>2</span>
                     </div>
@@ -49,7 +49,7 @@ const IndividualTraining = () => {
 
             <div className={style.item}>
 
-                <h3>
+                <h3 key={uuidv4()}>
                     <div className={style.circle}>
                         <span className={style.number}>3</span>
                     </div>

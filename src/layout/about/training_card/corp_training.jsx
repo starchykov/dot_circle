@@ -19,21 +19,21 @@ const Corp_training = () => {
                 </div>
             </div>
             <div className={style.item}>
-                <h3>
+                <h3 key={uuidv4()}>
                     <div className={style.circle}><span className={style.number}>1</span></div>
                     {t('Invitation process')}
                 </h3>
                 {t('Make a breakthrough')}
             </div>
             <div className={style.item}>
-                <h3>
+                <h3 key={uuidv4()}>
                     <div className={style.circle}><span className={style.number}>2</span></div>
                     {t('Skill processes')}
                 </h3>
                 {t('Get specific tools')}
             </div>
             <div className={style.item}>
-                <h3>
+                <h3 key={uuidv4()}>
                     <div className={style.circle}><span className={style.number}>3</span></div>
                     {t('Continuous growth')}
                 </h3>

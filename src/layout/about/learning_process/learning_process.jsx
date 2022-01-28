@@ -16,25 +16,25 @@ const LearningProcess = ({t}) => {
                 <div className={s.items}>
                     <div className={s.lineOne}>
                         <img src={titleImage_1} alt={"#"}/>
-                        <h3>{t('Work in groups')}</h3>
+                        <h3 key={uuidv4()}>{t('Work in groups')}</h3>
                         <p key={uuidv4()}>{t('Each participant voices his/her goals in the presence')}</p>
                     </div>
 
                     <div className={s.lineOne}>
                         <img src={titleImage_2} alt={"#"}/>
-                        <h3>{t('Business Game')}</h3>
+                        <h3 key={uuidv4()}>{t('Business Game')}</h3>
                         <p key={uuidv4()}>{t('Identifying the strengths and weaknesses of habitual')}</p>
                     </div>
 
                     <div className={s.lineOne}>
                         <img src={titleImage_3} alt={"#"}/>
-                        <h3>{t('Work with a trainer')}</h3>
+                        <h3 key={uuidv4()}>{t('Work with a trainer')}</h3>
                         <p key={uuidv4()}>{t('Familiarization with personal cases of participants')}</p>
                     </div>
 
                     <div className={s.lineOne}>
                         <img src={titleImage_4} alt={"#"}/>
-                        <h3>{t('Work in pairs')}</h3>
+                        <h3 key={uuidv4()}>{t('Work in pairs')}</h3>
                         <p key={uuidv4()}>{t('Each participant practices and consolidates the')}</p>
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const LearningProcess = ({t}) => {
                 <div className={s.items}>
                     <div className={s.lineOne}>
                         <img src={titleImage_1} alt={"#"}/>
-                        <h3>{t('Lecture material')}</h3>
+                        <h3 key={uuidv4()}>{t('Lecture material')}</h3>
                         <p key={uuidv4()}>{t('Outline of basic principles, concepts and stereotypes')}</p>
                     </div>
                 </div>
