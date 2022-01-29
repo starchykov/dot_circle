@@ -50,7 +50,10 @@ const OrganizationalDevelopment = ({t, trainings}) => {
 
         return <>
             <PageTitle key={uuid(this)} icon={<RiArticleFill/>} title={t(bottomTitle)}/>
-            {t(bottomContent).split('\n').map((e, idx) => <ItemText key={uuid(idx)} icon={<BsDot/>} text={e}/>)}
+            {t(bottomContent).split('\n').map((e, idx) => <ContainerTitle key={uuid(idx)}
+                                                                          icon={<BsDot/>}
+                                                                          title={e}
+                                                                          style={{color: 'dimgray'}}/>)}
         </>
     };
 

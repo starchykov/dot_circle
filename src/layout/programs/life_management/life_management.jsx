@@ -31,7 +31,7 @@ const LifeManagement = ({t}) => {
                     <Title title={i++} style={{width: '50px', margin: 0, color: '#ff962e', lineHeight: 1, alignItems: 'center'}}/>
                     <Text text={t(e)} style={{alignItems: 'center'}}/>
                 </div>)}
-                <PageTitle icon={<RiArticleFill/>} title={t('The training is held in an open')}/>
+                <ContainerTitle icon={<RiArticleFill/>} title={t('The training is held in an open')}/>
             </>
         );
     };

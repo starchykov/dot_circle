@@ -27,14 +27,17 @@
 
     :nth-child(2) {
       padding-left: 100px;
+      color: dimgrey;
     }
 
     :nth-child(3) {
       transform: rotate(360deg);
+      color: dimgrey;
     }
 
     :nth-child(4) {
       padding-right: 100px;
+      color: dimgrey;
     }
 
     svg {
@@ -48,8 +51,8 @@
       text-align: center;
       line-height: 60px;
       z-index: 3;
-      color: dimgrey;
-      margin-bottom: 50px;
+      color: #ff962e;
+      margin-bottom: 30px;
 
       @media (max-width: 768px) {
         display: none;

@@ -100,15 +100,15 @@ const Transformation = ({t}) => {
 
                 </div>
                 <div className={s.bottomLine}>
-                    <File content={<ContainerTitle title={t('Movement. Breathing. Consciousness.')}
+                    <File content={<BoldText text={t('Movement. Breathing. Consciousness.')}
                                                    style={{justifyContent: 'center', textAlign: 'center' ,color: '#333'}}/>}
                           style={{width: '350px', height: '180px', margin: '10px 0'}}
                           link={transformation_1}/>
-                    <File content={<ContainerTitle title={t('Time. Energy. Action.')}
+                    <File content={<BoldText text={t('Time. Energy. Action.')}
                                                    style={{justifyContent: 'center', textAlign: 'center' ,color: '#333'}}/>}
                           style={{width: '350px', height: '180px', margin: '10px 0'}}
                           link={transformation_2}/>
-                    <File content={<ContainerTitle title={t('Course')}
+                    <File content={<BoldText text={t('Course')}
                                                    style={{justifyContent: 'center', textAlign: 'center' ,color: '#333'}}/>}
                           style={{width: '350px', height: '180px', margin: '10px 0'}}
                           link={transformation_2}/>
@@ -270,7 +270,7 @@ const Transformation = ({t}) => {
                 <>
                     <PageTitle icon={<BiNotification/>} title={t('Transformation program')}/>
                     <BoldText text={t('This program was created in the basis')}/>
-                    <PageTitle icon={<RiArticleFill/>} title={t('Knowledge and practical skills')}/>
+                    <ContainerTitle icon={<RiArticleFill/>} title={t('Knowledge and practical skills')}/>
                     <BoldText text={t('Many of us live our lives')}/>
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>

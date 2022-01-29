@@ -4,7 +4,7 @@ import {compose} from "redux";
 import {connect} from "react-redux";
 import Background from "../../common/background/background";
 import background from "../../../assets/stress_management.png";
-import {Title, PageTitle} from "../../common/title/title";
+import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";
 import {AiOutlineCarryOut, BiNotification, RiTeamFill} from "react-icons/all";
@@ -44,7 +44,7 @@ const StressManagement = ({t, trainings}) => {
                     <>
                         <Title title={i.number}
                                style={{width: '60px', margin: 0, fontSize: '70px', color: '#878787', alignItems: 'center'}}/>
-                        <Text text={t(i.content)} style={{alignItems: 'center'}}/>
+                        <ContainerTitle title={t(i.content)} style={{alignItems: 'center', color: '#333'}}/>
                     </>
                 } style={{display: 'flex'}}/>
             )}
@@ -60,7 +60,7 @@ const StressManagement = ({t, trainings}) => {
                     <MaterialBox key={uuid(idx)} content={
                         <>
                             <Title title={i.number} style={titleStyle}/>
-                            <Text text={t(i.content)} style={{alignItems: 'center'}}/>
+                            <ContainerTitle title={t(i.content)} style={{alignItems: 'center', color: '#333'}}/>
                         </>
                     } style={{display: 'flex'}}/>
                 )}

@@ -11,8 +11,14 @@ const File = ({t, style, content, link}) => {
            className={s.file}
            style={css} download>
             {content && content}
-            <BsBoxArrowInDown/>
-            <HintText text={t('Click to download the program')}/>
+
+            <div className={s.bounce}>
+                <BsBoxArrowInDown/>
+            </div>
+            <div className={s.hintText}>
+                <HintText text={t('Click to download the program')}/>
+            </div>
+
         </a>
     )
 };

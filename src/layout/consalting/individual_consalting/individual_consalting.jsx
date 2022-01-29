@@ -8,12 +8,12 @@ import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import {
     AiOutlineFileDone,
     BiNotification,
-    BsPersonXFill, ImArrowDown2, ImArrowDownLeft2, ImArrowDownRight2,
+    BsPersonXFill, GiHorizonRoad, ImArrowDown2, ImArrowDownLeft2, ImArrowDownRight2,
     MdPublishedWithChanges,
     RiArrowDropRightFill,
     RiArticleFill,
 } from "react-icons/all";
-import {ItemText} from "../../common/text/text";
+import {ItemText, Text} from "../../common/text/text";
 import circleBg from '../../../assets/circle.png';
 import Footer from "../../footer/footer";
 import File from "../../common/file/file";
@@ -55,14 +55,15 @@ const IndividualConsulting = ({t}) => {
     }
 
     let reasons = [
-        'We are result-oriented',
-        'Conscious choice. Life management',
-        'High efficiency. Close cooperation gives'
+        {header: 'We are result-oriented', text: 'After each consultation session'},
+        {header: 'Conscious choice. Life management', text: 'Life management consultation'},
+        {header: 'High efficiency. Close cooperation gives', text: 'Close cooperation gives excellent'},
     ]
 
     const BlockThree = () => <div className={s.blockThree}>
 
         <PageTitle icon={<BiNotification/>} title={t('What is the essence of the individual')}/>
+        <ContainerTitle title={t('Its purpose is a competent correction')}/>
 
 
         <details className={s.dropdownBox} open>
@@ -108,7 +109,8 @@ const IndividualConsulting = ({t}) => {
             <MaterialBox content={
                 <>
                     <PageTitle icon={<RiArticleFill/>} title={t('Immerse yourself')}/>
-                    <ContainerTitle icon={<RiArrowDropRightFill/>} title={t('Life Management consultation')}/>
+                    <PageTitle icon={<GiHorizonRoad/>}
+                               title={t('Life Management consultation')}/>
                     <div style={{display: 'flex', flexWrap: 'wrap', gap: '20px'}}>
                         <ItemText text={t('We will show you the way out of difficult life')}
                                   style={{paddingLeft: '42px', flex: 3, textAlign: 'justify'}}/>
@@ -129,8 +131,13 @@ const IndividualConsulting = ({t}) => {
                 {reasons.map((item, idx) =>
                     <MaterialBox key={uuid(idx)}
                                  style={{flex: `${window.innerWidth <= 768 ? 1 : 100}`}}
-                                 content={<ContainerTitle icon={<AiOutlineFileDone/>}
-                                                          title={t(item)}/>}
+                                 content={
+                                     <>
+                                         <ContainerTitle icon={<AiOutlineFileDone/>}
+                                                         title={t(item.header)}/>
+                                         <Text text={t(item.text)} style={{padding: '0', textAlign: 'left'}}/>
+                                     </>
+                                     }
                     />)}
             </div>
 

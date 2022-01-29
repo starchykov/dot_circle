@@ -4,10 +4,10 @@ import {connect} from "react-redux";
 import {compose} from "redux";
 import Background from "../../common/background/background";
 import background from "../../../assets/self_development.png";
-import {Title, PageTitle} from "../../common/title/title";
+import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";
-import {BiNotification} from "react-icons/all";
+import {BiNotification, FaInfo} from "react-icons/all";
 import {BoldText, Text} from "../../common/text/text";
 import Footer from "../../footer/footer";
 
@@ -54,8 +54,8 @@ const SelfDevelopment = ({t, trainings}) => {
 
     const InfoBox = () => {
         return <>
-            {InfoContent(trainings.selfDevelopment.thirdTitle)}
-            {InfoContent(trainings.selfDevelopment.fourthTitle)}
+            <ContainerTitle icon={<FaInfo/>} title={trainings.selfDevelopment.thirdTitle} style={{color: 'dimgray'}}/>
+            <ContainerTitle icon={<FaInfo/>} title={trainings.selfDevelopment.fourthTitle} style={{color: 'dimgray'}}/>
         </>
     };
 

@@ -34,7 +34,7 @@ const Travel = ({t}) => {
 
             <MaterialBox content={
                 <>
-                    <PageTitle icon={<RiArticleFill/>} title={t('Travelling means something different')}/>
+                    <ContainerTitle icon={<RiArticleFill/>} title={t('Travelling means something different')}/>
                     <BoldText text={t('We invite you to find a new meaning')}/>
                 </>
             } style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
