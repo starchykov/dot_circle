@@ -58,4 +58,20 @@
     }
   }
 
+
+  iframe {
+    flex: 1;
+    border: none;
+    border-radius: 12px;
+    height: 100%;
+    margin: 0;
+
+    min-height: 300px;
+
+    .ytp-impression-link {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
 }

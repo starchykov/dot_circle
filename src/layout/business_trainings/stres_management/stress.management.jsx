@@ -8,7 +8,7 @@ import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
 import {useCallback} from "react";
 import {AiOutlineCarryOut, BiNotification, RiTeamFill} from "react-icons/all";
-import {BoldText, Text} from "../../common/text/text";
+import {BoldText} from "../../common/text/text";
 import Footer from "../../footer/footer";
 
 

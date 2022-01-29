@@ -107,9 +107,13 @@ const Immersion = ({t}) => {
                 </div>
 
                 <div className={s.contentBox}>
+                    <PageTitle icon={<RiFeedbackFill/>} title={t('Feedback')}/>
                     <div className={s.commonBox}>
-                        <PageTitle icon={<RiFeedbackFill/>} title={t('Feedback')}/>
                         <iframe title="immersion" className={s.feedback} src={'https://www.youtube.com/embed/SvABVGRBph0?start=128'}/>
+                    </div>
+                    <div className={s.commonBox}>
+
+                        <iframe title="immersion" className={s.feedback} src={'https://www.youtube.com/embed/UrXQay7mLh0'}/>
                     </div>
 
                     <div className={s.commonBox}>

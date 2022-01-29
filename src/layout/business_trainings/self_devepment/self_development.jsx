@@ -6,10 +6,11 @@ import Background from "../../common/background/background";
 import background from "../../../assets/self_development.png";
 import {Title, PageTitle, ContainerTitle} from "../../common/title/title";
 import MaterialBox from "../../common/material_box/material_box";
-import {useCallback} from "react";
-import {BiNotification, FaInfo} from "react-icons/all";
+import React, {useCallback} from "react";
+import {BiNotification, CgFeed, FaInfo} from "react-icons/all";
 import {BoldText, Text} from "../../common/text/text";
 import Footer from "../../footer/footer";
+import {v4 as uuidv4} from "uuid";
 
 
 const SelfDevelopment = ({t, trainings}) => {
@@ -59,6 +60,15 @@ const SelfDevelopment = ({t, trainings}) => {
         </>
     };
 
+    const VideoFeedback = () => {
+        return (
+            <>
+                <PageTitle icon={<CgFeed/>} title={t('Feedback')}/>
+                <iframe src={'https://www.youtube.com/embed/q0-C0WdAgEY'} title={uuidv4()}/>
+                <iframe src={'https://www.youtube.com/embed/-T1Cv3y33CY'} title={uuidv4()}/>
+            </>
+        )
+    };
 
     return (
         <div className={s.selfDevelopment}>
@@ -70,6 +80,8 @@ const SelfDevelopment = ({t, trainings}) => {
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
             <MaterialBox content={<InfoBox/>}
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
+            <MaterialBox content={<VideoFeedback/>}
+                         style={{width: '-webkit-fill-available', height: 'inherit', display: 'flex', flexWrap: 'wrap'}}/>
             <Footer style={{borderRadius: '12px'}}/>
         </div>
     );

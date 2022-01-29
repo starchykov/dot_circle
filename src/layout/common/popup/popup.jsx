@@ -11,7 +11,6 @@ const CustomPopup = (props) => {
     useEffect(() => setShow(props.show), [props.show]);
 
     const closeHandler = (e) => {
-        console.log(e);
         setShow(false);
         props.onClose(false);
     };

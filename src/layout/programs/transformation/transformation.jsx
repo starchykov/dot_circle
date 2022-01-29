@@ -262,6 +262,16 @@ const Transformation = ({t}) => {
         )
     };
 
+    const VideoFeedback = () => {
+        return (
+            <>
+                <PageTitle icon={<CgFeed/>} title={t('Feedback')}/>
+                <iframe src={'https://www.youtube.com/embed/bOY-akxuihQ'} title={`Video feedback`}/>
+                <iframe src={'https://www.youtube.com/embed/c50FJg85Gsg'} title={`Video feedback 1`}/>
+            </>
+        )
+    }
+
     return (
         <div className={s.transformation}>
             <Background background={`${process.env.PUBLIC_URL}/assets/transformation.png`}/>
@@ -289,6 +299,8 @@ const Transformation = ({t}) => {
                          style={{width: '-webkit-fill-available', display: 'flex', flexWrap: 'wrap'}}/>
             <MaterialBox content={<Process/>}
                          style={{width: '-webkit-fill-available', display: 'flex'}}/>
+            <MaterialBox content={<VideoFeedback/>}
+                         style={{width: '-webkit-fill-available', height: 'inherit', display: 'flex', flexWrap: 'wrap'}}/>
             <MaterialBox content={<FeedBack/>}
                          style={{width: '-webkit-fill-available', height: 'auto', display: 'flex', flexWrap: 'wrap'}}/>
 

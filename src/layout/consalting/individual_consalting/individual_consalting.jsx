@@ -10,7 +10,6 @@ import {
     BiNotification,
     BsPersonXFill, GiHorizonRoad, ImArrowDown2, ImArrowDownLeft2, ImArrowDownRight2,
     MdPublishedWithChanges,
-    RiArrowDropRightFill,
     RiArticleFill,
 } from "react-icons/all";
 import {ItemText, Text} from "../../common/text/text";

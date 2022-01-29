@@ -4,7 +4,7 @@ import {HintText} from "../text/text";
 import {withNamespaces} from "react-i18next";
 
 const File = ({t, style, content, link}) => {
-    let css = style ?? {height: '-webkit-fill-available'};
+    let css = style ?? {height: '-webkit-fill-available', width: '-webkit-fill-available'};
 
     return (
         <a href={link}
