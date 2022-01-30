@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dot_circle/static/css/main.199e6f4b.chunk.css",
-    "main.js": "/dot_circle/static/js/main.abf01922.chunk.js",
-    "main.js.map": "/dot_circle/static/js/main.abf01922.chunk.js.map",
+    "main.css": "/dot_circle/static/css/main.dc15167d.chunk.css",
+    "main.js": "/dot_circle/static/js/main.4409da0c.chunk.js",
+    "main.js.map": "/dot_circle/static/js/main.4409da0c.chunk.js.map",
     "runtime-main.js": "/dot_circle/static/js/runtime-main.6963ef72.js",
     "runtime-main.js.map": "/dot_circle/static/js/runtime-main.6963ef72.js.map",
     "static/css/2.acb3237e.chunk.css": "/dot_circle/static/css/2.acb3237e.chunk.css",
@@ -10,13 +10,14 @@
     "static/js/2.5c3b122c.chunk.js.map": "/dot_circle/static/js/2.5c3b122c.chunk.js.map",
     "index.html": "/dot_circle/index.html",
     "static/css/2.acb3237e.chunk.css.map": "/dot_circle/static/css/2.acb3237e.chunk.css.map",
-    "static/css/main.199e6f4b.chunk.css.map": "/dot_circle/static/css/main.199e6f4b.chunk.css.map",
+    "static/css/main.dc15167d.chunk.css.map": "/dot_circle/static/css/main.dc15167d.chunk.css.map",
     "static/js/2.5c3b122c.chunk.js.LICENSE.txt": "/dot_circle/static/js/2.5c3b122c.chunk.js.LICENSE.txt",
     "static/media/Nurtac_dream_team.8fc70f12.png": "/dot_circle/static/media/Nurtac_dream_team.8fc70f12.png",
     "static/media/Zulfia_dream_team.dc2a4f89.png": "/dot_circle/static/media/Zulfia_dream_team.dc2a4f89.png",
     "static/media/about_me.60349ddb.png": "/dot_circle/static/media/about_me.60349ddb.png",
     "static/media/anar_dream_team.f575f720.png": "/dot_circle/static/media/anar_dream_team.f575f720.png",
     "static/media/arrow_cooperation_process.f1a92a90.svg": "/dot_circle/static/media/arrow_cooperation_process.f1a92a90.svg",
+    "static/media/aylin_dream_team.671d8ec7.png": "/dot_circle/static/media/aylin_dream_team.671d8ec7.png",
     "static/media/circle.8f52d011.png": "/dot_circle/static/media/circle.8f52d011.png",
     "static/media/comm1.6a5da600.png": "/dot_circle/static/media/comm1.6a5da600.png",
     "static/media/comm10.f2f8e95b.png": "/dot_circle/static/media/comm10.f2f8e95b.png",
@@ -70,7 +71,7 @@
     "static/js/runtime-main.6963ef72.js",
     "static/css/2.acb3237e.chunk.css",
     "static/js/2.5c3b122c.chunk.js",
-    "static/css/main.199e6f4b.chunk.css",
-    "static/js/main.abf01922.chunk.js"
+    "static/css/main.dc15167d.chunk.css",
+    "static/js/main.4409da0c.chunk.js"
   ]
 }
