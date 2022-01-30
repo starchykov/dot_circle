@@ -3,6 +3,7 @@ import {withNamespaces} from "react-i18next";
 import executiveDirector from '../../assets/anar_dream_team.png'
 import trainingAssistant from '../../assets/Zulfia_dream_team.png'
 import challenger from '../../assets/Nurtac_dream_team.png'
+import photographer from '../../assets/aylin_dream_team.png'
 import background from "../../assets/dream_team.png";
 import {FaFacebookSquare, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 import {useCallback, useEffect} from "react";
@@ -46,6 +47,16 @@ const DreamTeam = ({t}) => {
             name: 'Guliyeva Nurtac',
             position: "Challenger",
             image: challenger,
+            social: [
+                {icon: 'facebook', link: '/'},
+                {icon: 'instagram', link: '/'},
+                {icon: 'linkedin', link: '/'},
+            ]
+        },
+        {
+            name: 'Aylin Mammadova',
+            position: "Filmmaker/Photographer",
+            image: photographer,
             social: [
                 {icon: 'facebook', link: '/'},
                 {icon: 'instagram', link: '/'},

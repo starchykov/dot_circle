@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   gap: 15px;
 
-  height: 100vh;
+  min-height: 100vh;
   padding: 30px 0 0 0;
 
   @media (max-width: 768px) {
@@ -37,7 +37,7 @@
     }
 
     img {
-      width: 50%;
+      width: 53%;
 
       @media (max-width: 768px) {
         flex: 1;
