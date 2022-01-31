@@ -27,7 +27,7 @@ const DreamTeam = ({t}) => {
             position: 'Executive Director',
             image: executiveDirector,
             social: [
-                {icon: 'youtube', link: 'https://www.facebook.com/anar.mammadov.56211'},
+                {icon: 'youtube', link: 'https://www.youtube.com/channel/UCkrJlMOqKg_8GlbQL5_y44w'},
                 {icon: 'facebook', link: 'https://www.facebook.com/anar.mammadov.56211/'},
                 {icon: 'instagram', link: 'https://www.instagram.com/anarmammadov.az/'},
                 {icon: 'linkedin', link: 'https://www.linkedin.com/in/anar-mamm/'},
